@@ -98,8 +98,9 @@ Stellen Sie sich mit Ihrem Namen vor und berichten Sie entweder
 
 ::: notes
 
-* entsprechend anmoderieren, dass es nicht so langweilig wird 
-* erste Person setzt häufig einen Anker, daher kreativ sein: nicht nur wiederholen & sich den Vorgänger:innen anschließen
+* Vorstellung in Großgruppe
+    + Teilnehmende in Dreiergruppen einteilen + rotieren; Nr. 3 bleibt immer mit Wimmelbild stehen
+
 * zwischen beiden Möglichkeiten abwechseln 
     + Erinnern Sie sich an ein besonders positives Ereignis aus Praktikum! Damit ist nicht ein allgemeiner Eindruck des Schulpraxissemesters gemeint, sondern ein ganz spezifisches Ereignis
     + ein Ereignis jeglicher Art – nicht nur auf den Unterricht bezogen!!- Schildern Sie das Ereignis kurz!
@@ -122,14 +123,27 @@ Auf all diesen Ebenen – positive Erlebnisse – Bewusstmachung dessen – Ress
 
 ::: 
 
-## Organisatorische Informationen 
+## Organisatorische Informationen {{< fa list >}}
 
-* Montag bis Freitag jeweils von 08:00 bis 13:00 Uhr
-* Dienstag Wahl der Vertiefung
-* Freitag: Studienleistung
-* Ihre Fragen?
+* Blockzeiten jeweils von 08:00 bis 13:00 Uhr
+    + pro Tag mind. 40 Minuten Pause 
+    + geplante Pausen können flexibel angepasst werden
+* Bis spätestens Dienstagvormittag Vertiefung wählen
+* Informationsblock zur Studienleistung/Modulprüfung am Freitag 
+* Seminar steht und fällt mir Ihrer Aktivität
+    + Tag 1 und 2 viele Inputphasen
+    + Tag 3, 4 und 5 viel Aktivität
+* Noch offene Fragen Ihrerseits?
 
-## Was erwartet Sie heute?
+## Geplante Pausen {{< fa mug-hot >}}
+
+> ca. 09:45 Uhr - 10:05 Uhr 
+
+<br>
+
+> ca. 11:50 Uhr - 12:10 Uhr
+
+## Was erwartet Sie heute? {{< fa list-ol >}}
 
 * Einführung in die Unterrichtsqualität 
     + Gespräch im Lehrer:innenzimmer
@@ -140,7 +154,8 @@ Auf all diesen Ebenen – positive Erlebnisse – Bewusstmachung dessen – Ress
     + Anwendung der Unterrichtsqualität
 * Komplexität des Unterrichts
 
-## <font color="#8cd000">Lernziele {{< fa bullseye >}}</font>
+
+## Lernziele {{< fa bullseye >}}
 
 * Unterrichtsqualität erklären können
 * Unterscheidung von Oberflächen- und Tiefenstruktur
@@ -159,7 +174,7 @@ Auf all diesen Ebenen – positive Erlebnisse – Bewusstmachung dessen – Ress
 
 :::
 
-## <font color="#8cd000">Gespräch im Lehrer:innenzimmer {{< fa bullseye >}}</font> {.smaller}
+## Gespräch im Lehrer:innenzimmer {{< fa chalkboard-teacher >}} {.smaller}
 
 Frau Müller: „Heute haben wir in Mathe wieder Stationenarbeit gemacht. Da war wieder was los in der Klasse. Meinen Viertklässlern hat‘s eine Menge Spaß gemacht. Und alle waren sie dabei.“
 
@@ -196,28 +211,26 @@ Optimale Ausprägung ist immer eine Frage der Adaptivität (der Passung) – an 
 
 :::
 
-## Wozu Forschung zu UQual? {{< fa list-ul >}}
-
-Confbias Experiment 
-
-## Wozu Forschung zu UQal? {{< fa list-ul >}}{.center}
+## Wozu Forschung zu UQual? {{< fa magnifying-glass >}}
 
 > Lehrer:innen und Studierende sind immer wieder der Meinung die Frage nach »Merkmalen guten Unterrichts« könne mit dem »Alltagsverstand« genauso beantwortet werden, wie mit Unterrichtsforschung.
 
-> Dazu zwei kleine Experimente: 
-1. Klicken Sie im Innovationspace auf "Quiz: Unterrichtsqualität - eine Frage der Intuition?"
-2. Klicken Sie im Innovationspace/Stud.ip auf "Ihre Meinung ist gefragt"
+ADD LINK ZUR UMFRAGE
 
 ::: notes
 -	Lehrer:innen und Lehramtsstudierende sind oft der Meinung, dass man mit dem Alltagsverstand - Erfahrungen, practical wisdom ... - genauso gut wie mit Unterrichtsforschung beantworten kann, was Merkmale guten Unterrichts sind 
--	starten wir daher mal mit einem kleinen Experiment, warum UQual-Forschung (effective teaching-Perspektive) überhaupt sinnig ist
+-	starten wir daher mal mit einem kleinen Experiment, warum UQual-Forschung  überhaupt sinnig sein kann
 
 -	Ergebnisse der Studis anschauen
 -	Schauen wir mal, was die Forschung dazu sagt
 
+- noch weitere Themen, bei der uns unsere Intiution trügen kann oder unsere Überzeugungen uns in die Irre führen können
+
 ::: 
 
-## Wozu Forschung zu UQual? {{< fa list-ul >}} {.scrollable}
+
+
+## Wozu Forschung zu UQual? {{< fa magnifying-glass >}} {.scrollable}
 ```{r}
 #| echo: false
 #| cache: true
@@ -331,7 +344,7 @@ __Lernstile__
 ::: 
 
 
-## Wiss. Wissen & Handlungswissen {.smaller}
+## Wiss. Wissen & Handlungswissen {{< fa magnifying-glass >}} {.smaller}
 #### Charakteristika
 * Wissenschaftliches Wissen: Formal, explizit, propositional, diskursiv [@habermas2014]
 * Praktisches Wissen: Implizit, »embodied in action« [@massingham2019]
@@ -372,7 +385,7 @@ Praktisches Wissen:
 
 
 
-## Begriffsverständnis {.smaller}
+## Begriffsverständnisse (I) {{< fa chalkboard-teacher >}} {.smaller}
 
 * Unterrichtsqualität ein Kompositum aus Unterricht und Qualität 
     + Bestimmungsmerkmale von Unterricht: Planmäßigkeit, Professionalisierung, Institutionalisierung, Intentionalität
@@ -414,7 +427,7 @@ Praktisches Wissen:
   
 ::: 
 
-## Modelle
+## Begriffsverständnisse (II) {{< fa chalkboard-teacher >}}
 
 ::: {.column width='33%'}
 #### Listen {{< fa list-check >}}
@@ -445,7 +458,7 @@ Praktisches Wissen:
     3) Schüler:innen motivieren
     4) Differenzieren
     
-Stufenmodell (Schaubild Eva ergänzen)
+![Struktur nach [@berliner2005]](img/berliner4.png){width="200"}
 :::
 
 
@@ -464,16 +477,16 @@ Stufenmodell (Schaubild Eva ergänzen)
 :::
     
     
-## Dimensionen {{< fa ruler-combined >}} {.smaller}
+## Begriffsverständnisse (II) {{< fa chalkboard-teacher >}}{.smaller}
 
-Im Kontext aktueller empirischer (insb. deutschsprachiger) Forschung {{< fa eye >}}
-
-* wird meistens die [Leistungsentwicklung]{style="color: #0FA5D7;"} als Kriterium fokussiert [@kunter2013b];
-* werden meistens sog. generische Tiefenstrukturen als Unterrichtsmerkmale betrachtet [@praetorius2018]
-    * [Klassenführung]{style="color: #d77d00;"} (classroom management)
-    * [Konstruktive Unterstützung]{style="color: #d77d00;"} (student support)
-    * [Kognitive Aktivierung]{style="color: #d77d00;"} (cognitive activation)
-* ![](img/Eisberg.png){width="200"}
+* ... 
+* Im Kontext aktueller empirischer (insb. deutschsprachiger) Forschung {{< fa eye >}}
+    + wird meistens die [Leistungsentwicklung]{style="color: #0FA5D7;"} als Kriterium fokussiert [@kunter2013b];
+    + werden meistens sog. generische Tiefenstrukturen als Unterrichtsmerkmale betrachtet [@praetorius2018]
+        * [Klassenführung]{style="color: #d77d00;"} (classroom management)
+        * [Konstruktive Unterstützung]{style="color: #d77d00;"} (student support)
+        * [Kognitive Aktivierung]{style="color: #d77d00;"} (cognitive activation)
+    + ![](img/Eisberg.png){width="200"}
 
 
 ::: notes
@@ -497,48 +510,50 @@ Implikation der Definiton:
 
 :::
 
-## Vertiefung
+## Vertiefung {{< fa chalkboard-teacher >}}
 
-> 5 Minuten Inhalte in Partner:inennarbeit vertiefen & eigene Fragen an den Text berücksichtigen
+> Vertiefen Sie die Inhalte nochmals mit Ihrer Sitznachbarin/Ihrem Sitznachbarn und diskutieren Sie dabei auch Ihre Fragen, die Sie an den Text von Drechsler & Schindler (2019) gestellt haben.
 
-# Die Arbeit mit Ihren Fällen
+<center> 5 Minuten {{< fa clock >}} </center>
 
-## Peer-Feedback Aufgabe
+# Arbeit an Ihren Fällen {{< fa file-lines >}}{.cent1}
 
-Stellen Sie sich Ihre Fälle vor, d.h. tragen Sie sich Ihre Fallbeschreibungen vor.
+> „Ein Fall ist eine exemplarische Schlüsselsituation pädagogischen
+Handelns“ (Goeze u. Hartz, 2010)
 
-Geben Sie sich gegenseitig Rückmeldung hinsichtlich der folgenden Aspekte:
+## Peer-Feedback Aufgabe {{< fa user-group >}} {.smaller}
+
+Tragen Sie sich Ihre Fallbeschreibungen gegenseitig vor und geben Sie sich dabei Rückmeldung zu den folgenden Aspekten:
 
 * Nur eine Situation ist ausgewählt und verschriftlicht, nicht eine gesamte Unterrichtsstunde.
 * Die Situation ist so konkret wie möglich verschriftlicht, z.B. auch mit wörtlicher Rede (was wurde gesprochen?).
 * Die Kontextfragen sind beantwortet (s. Foliensatz der Vorbesprechung).
 * Die Verschriftlichung ist durchgängig beschreibend und nicht wertend oder interpretierend.
 
-Überarbeiten Sie - falls notwendig - Ihre Fallbeschreibung und laden Sie diese überarbeitete Version in Stud.IP/im Innovationspace hoch.
+Überarbeiten Sie - falls notwendig - Ihre Fallbeschreibung und laden Sie diese überarbeitete Version in Innovationspace unter "Ihr herausforderndes Ereignis (überarbeitet)" hoch.
 
-## Aktivität{.smaller}
+## Aktivität {{< fa sitemap >}} {.smaller}
 
-> „Ein Fall ist eine exemplarische Schlüsselsituation pädagogischen
-Handelns“ (Goeze u. Hartz, 2010)
-
-Teil 1: Titel für Ihren Fall
+__Teil 1: Betiteln Sie Ihren Fall__
 
 * Suchen Sie einen passenden Titel für Ihren Fall.
 * Schreiben Sie Ihren Titel auf eine Karte. 
 
 
-Teil 2: Anwendung der Basisdimensionen 
+__Teil 2: Anwendung der Basisdimensionen__ 
 
-* Sie haben als Vorbereitung auf die Kompaktveranstaltung Texte zu den Basisdimensionen gelesen. Um Ihr Wissen zu aktivieren, bearbeiten Sie das Quiz "Zuordnung: Basisdimension (KKK) <-> Item im Unterrichtsfeedbackbogen". Dieses finden Sie im Innovationspace / in Stud.ip.
+* Sie haben als Vorbereitung auf die Kompaktveranstaltung Texte zu den Basisdimensionen gelesen. Um Ihr Wissen zu aktivieren, bearbeiten Sie das Quiz "Zuordnung: Basisdimension (KKK) <-> Item im Unterrichtsfeedbackbogen". Dieses finden Sie im Innovationspace.
 * Welche Basisdimensionen kommen in Ihrem Fall zum tragen? Gibt es eine dominante Dimension? 
 * Notieren Sie wenige Stichpunkte für die Vorstellung. Begründen Sie dabei auch, warum Sie sich für welche Basisdimension(en) entschieden haben.
 
-Teil 3: Vorstellung & Clusterung Ihres Falles
+__Teil 3: Vorstellung & Clusterung Ihres Falles__
 
 * Stellen Sie Ihren Fall in zwei bis drei kurzen Sätzen vor.
-* Ihre Kärtchen gemeinsam nach den Basisdimensionen clustern.
+* Gemeinsam clustern wir Ihre Fälle hinsichtlich der Basisdimensionen.
 
-## Komplexität des Unterrichts {.smaller .scrollable}
+# Komplexität des Unterrichts {{< fa layer-group >}}
+
+## Komplexität des Unterrichts {{< fa layer-group >}} {.smaller .scrollable}
 
 |    |    |
 |----|----|
@@ -549,28 +564,16 @@ Teil 3: Vorstellung & Clusterung Ihres Falles
 
 (Doyle 1986, ergänzt durch Herzog 2002; vgl. Syring 2017, S.12/13)
 
-## Komplexität des Unterrichts: Arbeitsauftrag{.smaller}
+## Arbeitsauftrag {{< fa layer-group >}} {.smaller}
 
 1. Lesen Sie die Merkmale der Komplexität des Unterrichts und finden Sie zu mind. zwei der aufgelisteten Merkmalen verschiedene __konkrete__, möglichst __selbst erlebte Beispiele__ aus dem __Unterrichtsalltag__, um diese Merkmale der Komplexität von Unterricht zu stützen und greifbarer zu machen. Halten Sie Ihre Beispiele in Stichpunkten fest und laden Sie diese im Innovationspace unter "Beispiele zur Komplexität des Unterrichts" hoch.
 
-<center> 15. Minuten </center>
+<center> 15 Minuten {{< fa clock >}} </center>
 
 2. Stellen Sie ein Beispiel vor - ohne das Merkmal zu nennen und lassen Sie Ihre Sitznachbarin / Ihren Sitznachbarn das Merkmal zuordnen.
-<center> 10. Minuten </center>
 
-## Komplexität des Unterrichts
+<center> 10 Minuten {{< fa clock >}} </center>
 
-„Aushalten können“ der komplexen Anforderungen im Klassenzimmer <br> 
-&rarr; wichtige Bedingung für Classroom Management (Syring 2017, S.22) <br>
-&rarr; CRM muss erlernt werden und bildet sich erst im Verlauf des Berufslebens heraus! <br>
-&rarr; CRM = „spezifische Expertenkompetenz“ → Erfahrene Lehrpersonen und Novizen unterscheiden sich darin deutlich! <br> 
-&rarr; Für Novizen häufig eine belastende Anforderung
-
-
-::: notes
-- Wir können die Komplexität nicht auflösen, sie uns aber bewusst machen -> und Strategien / Merkmale / Techniken etc. von CRM können uns behilflich sein damit umzugehen. 
-
-:::
 
 # Vielen Dank!{.cent1}
 
@@ -617,20 +620,50 @@ Pädagogische Hochschule Karlsruhe <br>
   
 :::
 
-## Lernziel {{< fa paper-plane >}}
+## Geplante Pausen {{< fa mug-hot >}}
+
+> ca. 09:10 Uhr - 09:30 Uhr 
+
+<br>
+
+> ca. 10:45 Uhr - 10:50 Uhr 
 
 <br> 
-<br>
 
-* Die Techniken der Klassenführung nach Kounin kennen und anwenden können 
-<br>
-<br>
+> ca. 11:50 Uhr - 12:10 Uhr
+
+
+## Lernziele {{< fa bullseye >}}
+
+* Techniken der Klassenführung nach Kounin kennen und anwenden können 
 * Potenziale und Herausforderungen im Umgang mit Unterrichtsvideos kennen
-<br>
-<br>
 * Grundlegende Herangehensweisen videobasierter Reflektion anwenden können
 
 ## Was erwartet Sie heute?
+
+* Classroom Management 
+    + Historische Entwicklung
+    + Techniken der Klassenführung nach Kounin
+* Einführung in die Analyse von Unterrichtsvideo
+    + Potenziale und Herausforderungen
+    + Einführung in die Analyseschritte 
+    + Durchführung der Videoanalyse
+
+# Classroom Management
+
+## Komplexität des Unterrichts
+
+„Aushalten können“ der komplexen Anforderungen im Klassenzimmer <br> 
+&rarr; wichtige Bedingung für Classroom Management (Syring 2017, S.22) <br>
+&rarr; CRM muss erlernt werden und bildet sich erst im Verlauf des Berufslebens heraus! <br>
+&rarr; CRM = „spezifische Expertenkompetenz“ → Erfahrene Lehrpersonen und Novizen unterscheiden sich darin deutlich! <br> 
+&rarr; Für Novizen häufig eine belastende Anforderung
+
+
+::: notes
+- Wir können die Komplexität nicht auflösen, sie uns aber bewusst machen -> und Strategien / Merkmale / Techniken etc. von CRM können uns behilflich sein damit umzugehen. 
+
+:::
 
 
 ## Classroom Management: Historische Entwicklung {{< fa arrow-rotate-left >}}
@@ -1307,7 +1340,7 @@ Podcast Psychologie fürs Klassenzimmer, Folge Kounin (1970) | Unterrichtsstöru
 
 
 
-# <font color="#8cd000">Vielen Dank!</font> {.cent1}
+# Vielen Dank! {.cent1}
 
 ## Classroom Management{.cent2}
 <center>
@@ -1332,6 +1365,32 @@ Pädagogische Hochschule Karlsruhe <br>
 * herzlich willkommen zum 3. Kompakttag
 
 :::
+
+## Geplante Pausen {{< fa mug-hot >}}
+
+> ca. 09:45 Uhr - 10:00 Uhr 
+
+<br>
+> va. 10:50 Uhr - 11:05 Uhr 
+
+<br> 
+
+> ca. 11:50 Uhr - 12:10 Uhr
+
+## Was erwartet Sie heute?
+
+* Einführung in die Analyse von Unterrichtsvideo
+    + Durchführung der Videoanalyse (Fortsetzung)
+* Classroom Management 
+    + Einführung in die Classroom Management-Merkmale nach Evertson
+    + Anwendung der Classroom Management-Merkmale nach Evertson
+* Wahlvertiefung
+
+## Lernziele {{< fa bullseye >}}
+
+* Merkmale des Classroom Managements nach Evertson und Kolleg:innen kennen und anwenden können 
+
+* Verschiedene Verständnisse von Classroom Management kontrastieren können
 
 ## Ihr Arbeitsauftrag {{< fa pen >}}{.scrollable}
 
