@@ -453,12 +453,8 @@ Praktisches Wissen:
 ::: {.column width='33%'}
 #### Stufen {{< fa stairs >}}
 * z.B. [@pietsch2010]
-    1) Lernklima sichern
-    2) Klasse führen
-    3) Schüler:innen motivieren
-    4) Differenzieren
-    
-![Struktur nach [@berliner2005]](img/berliner4.png){width="200"}
+
+![](img/Pietsch_Stufenmodell.png){width="500"}
 :::
 
 
@@ -563,6 +559,14 @@ __Teil 3: Vorstellung & Clusterung Ihres Falles__
 |  __7. Intransparenz__ Die am Unterricht Beteiligten vermögen sich gegenseitig nicht zu durchschauen. Nur indirekt, über Kommunikation, kann aufeinander Einfluss genommen werden und auf diesem Umweg kann vieles passieren“. | __8. Informalität:__ Unterrichten ist nur in geringem Ausmaß standardisierbar oder reglementierbar. Prinzipien, Regeln, Rezepte, Gesetze oder Techniken müssen den variierenden situativen Bedingungen angepasst werden.|
 
 (Doyle 1986, ergänzt durch Herzog 2002; vgl. Syring 2017, S.12/13)
+
+
+::: notes
+
+Informalität - Technologiedefizit
+
+:::
+
 
 ## Arbeitsauftrag {{< fa layer-group >}} {.smaller}
 
@@ -1033,7 +1037,7 @@ ADD NEGATIVBEISPIEL Digitalisierung bei Cocabora
 :::
 
 
-## [Vertiefung der Techniken]{style="color:black;"} {background-image="img/Fluss.png"}
+## [Vertiefung der Techniken {{< fa wrench >}}]{style="color:black;"} {background-image="img/Fluss.png"}
 
 
 ::: {.fragment} 
@@ -1070,7 +1074,7 @@ Was unterstützt den Unterrichtsfluss?
 :::
 
 
-## [Vertiefung der Techniken]{style="color:black;"} {background-image="img/Fluss.png"}
+## [Vertiefung der Techniken {{< fa wrench >}}]{style="color:black;"} {background-image="img/Fluss.png"}
 
 ::: {style="font-size: 0.60em"}
 
@@ -1115,10 +1119,20 @@ __5. Gesamtaktivität der Klasse ermöglichen__
 
 :::
 
+::: {style="font-size: 0.70em"}
+:::{.fragment}
+{{< fa triangle-exclamation >}} Notieren Sie sich den Stolperstein oder den Ast, der für Sie am wichtigsten ist. {{< fa triangle-exclamation >}}
+
+:::
+:::
+
+
 ::: notes
 Zurück zum Fluss: Notieren sie sich den Stolperstein oder den Ast, der für sie am wichtigsten ist – oder nehmen sie sich das Kärtchen mit….
 
 …diesen Steinen, Unterbrechungen möchten wir uns jetzt zuwenden
+
+- Erinnerung an Entscheidung für Vertiefung
 
 :::
 
@@ -1239,10 +1253,12 @@ Herausforderungen:
 3. Wie beschreiben Sie die ausgewählte Situation? Machen Sie sich hierfür bitte Notizen! Diese brauchen Sie zu einem späteren Zeitpunkt.
 
 > Einzelarbeit: <br>
-Öffnen Sie die Aktivität "Videoanalyse: Experimente zum Thema Magnetismus" im Innovationspace. Nutzen Sie gerne auch die Datei "Techniken der Klassenführung - ein Überblick". Erklären Sie gemäß des dritten Analyseschritts "Erklären" (F.10) die Unterrichtssituation, die wir gemeinsam beschrieben haben. Greifen Sie dabei auch auf die Techniken der Klassenführung nach Kounin zurück. Halten Sie Ihre Teilanalyse im Fließtext/in Stichpunkte  __in dem Online-Textfeld im Innovationspace__ in der Einreichungsphase fest.
+4. Öffnen Sie die Aktivität "Videoanalyse: Experimente zum Thema Magnetismus" im Innovationspace. Nutzen Sie gerne auch die Datei "Techniken der Klassenführung - ein Überblick". Erklären Sie gemäß des dritten Analyseschritts "Erklären" (F.10) die Unterrichtssituation, die wir gemeinsam beschrieben haben. Greifen Sie dabei auch auf die Techniken der Klassenführung nach Kounin zurück. Halten Sie Ihre Teilanalyse im in Stichpunkten __im Online-Textfeld im Innovationspace__ fest.
 
 > Plenum <br> 
-Erörtern möglicher Handlungsalternativen und Entschiedung für eine Handlungsalternative vor dem Hintergrund der Techniken der Klassenführung
+5. Sammlung der Erklärungen <br> 
+6. Erörtern möglicher Handlungsalternativen <br>  
+7. Entschiedung für eine Handlungsalternative vor dem Hintergrund der Techniken der Klassenführung.
 
 :::
 
@@ -1264,28 +1280,12 @@ Erörtern möglicher Handlungsalternativen und Entschiedung für eine Handlungsa
 
 ::: 
 
-<!--
-## Ihr Arbeitsauftrag {{< fa pen >}}{.scrollable}
-
-::: {.callout-tip icon=false collapse="false"}
-
-## Peefeedback
-Geben Sie bis zum 22.05.2025 unter der Aktivität "Videoanalyse: Experimente zum Thema Magnetismus" ein Feedback zu einer zufällig zugeteilten Erklärung einer Kommilitonin / eines Kommilitonen. Genauere Hinweise finden Sie in der Aktivität.
-
-:::
-
-::: notes
-
-
-:::
-
---> 
 
 ## Ihr Arbeitsauftrag {{< fa pen >}}{.scrollable}
 
-::: {style="font-size: 0.6em"}
+::: {style="font-size: 0.57em"}
 
-1. Schauen Sie sich zunächst das Unterrichtsvideo mit dem Titel __"Klassenperspektive: Schwimmen/Sinken. 1. Unterrichtseinheit 1. Doppelstunde - 2. Klasse"__ in Ruhe und für sich an ohne dabei einen der Analyseschritte (vgl. Sitzung 4; F.10) durchzuführen. Das Unterrichtsvideo finden Sie im Metaportal "unterrichtsvideos.net". Achten Sie dabei darauf, dass Sie das Video auswählen, das sich auf die __1. Doppelstunde__ bezieht (dies müsste das erste Video sein, das Ihnen angezeigt wird). Um das Video abzurufen, klicken Sie im Portal auf "Videosuche". Folgende Angaben können Ihnen die Suche erleichtern:
+1. Schauen Sie sich zunächst das Unterrichtsvideo mit dem Titel __"Klassenperspektive: Schwimmen/Sinken. 1. Unterrichtseinheit 1. Doppelstunde - 2. Klasse"__ in Ruhe und für sich an ohne dabei einen der Analyseschritte (vgl. F. 46) durchzuführen. Das Unterrichtsvideo finden Sie im Metaportal "unterrichtsvideos.net". Achten Sie dabei darauf, dass Sie das Video auswählen, das sich auf die __1. Doppelstunde__ bezieht (dies müsste das erste Video sein, das Ihnen angezeigt wird). Um das Video abzurufen, klicken Sie im Portal auf "Videosuche". Folgende Angaben können Ihnen die Suche erleichtern:
 
 - Nutzergruppe: Lehramtsstudierende
 - Ort: Sonstige Universität
@@ -1293,13 +1293,13 @@ Geben Sie bis zum 22.05.2025 unter der Aktivität "Videoanalyse: Experimente zum
 
 *Hinweis: Das Video wird ggf. nicht von Safari unterstützt, verwenden Sie also am besten einen anderen Internetbrowser.* <br>
 
-2. Wählen Sie gemeinsam in der Gruppe __3 Szenen des Unterrichtsvideos__ aus, die Sie gemäß der im Seminar formulierten Analyseschritte analysieren (vgl. Sitzung 4; Folie 10). *Hinweis: Der theoretische Hintergrund auf den Sie sich in Analyseschritt 3 beziehen sollen, umfasst Kounins Techniken der Klassenführung. Halten Sie Ihre Gedanken für den jeweiligen Analyseschritt schriftlich in Stichpunkten fest.*
+2. Wählen Sie gemeinsam in der Gruppe __1 Szene des Unterrichtsvideos__ aus, die Sie gemäß der im Seminar formulierten Analyseschritte analysieren (vgl. Folie 46). *Hinweis: Der theoretische Hintergrund auf den Sie sich in Analyseschritt 3 beziehen sollen, umfasst Kounins Techniken der Klassenführung. Halten Sie Ihre Gedanken für den jeweiligen Analyseschritt schriftlich in Stichpunkten fest.*
 
-3. Laden Sie am Ende Ihrer Analyse die Stichpunkte unter der Aktivität "Videoanalyse: Schwimmen und Sinken" im Innovationspace hoch und bereiten Sie sich auf eine kurze Vorstellung Ihres Analyseprozesses morgen vor.
-    - Wählen Sie für die Präsentation **eine beispielhafte Situation** aus, beschreiben Sie was in dieser Situation passiert ist, wie Sie diese vor dem Hintergrund der Techniken nach Kounin erklären, welche Handlungsalternativen Sie sehen und wie Sie diese bewerten.
-    - Legen Sie fest wer aus Ihrer Gruppe (max. 2 Personen) das Beispiel vorstellt.
+3. Laden Sie am Ende Ihrer Analyse die Stichpunkte unter der Aktivität "Videoanalyse: Schwimmen und Sinken" im Innovationspace hoch und bereiten Sie sich auf eine fünfminütige Vorstellung Ihres Analyseprozesses morgen vor.
+    - Legen Sie fest wer aus Ihrer Gruppe (max. 2 Personen) das Beispiel vorstellt. Beschreiben Sie was in dieser Situation passiert ist, wie Sie diese vor dem Hintergrund der Techniken nach Kounin erklären, welche Handlungsalternativen Sie sehen und wie Sie diese bewerten.
+    - Die Vorstellung findet in der Großgruppe statt.
 
-[{{< fa exclamation >}}]{.imp2} Die Gruppenzusammensetzung (8 x 4-er und 1x 3erGruppen) dürfen Sie selbst entscheiden; tragen Sie ihre Gruppe in die Liste ein.
+[{{< fa exclamation >}}]{.imp2} Die Gruppenzusammensetzung (8 x 4-er und 1x 3-er Gruppen) dürfen Sie selbst entscheiden; tragen Sie ihre Gruppe in die Liste ein.
 
 
 ::: 
@@ -1310,7 +1310,7 @@ Geben Sie bis zum 22.05.2025 unter der Aktivität "Videoanalyse: Experimente zum
 - Suchbegriff: Klassenperspektive: Schwimmen/Sinken
 - Portal (ViU)
 - nicht in Safari öffnen
-- in dieser Woche nicht vor Ort
+- Vorstellung in Großgruppe - jeweils 5 Minuten
 :::
 
 
@@ -1371,7 +1371,8 @@ Pädagogische Hochschule Karlsruhe <br>
 > ca. 09:45 Uhr - 10:00 Uhr 
 
 <br>
-> va. 10:50 Uhr - 11:05 Uhr 
+
+> ca. 10:50 Uhr - 11:05 Uhr 
 
 <br> 
 
@@ -1392,36 +1393,20 @@ Pädagogische Hochschule Karlsruhe <br>
 
 * Verschiedene Verständnisse von Classroom Management kontrastieren können
 
-## Ihr Arbeitsauftrag {{< fa pen >}}{.scrollable}
-
-::: {style="font-size: 0.6em"}
-
-1. Schauen Sie sich zunächst das Unterrichtsvideo mit dem Titel __"Klassenperspektive: Schwimmen/Sinken. 1. Unterrichtseinheit 1. Doppelstunde - 2. Klasse"__ in Ruhe und für sich an ohne dabei einen der Analyseschritte (vgl. Sitzung 4; F.10) durchzuführen. Das Unterrichtsvideo finden Sie im Metaportal "unterrichtsvideos.net". Achten Sie dabei darauf, dass Sie das Video auswählen, das sich auf die __1. Doppelstunde__ bezieht (dies müsste das erste Video sein, das Ihnen angezeigt wird). Um das Video abzurufen, klicken Sie im Portal auf "Videosuche". Folgende Angaben können Ihnen die Suche erleichtern:
-
-- Nutzergruppe: Lehramtsstudierende
-- Ort: Sonstige Universität
-- Suchbegriff: Klassenperspektive: Schwimmen/Sinken
-
-*Hinweis: Das Video wird ggf. nicht von Safari unterstützt, verwenden Sie also am besten einen anderen Internetbrowser.* <br>
-
-2. Wählen Sie gemeinsam in der Gruppe __3 Szenen des Unterrichtsvideos__ aus, die Sie gemäß der im Seminar formulierten Analyseschritte analysieren (vgl. Sitzung 4; Folie 10). *Hinweis: Der theoretische Hintergrund auf den Sie sich in Analyseschritt 3 beziehen sollen, umfasst Kounins Techniken der Klassenführung. Halten Sie Ihre Gedanken für den jeweiligen Analyseschritt schriftlich in Stichpunkten fest.*
-
-3. Laden Sie am Ende Ihrer Analyse die Stichpunkte unter der Aktivität "Videoanalyse: Schwimmen und Sinken" im Innovationspace hoch und bereiten Sie sich auf eine kurze Vorstellung Ihres Analyseprozesses morgen vor.
-    - Wählen Sie für die Präsentation **eine beispielhafte Situation** aus, beschreiben Sie was in dieser Situation passiert ist, wie Sie diese vor dem Hintergrund der Techniken nach Kounin erklären, welche Handlungsalternativen Sie sehen und wie Sie diese bewerten.
-    - Legen Sie fest wer aus Ihrer Gruppe (max. 2 Personen) das Beispiel vorstellt.
-
-[{{< fa exclamation >}}]{.imp2} Die Gruppenzusammensetzung (8 x 4-er und 1x 3erGruppen) dürfen Sie selbst entscheiden; tragen Sie ihre Gruppe in die Liste ein.
+## Ihr Arbeitsauftrag - Teil 2 {{< fa pen >}}{.scrollable}
 
 
-::: 
+1. ...
+
+2. ...
+
+3. 5-minütige Vorstellung Ihres Analysebeispiels. 
+
+4. 10-minütige Diskussion Ihrer Vorstellungen in der Großgruppe.
+
 
 ::: notes
-- Nutzergruppe: Lehramtsstudierende
-- Ort: Sonstige Universität
-- Suchbegriff: Klassenperspektive: Schwimmen/Sinken
-- Portal (ViU)
-- nicht in Safari öffnen
-- in dieser Woche nicht vor Ort
+- in 10 Minuten Präsentationen rahmen
 :::
 
 
@@ -1653,12 +1638,15 @@ weitere Differenzierung:
 
 ##  Arbeitsauftrag Videoanalyse (Teil 2) {{< fa pen >}} {.smaller}
 
-Schauen Sie sich einen der vier Videoausschnitte nochmals an, die Sie als Vorbereitung auf die heutige Sitzung in Ihrer Gruppe analysiert haben. Analysieren Sie diesen Videoausschnitt erneut, indem Sie 
+__Teil 1:__ 
+Schauen Sie sich Ihren Videoausschnitt nochmals an, den Sie heute morgen in Ihrer Gruppe vorgestellt haben. Analysieren Sie diesen Videoausschnitt erneut, indem Sie 
 
 * in Einzelarbeit {{< fa user >}}
-* gemäß der Analyseschritte nach Syring (2017) und Kohler et al. (2015) auch die Classroom Management-Merkmale nach Evertson und Kolleg:innen berücksichtigen {{< fa list >}}
-* und Ihre Analyse in einem Fließtext im Innovationspace in der Woche vom "CM: Besprechung der Videoanalyse & Einführung in Evertson et al." unter "Videoanalyse - Teil 2: Schwimmen und Sinken" hochladen {{< fa upload >}}.
+* gemäß der Analyseschritte nach Syring (2017) und Kohler et al. (2015) auch die Classroom Management-Merkmale nach Evertson und Kolleg:innen berücksichtigen {{< fa list >}}. D.h. Formulieren Sie Ihre bereits erstellten Stichpunkte für die Beschreibung aus und überarbeiten Sie die Schritte Erklären, Handlungsalternativen und ggf. die Entscheidung.  
+* Verfassen Sie Ihren __Fließtext im Online-Textfeld__ der Aktivität "Videoanalyse - Teil 2: Schwimmen und Sinken (Peerfeedback)" {{< fa upload >}} (Einreichungsphase).
 
+__Teil 2__
+Sie erhalten zufällig eine Ausarbeitung einer Kommilitonin / eines Kommilitonen (diese Ausarbeitung kann auch aus der anderen Seminargruppe stammen). Geben Sie nun anhand vorgegebener Fragen ein Feedback zur zugeteilten Analyse.
 
 ::: notes
 
