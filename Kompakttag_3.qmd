@@ -1,0 +1,365 @@
+---
+format: 
+  revealjs:
+    auto-stretch: true
+    self-contained: false
+    controls: true
+    slide-number: c/t
+    logo: img/PH_logo.svg
+    theme: [simple, css/custom.scss]
+    fullscreen: true
+    pdf-separate-fragments: true
+    pdfexport: true
+bibliography: references.bib
+csl: apa.csl
+editor_options: 
+  chunk_output_type: console
+lightbox: true
+---
+
+```{r hidden chunk which creates template stuff}
+#| echo: false
+
+## in terminal ########
+# quarto install extension quarto-ext/fontawesome
+# quarto install extension schochastics/academicons
+# test
+
+########################
+library(fontawesome)
+library(tidyverse)
+library(readxl)
+library(ggalt)
+library(hrbrthemes)
+library(reactable)
+
+# Change css to PH green
+if(!dir.exists("css"))
+dir.create("css")
+fileConn<-file("css/custom.scss")
+fileStyle<-file("css/custom.scss")
+writeLines(c("/*-- scss:defaults --*/",
+             "$link-color: #8cd000 !default;",
+             # line-height muss im parent der font-size gesetzt werden,
+             # daher hier und nicht inline im YAML header
+             ".reveal h1 {line-height: .8 !important;} ", 
+             # make citations a bit smaller
+             ".citation {font-size: .8em; color: #8cd000;}",
+             ".imp {color: #8cd000;}",
+             ".imp2 {color: #50B32E;}",
+             ".red {color: #A52019;}",
+             ".lightgrey {color: #ECECEC}",
+             ".cent2 h2 {text-align: center;}",
+             ".cent3 h3 {text-align: center;}",
+             ".cent1 h1 {text-align: center;}",
+             ".cent_text {text-align: center;}",
+             ".reveal h2 {color: #8cd000 !important;}"),
+           fileConn)
+close(fileConn)
+close(fileStyle)
+```
+
+## Classroom Management{.cent2}
+<center>
+<font color="#8cd000">3. Kompakttag</font>
+
+![](img/PHKA_logo.png){width="25%"}
+</center>
+
+<center>
+
+<br> 
+Dr. Eva Prinz  & Dr. Kirstin Schmidt <br> 
+
+::: {style="font-size: 0.8em"}
+Pädagogische Hochschule Karlsruhe <br>
+<font color="#50B32E">Sommersemester 2025</font>
+:::
+
+</center>
+
+::: notes
+* herzlich willkommen zum 3. Kompakttag
+
+:::
+
+## Ihr Arbeitsauftrag {{< fa pen >}}{.scrollable}
+
+::: {style="font-size: 0.6em"}
+
+1. Schauen Sie sich zunächst das Unterrichtsvideo mit dem Titel __"Klassenperspektive: Schwimmen/Sinken. 1. Unterrichtseinheit 1. Doppelstunde - 2. Klasse"__ in Ruhe und für sich an ohne dabei einen der Analyseschritte (vgl. Sitzung 4; F.10) durchzuführen. Das Unterrichtsvideo finden Sie im Metaportal "unterrichtsvideos.net". Achten Sie dabei darauf, dass Sie das Video auswählen, das sich auf die __1. Doppelstunde__ bezieht (dies müsste das erste Video sein, das Ihnen angezeigt wird). Um das Video abzurufen, klicken Sie im Portal auf "Videosuche". Folgende Angaben können Ihnen die Suche erleichtern:
+
+- Nutzergruppe: Lehramtsstudierende
+- Ort: Sonstige Universität
+- Suchbegriff: Klassenperspektive: Schwimmen/Sinken
+
+*Hinweis: Das Video wird ggf. nicht von Safari unterstützt, verwenden Sie also am besten einen anderen Internetbrowser.* <br>
+
+2. Wählen Sie gemeinsam in der Gruppe __3 Szenen des Unterrichtsvideos__ aus, die Sie gemäß der im Seminar formulierten Analyseschritte analysieren (vgl. Sitzung 4; Folie 10). *Hinweis: Der theoretische Hintergrund auf den Sie sich in Analyseschritt 3 beziehen sollen, umfasst Kounins Techniken der Klassenführung. Halten Sie Ihre Gedanken für den jeweiligen Analyseschritt schriftlich in Stichpunkten fest.*
+
+3. Laden Sie am Ende Ihrer Analyse die Stichpunkte unter der Aktivität "Videoanalyse: Schwimmen und Sinken" im Innovationspace hoch und bereiten Sie sich auf eine kurze Vorstellung Ihres Analyseprozesses morgen vor.
+    - Wählen Sie für die Präsentation **eine beispielhafte Situation** aus, beschreiben Sie was in dieser Situation passiert ist, wie Sie diese vor dem Hintergrund der Techniken nach Kounin erklären, welche Handlungsalternativen Sie sehen und wie Sie diese bewerten.
+    - Legen Sie fest wer aus Ihrer Gruppe (max. 2 Personen) das Beispiel vorstellt.
+
+[{{< fa exclamation >}}]{.imp2} Die Gruppenzusammensetzung (8 x 4-er und 1x 3erGruppen) dürfen Sie selbst entscheiden; tragen Sie ihre Gruppe in die Liste ein.
+
+
+::: 
+
+::: notes
+- Nutzergruppe: Lehramtsstudierende
+- Ort: Sonstige Universität
+- Suchbegriff: Klassenperspektive: Schwimmen/Sinken
+- Portal (ViU)
+- nicht in Safari öffnen
+- in dieser Woche nicht vor Ort
+:::
+
+
+# Classroom Management nach Evertson und Kolleg:innen {{< fa list-ol >}} {.cent1}
+
+## Classroom Management: Historische Entwicklung {{< fa arrow-rotate-left >}}
+
+::: {style="font-size: 0.45em"}
+
+__1. Classroom Management als reaktiver Umgang mit Störungen__
+
+- Mittelpunkt der Verantwortlichkeit: Lehrperson
+- Ziel: Disziplin zu erhalten und wiederherzustellen, um reibungsloses Lernen zu ermöglichen &rarr; Fokus auf Modifikation des individuellen Verhaltens 
+- Vorgehensweise: Verstärkung durch z.B. Belohnungen, Lob, Tadel und Sanktionen (Behaviourismus)
+ 
+__2. Classroom Management als proaktiver Umgang mit Störungen__
+
+- Wende durch Kounin Ende der 1970er
+- Mittelpunkt der Verantwortlichkeit: Lehrperson
+- Ziel: Prävention von Störungen &rarr; Fokus auf Lerngeschehen in der Gruppe
+ 
+__3. lernerzentriertes und präventives Classroom Management__
+
+- Wandel seit 1990er: großer Beitrag durch Evertson, Weinstein und Brophy 
+- Mittelpunkt der Verantwortlichkeit: Lehrperson und Schüler:innen
+- Ziel: Förderung der Selbständigkeit und Selbstregulation im Aneignen von Lernstoffen bei Schüler:innen; gemeinsame Verantwortung bei Konflikten
+ 
+:::
+
+::: notes
+- Auflistung müsste Ihnen bekannt vorkommen: historische Entwicklung vom __reaktiven CM über proaktives CM bis hin zum lernerzentrierten und präventives CM__
+- wenn Sie sich an Sitzung 3 erinnern, in der Sie die Techniken von Kounin kennengelernt haben, haben wir Kounins Arbeit unter 2. Klassenmanagement stärker proaktiv gestalten verortet
+
+::: 
+
+##  Classroom Management: Historische Entwicklung {{< fa arrow-rotate-left >}}
+
+::: {style="font-size: 0.45em"}
+
+__1. Classroom Management als reaktiver Umgang mit Störungen__
+
+ - Mittelpunkt der Verantwortlichkeit: Lehrperson
+ - Ziel: Disziplin zu erhalten und wiederherzustellen, um reibungsloses Lernen zu ermöglichen &rarr; Fokus auf Modifikation des individuellen Verhaltens 
+ - Vorgehensweise: Verstärkung durch z.B. Belohnungen, Lob, Tadel und Sanktionen (Behaviourismus)
+ 
+__2. Classroom Management als proaktiver Umgang mit Störungen__
+
+ - Wende durch Kounin Ende der 1970er
+ - Mittelpunkt der Verantwortlichkeit: Lehrperson
+ - Ziel: Prävention von Störungen &rarr; Fokus auf Lerngeschehen in der Gruppe
+ 
+[__3. lernerzentriertes und präventives Classroom Management__]{.imp2}
+
+ - [Wandel seit 1990er: großer Beitrag durch Evertson, Weinstein und Brophy]{.imp2}
+ - [Mittelpunkt der Verantwortlichkeit: Lehrperson und Schüler:innen]{.imp2}
+ - [Ziel: Förderung der Selbständigkeit und Selbstregulation im Aneignen von Lernstoffen bei Schüler:innen; gemeinsame Verantwortung bei Konflikten]{.imp2}
+
+:::
+
+::: notes
+
+- heute wollen wir noch einen anderen Klassiker kennnenlernen, der sich dem __lernerzentrieren CM__ zuordnen lässt: Evertson und Kolleg:innen
+- Wiederholung: Mittelpunkt ist nun nicht mehr alleinig die Lehrperson, sondern auch die Schüler:innen
+- neben der __Prävention von Störungen: Aufbau von Regeln und Ritualen und vor allem Selbständigkeit und Selbstregulation der SuS fördern__
+
+::: 
+
+##  Arbeitsweise von Evertson und Kolleg:innen {{< fa list-ol >}}
+
+::: {style="font-size: 0.8em"}
+
+* Carolyn M. Evertson amerikanische Psychologin
+* über 20 Jahre Forschungsarbeit (verschiedene Beobachtungsstudien) <br>
+
+[&rarr; 11 Merkmale von Classroom Management entwickelt, evaluiert und in ein Programm zur Unterstützung von Lehrkräften in effektivem Classroom Management (Classroom Organization & Management Program) überführt]{.imp2}
+
+
+
+:::
+
+::: notes
+- Beobachtungsstudien 
+- Trainingsprogramme (COMP) zum Classroom Management: insgesamt elf Punkte, die für ein gutes Classroom Management zu beachten sind
+
+:::
+
+##  Classroom Management <br> nach Evertson {{< fa list-ol >}} {.smaller}
+
+<center> 
+1. Klassenraum vorbereiten <br> 
+2. Regeln planen und Verfahrensweisen klar festlegen <br> 
+3. Konsequenzen festlegen <br>
+4. Unterbindung von unangemessenem Verhalten <br> 
+5. Regeln und Prozeduren unterrichten <br>
+6. Gemeinschaftsfördernde Aktivitäten <br>
+7. Strategien für eventuelle Probleme <br>
+8. Überwachen des Schüler:innenverhaltens <br> 
+9. Vorbereiten des Unterrichts <br>
+10. Verantwortlichkeit der Schüler:innen <br> 
+11. Unterrichtliche Klarheit <br> 
+
+
+</center> 
+
+::: notes
+- Hier eine Auflistung der Merkmale, in die Sie direkt mit Textarbeit tiefer einsteigen werden 
+
+- vorarb: __Merkmale nicht als isolierte Merkmale zu verstehen, sondern - so Evertson - alle von Lehrpersonen zu verwirklichen sind__
+- zentral für effektives CM ist hierbei, dass es um __proaktives Planen__ geht, 
+- es geht also primär darum __Strukturen so zu planen, dass Störungen möglichst verhindert werden__, nicht um das Handeln in der Situation
+
+
+:::
+
+---
+
+## Ihr Arbeitsauftrag: Elaborationen der Merkmale nach Evertson {{< fa pen >}}{.scrollable}
+
+::: {style="font-size: 0.7em"}
+[__Think__]{.imp2} <br> 
+
+Lesen Sie sich den Textauszug von Haag & Streber (2020; S.74 unten - S.77 oben) durch. Den Textauszug finden Sie im Innovationspace unter "Evertson nach Haag und Streber (2020)". __Überlegen Sie sich mind. zwei Beispiele zu zwei Merkmalen.__ Beziehen Sie sich dabei *nicht* auf die ersten beiden Merkmale "Klassenraum vorbereiten" und "Regeln planen und Verfahrensweisen klar festlegen", da hierfür die Autor:innen Beispiele liefern. <br> *{{< fa clock >}} 15 Minuten*
+
+<br> 
+
+[__Pair__]{.imp2} <br> 
+
+Lassen Sie Ihre:n Sitznachbar:in Ihre Beispiele zu den möglichen Merkmalen zuordnen, d.h. stellen Sie Ihre Bespiele vor ohne dabei zu nennen, für welches Merkmal Sie dieses Beispiel gewählt haben. <br> *{{< fa clock >}} 10 Minuten* 
+
+<br>
+
+[__Share__]{.imp2} <br> 
+
+Kurze Reflexion Ihrer Einzel- und Partner:innenarbeit. <br> *{{< fa clock >}} 5 Minuten*
+:::
+
+
+::: notes
+
+bis " Auch müssen die genannten Techni- ken in ein unterstützendes und vertrauensvolles Klima eingebettet sein" lesen 
+
+
+1. __Klassenraum vorbereiten__: Staus und Störungen im Vorfeld vermeiden
+- Bsp. wie stelle ich meine Tische auf, um eine gute Kontrolle des Klassenraums zu haben
+
+2. __Regeln planen und Verfahrensweisen klar festlegen__: zu Schuljahresbeginn klar festlegen, was in der Klasse erlaubt, was verboten ist
+
+3. __Konsequenzen festlegen__: Belohnung und Bestrafungen für angemessenes und unangemessenes Verhalten einführen
+
+4. __Unterbindung von unangemessenem Verhalten__: Schüler:innenfehlverhalten sofort und konsistent unterbinden
+
+5. __Regeln und Prozeduren unterrichten__: im Laufe des Schuljahres immer wieder auf die festgelegten Regeln hinweisen; ggf. neue Regeln ergänzen
+
+6. __Gemeinschaftsfördernde Aktivitäten__: Aktivitäten wie Ausflüge, Spiele, gemeinsame Projekte zu Schuljahresbeginn um Zusammengehörigkeitsgefühl zu entwickeln
+
+7. __Strategien für eventuelle Probleme__: Strategien, wie man mit potenziellen Problemen umgeht, rechtzeitig planen
+  - z.B. Störungen des Unterrichts: Schulleitung kommt ins Zimmer und will ein dringendes Gespräch/Durchsagen
+  - Störungen durch Leerzeiten: Was machen Schüler:innen, die mit den Aufgaben fertig sind?
+  - Was passiert, wenn einige Schüler:innen die Aufgaben oder den Inhalt nicht verstehen??
+
+8. __Überwachen des Schülerverhaltens__: Schüler:innenaktivitäten und deren soziale Prozesse genau beobachten, um früh auftauchende Probleme zu identifizieren und die Wirksamkeit der eigenen Handlungen zu reflektieren
+
+9. __Vorbereiten des Unterrichts__: Unterricht gut vorbereiten, um unterschiedlich schwierige Lernaktivitäten für die heterogene Schüler:innenschaft zu ermöglichen
+
+10. __Verantwortlichkeit der Schüler__: Schüler:innen ihre Verantwortlichkeit für die Ergebnisse ihrer Arbeiten klarmachen, und sie dabei unterstützen, ihre Selbstwirksamkeit zu entwickeln
+
+11. __Unterrichtliche Klarheit__: Unterricht wird klar sturkturiert; dabei werden ausreichend redundante Informationen gegeben
+
+- Reflexion Ihrer Diskussion:
+  - was ist Ihnen besonders aufgefallen? positiv/negativ?
+  - waren Sie sich bei der Zuordnung einig?
+
+:::
+
+---
+
+
+## Weitere Elaboration: <br> Kontrastierung Kounin & Evertson {{< fa wrench >}}
+::: {style="font-size: 0.50em"}
+| Unterrichtsgestaltung        | Beziehungsförderung                                    | Verhaltenssteuerung                                           |
+|-------------------------------------------|---------------------------------------------------|----------------------------------------------------------|
+| Flüssigkeit (Schwung; K)     | [gemeinschaftsfördernde Aktivitäten (E)]{.imp2} | Überlappung (K)                                               |
+| Sachmotivation (Überdrussvermeidung) (K)           | [Verantwortlichkeit der Schüler:innen (E)]{.imp2}               | Allgegenwärtigkeit (K)                                        |
+| Abwechslung (K)              |                                                        | Flüssigkeit (Schwung; K)                                      |
+| [Unterrichtliche Klarheit (E)]{.imp2} |                                                        | Gruppenmobilisierung (K)                                      |
+| [Klassenraum vorbereiten (E)]{.imp2}         |                                                        | [Regeln und Verfahrensweisen planen (E)]{.imp2}                              |
+| [Unterricht vorbereiten (E)]{.imp2}   |                                                        | [Regeln und Verfahrensweisen unterrichten (E)]{.imp2}                        |
+|                              |                                                        | [Strategien für eventuelle Probleme (E)]{.imp2}                        |
+|                              |                                                        | [Überwachen des Schüler:innenverhalten (E)]{.imp2} |
+|                              |                                                        | [Unangemessenes Schüler:innenverhalten unterbinden (E)]{.imp2}         |
+|                              |                                                        | [Konsequenzen festlegen (E)]{.imp2}                                    |
+
+
+
+(angelehnt an Syring et al., 2013b; Syring, 2017) 
+
+:::
+
+::: notes
+ 
+- Sie haben die Merkmale weiter elaboriert, indem Sie sich Beispiele überlegt, zugeordnet und diskutiert haben
+- ich zeige Ihnen jetzt noch wie man Kounin und Evertson einander gegenüberstellen kann 
+  - Zusammenhänge zu erkennen und Vergleiche sichtbar machen
+  - eine Heuristik, es gibt ganz unterschiedliche Möglichkeiten
+- in schwarz die Techniken nach Kounin abgetragen, in grün die Merkmale nach Evertson
+  - Heuristik könnte auch um weitere Ansätze ergänzt werden
+- drei Dimensionen von CM zuteilen:
+  - __Unterrichtsgestaltung__: Handeln der Lehrperson, welches das __aktive Lernen__ und die aktive __Partizipation der Schüler:innen__ anregt
+  - Beziehungsförderung: __fürsorgliche und vertrauensvolle__ Beziehung zwischen Lehrperson und Schüler:innen
+  - Verhaltenssteuerung: __Ordnungs- und Interaktionsstrukturen__ errichten und aufrechterhalten 
+- Evertson allen drei Dimensionen zugeordnet werden kann, sind die Techniken von Kounin bei Unterrichtsgestaltung und Verhaltenssteuerung einzuordnen, wenn auch nicht eindeutig einer Dimension (z.B. Flüssigkeit und Schwung)
+- Beziehungsförderung nur von Evertson in den Blick genommen, __erweitert also das Verständnis um die soziale Dimension__
+
+
+weitere Differenzierung:
+
+- während sich die Techniken von __Kounin als »konstruktives Agieren«__ beschreiben/zusammenfassen lassen
+  - Kounin häufig das Handeln in der Unterrichtssituation 
+  - z.B. Allgegenwärtigkeit, Überlappung, Reibungslosigkeit und Schwung
+- könnnen die __Merkmale nach Evertson und Kolleg:innen als »vorausplanendes Handeln«__ verstanden werden   
+  - Aktivitäten zu Beginn des Schuljahres, Regeln und Verfahrensweisen, Raum vorbereiten, Unterricht vorbereiten
+- CM also mehr als nur Disziplinierung
+
+- falls noch Zeit: Rückfragen?
+
+ 
+::: 
+
+
+##  Arbeitsauftrag Videoanalyse (Teil 2) {{< fa pen >}} {.smaller}
+
+Schauen Sie sich einen der vier Videoausschnitte nochmals an, die Sie als Vorbereitung auf die heutige Sitzung in Ihrer Gruppe analysiert haben. Analysieren Sie diesen Videoausschnitt erneut, indem Sie 
+
+* in Einzelarbeit {{< fa user >}}
+* gemäß der Analyseschritte nach Syring (2017) und Kohler et al. (2015) auch die Classroom Management-Merkmale nach Evertson und Kolleg:innen berücksichtigen {{< fa list >}}
+* und Ihre Analyse in einem Fließtext im Innovationspace in der Woche vom "CM: Besprechung der Videoanalyse & Einführung in Evertson et al." unter "Videoanalyse - Teil 2: Schwimmen und Sinken" hochladen {{< fa upload >}}.
+
+
+::: notes
+
+- Reanalyse, dieses Mal aber in Einzelarbeit und nur ein Videoausschnitt
+
+:::
+
+
+## Weiterführende Literatur
+
+Zusammenfassung des aktuellen Forschungsstandes rund um Classroom Management finden Sie hier: 
+
+> Gold, B., & Syring, M. (2025). Klassenführung/Klassenmangagement. In M. Syring, T. Bohl, A. Gröschner, & A. Scheunpflug (Hrsg.). *Studienbuch Bildungswissenschaften 2. Unterricht und Schule gestalten.* https://doi.org/10.36198/9783838562193

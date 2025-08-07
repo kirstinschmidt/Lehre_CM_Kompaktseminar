@@ -1,0 +1,585 @@
+---
+format: 
+  revealjs:
+    auto-stretch: true
+    self-contained: false
+    controls: true
+    slide-number: c/t
+    logo: img/PH_logo.svg
+    theme: [simple, css/custom.scss]
+    fullscreen: true
+    pdf-separate-fragments: true
+    pdfexport: true
+bibliography: references.bib
+csl: apa.csl
+editor_options: 
+  chunk_output_type: console
+lightbox: true
+---
+
+```{r hidden chunk which creates template stuff}
+#| echo: false
+
+## in terminal ########
+# quarto install extension quarto-ext/fontawesome
+# quarto install extension schochastics/academicons
+# test
+
+########################
+library(fontawesome)
+library(tidyverse)
+library(readxl)
+library(ggalt)
+library(hrbrthemes)
+library(reactable)
+
+# Change css to PH green
+if(!dir.exists("css"))
+dir.create("css")
+fileConn<-file("css/custom.scss")
+fileStyle<-file("css/custom.scss")
+writeLines(c("/*-- scss:defaults --*/",
+             "$link-color: #8cd000 !default;",
+             # line-height muss im parent der font-size gesetzt werden,
+             # daher hier und nicht inline im YAML header
+             ".reveal h1 {line-height: .8 !important;} ", 
+             # make citations a bit smaller
+             ".citation {font-size: .8em; color: #8cd000;}",
+             ".imp {color: #8cd000;}",
+             ".imp2 {color: #50B32E;}",
+             ".red {color: #A52019;}",
+             ".lightgrey {color: #ECECEC}",
+             ".cent2 h2 {text-align: center;}",
+             ".cent3 h3 {text-align: center;}",
+             ".cent1 h1 {text-align: center;}",
+             ".cent_text {text-align: center;}",
+             ".reveal h2 {color: #8cd000 !important;}"),
+           fileConn)
+close(fileConn)
+close(fileStyle)
+```
+
+## Classroom Management{.cent2}
+<center>
+<font color="#8cd000">1. Kompakttag</font>
+
+![](img/PHKA_logo.png){width="25%"}
+</center>
+
+<center>
+
+<br> 
+Dr. Eva Prinz  & Dr. Kirstin Schmidt <br> 
+
+::: {style="font-size: 0.8em"}
+Pädagogische Hochschule Karlsruhe <br>
+<font color="#50B32E">Sommersemester 2025</font>
+:::
+
+</center>
+
+::: notes
+* herzlich willkommen in der ersten Sitzung
+* heute zuerst kennenlernen und organisatorische Fragen rund um das Seminar klären, bevor wir inhaltlich einsteigen
+
+:::
+
+## Ihre Vorstellung {{< fa user-friends >}}
+
+
+Stellen Sie sich mit Ihrem Namen vor und berichten Sie entweder
+
+- __in welcher [Wimmelfigur]{.imp} Sie sich warum wiedererkennen__. Sie können sich dabei auf Ihren Alltag oder den Hochschulkontext beziehen!
+
+... oder ...
+
+- __ein [positives Erlebnis aus Ihrem Schulpraktikum]{.imp}__.
+
+
+::: notes
+
+* entsprechend anmoderieren, dass es nicht so langweilig wird 
+* erste Person setzt häufig einen Anker, daher kreativ sein: nicht nur wiederholen & sich den Vorgänger:innen anschließen
+* zwischen beiden Möglichkeiten abwechseln 
+    + Erinnern Sie sich an ein besonders positives Ereignis aus Praktikum! Damit ist nicht ein allgemeiner Eindruck des Schulpraxissemesters gemeint, sondern ein ganz spezifisches Ereignis
+    + ein Ereignis jeglicher Art – nicht nur auf den Unterricht bezogen!!- Schildern Sie das Ereignis kurz!
+    + Notizen zu den Erfahrungen machen
+* Am Ende nochmals darauf zurückkommen 
+* 35 Minuten 
+* eine Minute Zeit geben 
+
+- positiv Erlebnisse der Vorstellungsrunde hier einordnen - können Sie Erfahrungen hier einordnen?
+    + __Beziehungsebene__ (konstruktive Unterstützung: positive Rückmeldung von SuS, Sympathie, Dank
+    + __Leistungsebene__ (individueller Leistungsforschritt von SuS, guter Klassendurchschnitt)
+    + __Ebene der Selbstwirksamkeit__ (Unter Selbstwirksamkeit/ Selbstwirksamkeitsüberzeugung (self-efficacy beliefs) versteht die kognitive Psychologie die Überzeugung einer Person, auch schwierige Situationen und Herausforderungen aus eigener Kraft erfolgreich bewältigen zu können ->  Erfolgserlebnisse -> stärken die Selbstwirksamkeit 
+Unterrichtsstunde gelingt besonders gut, Schülerinnen und Schüler können motiviert werden
+    + __außerunterrichtliche Ebene__: Positive Erlebnisse auf Ausflügen, Klassenfahrten, Festen mit Schülerinnen und Schülern, Eltern, Kolleginnen und Kollegen, der Schulleitung 
+    + __Ebene der Nachhaltigkeit:__ Rückmeldung einer ehemaligen Schülerin/ eines ehemaligen Schülers über seinen Ausbildungs- und Berufsweg
+    + __Kollegiale Ebene:__ Anerkennung durch Kolleg:innen oder die Schulleitung
+
+Auf all diesen Ebenen – positive Erlebnisse – Bewusstmachung dessen – Ressourcenorientierung und Positivfokussierung -> wir kennen es alle: halten uns gerne am Negativen auf! -> Für unser psychisches Wohlbefinden ist die Positivfokussierung besonders wichtig!
+
+
+::: 
+
+## Was erwartet Sie heute?
+
+* Einführung in die Unterrichtsqualität 
+    + Gespräch im Lehrer:innenzimmer
+    + Wozu Forschung zu Unterrichtsqualität?
+    + Begriffsverständnisse
+* Arbeit mit Ihren Unterrichtsfällen
+    + Peer Feedback
+    + Anwendung der Unterrichtsqualität
+* Komplexität des Unterrichts
+
+## <font color="#8cd000">Lernziele {{< fa bullseye >}}</font>
+
+* Unterscheidung Good Teaching vs. Effective Teaching
+* Unterscheidung von Oberflächen- und Tiefenstruktur
+* Basisdimensionen des Unterrichts kennen und erklären können 
+* NOCH WEITERE ERGÄNZEN
+
+# Unterrichtsqualität {{< fa chalkboard-teacher >}} {.cent1}
+
+::: notes
+
+* Heute widmen wir uns der UQ, was wir in der nächsten Sitzung dann fortführen werden
+
+- Ziele des Themenblocks
+- __schon als SuS in der Schule__ und Sie haben vielleicht auch schon ein __Praktikum hinter sich__
+- daher möchte ich mit ihnen einsteigen, indem ich Sie fragen, __welche Merkmale guten Unterrichts sie eigentlich schon kennen__ und für relevant halten
+
+:::
+
+## <font color="#8cd000">Gespräch im Lehrer:innenzimmer {{< fa bullseye >}}</font> {.smaller}
+
+Frau Müller: „Heute haben wir in Mathe wieder Stationenarbeit gemacht. Da war wieder was los in der Klasse. Meinen Viertklässlern hat‘s eine Menge Spaß gemacht. Und alle waren sie dabei.“
+
+Herr Meyer: „Für mich sind diese neumodischen Methoden ja nichts. Das ist mir viel zu viel Unruhe in der Klasse. Am besten funktioniert es immer noch, wenn ich ein neues Verfahren einführe, dann erkläre ich das für alle an der Tafel und danach wird geübt. Ohne Fleiß kein Preis, sage ich immer! Und in der Schule muss
+eben auch geübt werden.“
+
+Frau Müller: „Aber da langweilen sich die Schüler doch und wer sich langweilt, lernt nichts. Außerdem gilt es doch, die Selbst- und die Methodenkompetenz der Schüler zu fördern. Dies schließt doch ein, dass die Schüler ihr Lernen selbst in die Hand nehmen.“
+
+> Was sagen Sie zu diesem Gespräch? Hat Frau Müller Recht oder würden Sie doch eher Herrn Meyer zustimmen? - Was ist guter Unterricht?
+
+::: notes
+
+Diskutieren Sie zu zweit oder zu dritt über dieses Gespräch (ca. 10 Minuten)
+Machen Sie sich Notizen (das ist immer hilfreich!) 
+Was ist Stationenlernen?
+Evtl. sind Ihnen solche Gespräche aus dem Praktikum bekannt?
+
+Wie lautet das Fazit ihrer Diskussion? Zu welchem Ergebnis sind sie gekommen?
+
+Ergebnisse/ Notizen evtl. auf einem Flipchart notieren  bereits hier werden Aspekte genannt, die in der späteren Auseinandersetzung mit dem Begriff/ dem Thema Unterrichtsqualität zur Sprache kommen. 
+ 
+
+Mögliche Ergebnisse
+Die Auseinandersetzung bezieht sich auf die Oberflächenmerkmale der Unterrichtsgestaltung
+Welcher Unterricht ist besser? – Hier müssten die tiefenstrukturellen Merkmale von Unterricht betrachtet werden
+ABER auch dann kann noch nicht von besser oder schlechter gesprochen werden  Unterricht kann durch eine sehr effektive Klassenführung gekennzeichnet sein, so dass alle Abläufe reibungslos funktionieren und wenige Störungen auftreten. Die kognitive Aktivierung kann jedoch gering sein, wenn Schülerinnen und Schüler einfache Aufgaben bearbeiten, die nicht zu einem vertieften Nachdenken anregen.
+Lehrpersonen müssen immer inhaltliche Schwerpunkte und didaktische Schwerpunkte setzen: nicht alle Merkmale können die jeweils höchste Ausprägung aufweisen.
+Optimale Ausprägung ist immer eine Frage der Adaptivität (der Passung) – an die Klassenvoraussetzungen (die Klassenzusammensetzung), die einzelnen Schülerinnen und Schüler (deren individuelle Voraussetzungen), das Fach, die Ziele, die ich verfolge…..
+
+Was ist Stationenlernen?
+Beim Stationenlernen sind meistens an verschiedenen Positionen im Raum, den „Lernstationen“, Arbeitsaufträge unterschiedlicher Art ausgelegt, die nacheinander von den Lernenden bearbeitet werden. Die Aufträge stehen in einem thematischen Zusammenhang, können aber in der Regel unabhängig voneinander und in unterschiedlicher Reihenfolge bearbeitet werden. Dadurch erhalten die Lernenden die Möglichkeit, ihren Lernweg entsprechend ihrer Interessen und Fähigkeiten selbst zu steuern. Unterschiede im Lernverhalten einzelner Schüler können so leichter miteinander vereinbart werden.Im Stationenlernen wird durch Art und Auswahl der Aufträge die Vielfalt möglicher Zugänge zum Stoff betont: Alle Sinneskanäle lassen sich durch die Art des ausgewählten Materials und Aufgabenstellungen ansprechen. Auch direktes Handeln kann durch gezielte Aufforderungen für Entscheidungen bei der Aufgabenbearbeitung gefördert werden. Die Methode weist den Lernenden eine aktive und verantwortungsvolle Rolle innerhalb des Lernprozesses zu. Damit steht sie anderen handlungsorientierten Methodennahe. Stationenlernen wird besonders empfohlen zur Vertiefung von Wissen (Lernziel „Kennenlernen“), zur Einübung (Lernziel „Beherrschen“) und im Rahmen von fächerübergreifendem Unterricht. Die vielen Vorzügen werden allerdings nur durch einen hohen Material- und Vorbereitungsaufwand erreicht.
+
+:::
+
+## <font color="#8cd000">Gespräch im Lehrer:innenzimmer {{< fa bullseye >}}</font> {.smaller}
+
+* Beide haben Recht und Unrecht – es gibt nicht nur eine Methode des guten Unterrichts!
+* Das Gespräch bezieht sich auf die Oberflächenmerkmale von Unterricht, nicht auf die Tiefenmerkmale.
+* Die Einschätzung einer Methode hat mit den eigenen berufsbezogenen Überzeugungen zu tun.
+* Nicht nur der Output kann ein Kriterium sein, es gibt auch weitere Kriterien wie bspw. die interkulturelle Kompetenz.
+* Was guter Unterricht ist, ist abhängig von der Jahrgangsstufe, vom Fach, von den Zielen des Unterrichts, etc.
+
+## Wozu Forschung zu UQual? {{< fa list-ul >}}
+
+Confbias Experiment 
+
+## Wozu Forschung zu UQal? {{< fa list-ul >}}{.center}
+
+> Lehrer:innen und Studierende sind immer wieder der Meinung die Frage nach »Merkmalen guten Unterrichts« könne mit dem »Alltagsverstand« genauso beantwortet werden, wie mit Unterrichtsforschung.
+
+> Dazu zwei kleine Experimente: 
+1. Klicken Sie im Innovationspace auf "Quiz: Unterrichtsqualität - eine Frage der Intuition?"
+2. Klicken Sie im Innovationspace/Stud.ip auf "Ihre Meinung ist gefragt"
+
+::: notes
+-	Lehrer:innen und Lehramtsstudierende sind oft der Meinung, dass man mit dem Alltagsverstand - Erfahrungen, practical wisdom ... - genauso gut wie mit Unterrichtsforschung beantworten kann, was Merkmale guten Unterrichts sind 
+-	starten wir daher mal mit einem kleinen Experiment, warum UQual-Forschung (effective teaching-Perspektive) überhaupt sinnig ist
+
+-	Ergebnisse der Studis anschauen
+-	Schauen wir mal, was die Forschung dazu sagt
+
+::: 
+
+## Wozu Forschung zu UQual? {{< fa list-ul >}} {.scrollable}
+```{r}
+#| echo: false
+#| cache: true
+#| message: false
+#| results: hide
+library(haven)
+library(tidyverse)
+library(ggforce)
+library(hrbrthemes)
+library(ggplot2)
+
+data_star <- read_spss("data/star_math3_per_class.sav") |> 
+  mutate(Klassentyp = case_when(g3classtype == 3 ~ 
+                                "Normale Klasse + Hilfslehrkraft",
+                                g3classtype == 2 ~ 
+                                "Normale Klasse",
+                                T ~ "Kleine Klasse"))
+
+ggsave(
+  "img/STAR.png",
+  ggplot(data_star, aes(Klassentyp, math_per_class)) + 
+    geom_boxplot(width = .2, color = "lightgrey", fill = "darkgrey") +
+    geom_sina(color = "#8cd000") + 
+    theme_modern_rc() + 
+    ylab("Mittelwert Matheleistung je Klasse")+
+    xlab("") +
+    labs(title = "Mathematikleistung",
+         subtitle = "je Klassengröße",
+         caption = "nach drei jahren Unterricht in verschiedener Klassengröße. Daten von   Achilles et al., 1985"))
+
+```
+
+
+::: {style="font-size: 0.5em"}
+* Klassengröße: 
+    * ~~Eine Reduktion der durchschnittlichen Klassengröße von 25 auf 15 steigert die Leistungsfähigkeit der Schüler\*innen deutlich.~~
+    * Im STAR-Experiment [@achilles1985] waren die Effektstärken eher klein: ![](img/STAR.png){width="25%"}
+* Much Pain - no Gain: 
+    * ~~Wenn Schüler\*innen berichten, eine Lernaktivität fühle sich anstrengend an, spricht das dafür, dass diese Lernaktivität nicht optimal adaptiv geplant war.~~
+    * Retrieval Practice wird als viel anstrengender als Restudying empfunden, kann aber als klar lernwirksamer bezeichnet werden [@kirk-johnson2019] 
+* Der Hans machts eh: 
+    * ~~Gruppenarbeit ist meist weniger effektiv als Standardmethoden und fördert auch affektive Outcomes wie Motivation und Emotionen von Lernenden nicht.~~
+    * Eine Review von qualitativ hochwertigen Studien zeigt eine klare Überlegenheit kooperativen Lernens bzgl. affektiver Outcomes. Bzgl. des Lernzuwachses sind »Gruppenziele bei individueller Verantwortlichkeit« notwendige Kriterien für die Überlegenheit [@slavin2010].
+* Lernstile: 
+    * ~~Bedient man den von Schülern bevorzugten VARK Lernstil (visual [V], auditiv [A], read/write [R], kinesthetic [K]) nach Fleming lernen diese mehr.~~
+    * Qualitativ hochwertige Studien  [z.B. @rogowsky2015] finden keine Bestätigung für die »Verzahnungshypothese«.
+    
+<!--
+* Gendern im Unterricht: 
+    * ~~Wenn Lehrer »Schüler« (generisches Maskulinum) sagen, werden weibliche und männliche Personen gleichermaßen adressiert. »Schülerinnen und Schüler« zu sagen ist also eher überkompliziert.~~
+    * Eher das Gegenteil ist der Fall: Der »Malebias« des Generischen Maskulinums ist sogar größer als der »Femalebias« des »Gendersterns« [@korner2022]
+    
+--> 
+
+:::
+
+::: notes
+
+__Klassengröße__
+
+- STAR (Student-Teacher Achievement Ratio) war eine experimentelle Studie
+- In vier Jahren wurde in Amerika in Tennessee die Effektivität von reduzierten Klassengrößen analysiert 
+  - Mehrere Kohorten: Kindergarten, 1-3, Klasse
+  - Klassengröße 13-17 vs. 22-25 Schüler:innen
+  - Ca. 330 Klassen in ca. 80 Schulen
+  - Lehrpersonen und Schüler:innen wurden jedes Jahr zufällig einer Klasse zugeteilt
+  - Bereiche: Lesen, Mathematik, „basic study skills“
+- kleinerer Klassen kleine positive Effekte auf die Leistung von Schüler:innen gezeigt
+-	Aber wenn Sie sich die Visualisierung anschauen, viel kleinere Effekte als man eigentlich sich das ganze vorstellt
+  - Hier Ergebnis abgetragen und das war noch einer der größten Effekte, der gefunden wurde 
+
+
+__Much Pain – no Gain__
+
+-	retrieval practice / "Abrufpraxis": Informationen auslassen, um Sie selbst abzurufen z.B. Materialien einmal durcharbeiten und dann ein Quiz bearbeiten; Vokablen einmal durchlesen und dann abdecken; Lückentexte
+-	Forschung zeigt, dass durch retrieval practice Lerninhalte längerfristig behalten werden können (Lerninhalte gelangen ins Langzeitgedächtnis) bzw. länger als bei restudying (Materialien mehrfach durcharbeiten) 
+  - während restudying ein passives Lesen erfordert, 
+  - ist für die retrieval practice eine aktive Gedächtnissuche erforderlich - eine kognitiv anstrengende Aufgabe
+
+<!--
+__Gendern im Unterricht__
+
+-	Tatsächlich Male Bias
+-	Argumentiert, dass bei Gendersternchen eher ein Female Bias, aber wurde gezeigt, dass der Male Bias größer ist als der Female Bias
+-	am ausgewogensten waren die Darstellungen, wenn sowohl männliche als auch weibliche Formen genannt wurden
+- wie wird das untersucht: mentale Geschlechterdarstellungen/-repräsentationen, die beim Lesen hervorgerufen werden z.B. zwei Sätze und die Teilnehmenden sollen entscheiden, ob der zweite Satz eine plausible Fortsetzung des ersten Satzes ist. Im ersten Satz wird eine Gruppe an Menschen in Gender-Schreibweise, generischem Maskulinum oder in Beidnennung, im Folgesatz wird dann Bezug zu Männern/Frauen aus der Gruppe hergestellt
+
+--> 
+__Der Hans machts eh__
+
+-	Überlegenheit kooperativen Lernens bezüglich affektiver Outcomes 
+  - Kooperatives Lernen verbessert diese fast immer
+  - Beispiele: Studierende arbeiten gerne in Gruppen (lieber als alleine), fühlen sich dann erfolgreicher etc.
+-	Aber um positive Effekte auf die Leistung zu erzielen, müssen Gruppenziele und individuelle Verantwortlichkeit vorliegen
+  - Gruppenziele und individuelle Verantwortlichkeit (Erfolg der Gruppenarbeit ist abhängig von jedem einzelnen Gruppenmitglied) als Mediatorvariable
+  - Hier geht es auch immer darum, dass die Schüler:innen etwas lernen
+  - Alternative: gleiche Aufgabe gemeinsam bearbeiten (nicht unterschiedliche Verantwortlichkeiten festlegen); Fokus eher auf „etwas machen“ statt „etwas lernen“  z.B. schwächere Schüler:innen werden eher als Störfaktor und nicht als Hilfe angesehen
+-	Zusatzinfos: Schüler:innen, die am meisten in GA lernen sind diejenigen, die Erklärungen geben/erhalten; auch high-achievers profitieren von GA
+
+
+__Lernstile__
+
+-	Studien finden keine Bestätigung für Lernstile, die über alle Fächer hinweg zu besseren Leistungen führen
+- Kogowsky und Kolleg:innen (2014) fokussierten auditory and visual learning style
+
+
+-	Was schließen wir daraus: unser Alltagsverstand kann uns doch auch immer in die Irre führen
+-	Lassen Sie uns jetzt die Eigenschaften von wissenschaftlichem Wissen und praktischem Wissen / Handlungswissen noch einander gegenüberstellen, die jeweiligen Eigenschaften und die damit einhergehenden Vor- und Nachteile anschauen
+
+
+::: 
+
+
+## Wiss. Wissen & Handlungswissen {.smaller}
+#### Charakteristika
+* Wissenschaftliches Wissen: Formal, explizit, propositional, diskursiv [@habermas2014]
+* Praktisches Wissen: Implizit, »embodied in action« [@massingham2019]
+<br><br>
+
+
+#### Resultierende Vor- und Nachteile
+{{< fa circle-plus >}} wiss. Wissen: Hoher Gültigkeitsanspruch, breiter anwendbar (generisch) <br>
+{{< fa circle-plus >}} prakt. Wissen: Schnell generierbar, unmittelbar anwendbar<br>
+<br>
+{{< fa circle-minus >}} wiss. Wissen: Aufwändige Genese, begrenzte Modi der »Verwendbarkeit« <br>
+{{< fa circle-minus >}} prakt. Wissen: Geringer Gültigkeitsanspruch, hochgradig spezifisch
+
+::: notes
+
+Wissenschaftliches Wissen: 
+
+- __Formal__: z.B. Mathe Physik, aber auch z.B. Jura/Medizin vergleichsweise klar definierte Begriffe/Sprache
+- __Explizit__: jede Kleinigkeit wird ausgedrückt, es wird vermieden zwischen den Zeilen zu sprechen // Konnotationen werden vermieden, nur was publiziert ist zählt
+- __Propositional__: Claims werden möglichst in Aussagen (Proposition Konklusion) verpackt. z.B. "Wenn Lernende einen zuvor gelesenen Text versuchen aktiv zu reproduzieren, steigt ihre Behaltensleistung im Vergleich zu nochmaligem Lesen" statt "ich hab den Eindruck ..."
+- __Diskusiv__: Wissenschaft gilt Wissenschaft, wenn ihre Ergebnisse in der Fachöffentlichkeit diskutiert wurden (Konferenzen, Publikationen mit Stellungnahmen ...)
+
+Praktisches Wissen:
+
+- __Implizit__: Man muss im LuL Alltag so viele Entscheidungen treffen, dass man nicht alle "bewusst" treffen kann - viel läuft automatisiert ab. Thinking slow - thinking fast, um hervorzuheben, dass das nicht negativ gemeint ist, sondern sehr hilfreich/notwendig, um Komplexität zu reduzieren
+- __embodied in action__: Kann nicht kognitiv manifestiert werden. Wechsel in Muttersprache, keine Spitznamen, bestimmte Position in Klassenzimmer
+
+- Bsp. für __Generik wiss. Wiss.__: CTML (wann Bild, wann Text, wann bewegtes Bild) in Präsenz- und Distanzunterricht
+  - aber aufwendig in der Genese, vielzählige Forschungsprojekte 
+  - begrenzt anwendbar -> aus dem Allgemeinen müssen erst einmal die spezifischen Infos z.B. Highlighting von Texten ist sinnvoll, abgeleitet werden
+- __Unmittelbar anwendbar__: Bsp.: Namen lernen
+  - aber hochgradig spezifisch
+- Geringer Gültigkeitsanspruch: Mythen ..
+
+- daher nun noch stärker mit UQ aus Forschungsperspektive
+
+:::
+
+## &nbsp;{.center}
+![Struktur nach [@berliner2005]](img/berliner4.png){width="850"}
+
+::: notes
+
+umfasst sowohl theoretische als auch empirische Forschung
+
+* Sie haben jetzt Einteilungen gemacht, jetzt ich Ihnen eine Einteilung aus der Literatur
+* Dieser Einteilung nach besteht UQ aus gutem Unterricht / „good teaching“ und effektivem Unterricht „effective teaching“
+* Die Idee stammt von David Berliner (amerikanischer Päd. Psych.) und hier ein wenig ausgebaut
+* Good teaching: hierbei geht es darum sich Gedanken zu machen, __was denn eigentlich erreicht werden soll__
+* Effective teaching hingegen prüft, __inwiefern ein festgelegtes Ziel erreicht wird__
+* __Outcomes von good teaching sind der Didaktik und der theoretischen Erziehungswissenschaft zuzuordnen__
+  * Didaktische Modelle wie das Hamburger oder Berliner Modell oder so etwas wie das EEE-Schema, das für Einstieg, Erarbeitung und Ergebnissicherung steht, aber auch Unterrichtstheorien usw.
+
+* Outcomes von __effective teaching__ stammen eher aus der __Pädagogischen Psychologie__:
+
+  * Qualitätskriterien, __Merkmale im Unterricht, die positiv mit Leistung von Schüler:innen zusammenhängen__ z.B. nach Hilbert Mayer – Strukturierung des Unterrichts, time on task, Klima
+  * __Wirkmodelle nennen nicht nur die Kriterien, sondern beschreiben die Prozesse dahinter__ z.B., kognitive Aktivierung (aktive Auseinandersetzung und vertiefte Beschäftigung mit den Lerngegenstände) = Qualitätskriterium 
+  * Wirkmodell: offene Aufgaben wirken kognitiv aktivierender weil Lernende nicht ein Ritual abspulen können, sondern wirklich das zu Verstehende elaborieren/durchdenken müssen
+  * Angebot-Nutzungs-Modell = Wirkmodell
+
+* Qualitätsvoller Unterricht integriert beide Seiten: 
+* „Direkte Instruktion“: zeigt sich konsistent lernwirksam in Bezug auf fachliche Lernziele, genügt somit den Kriterien effektiven Unterrichts, entspricht jedoch u.a. aufgrund der starken Lehrersteuerung nicht den aktuellen pädagogischen Vorstellungen guten Unterrichts
+
+::: 
+
+## Begriffsverständnis {.smaller}
+
+* Unterrichtsqualität ein Kompositum aus Unterricht und Qualität 
+    + Bestimmungsmerkmale von Unterricht: Planmäßigkeit, Professionalisierung, Institutionalisierung, Intentionalität
+    + Qualität: keine stabile, einem Objekt innenwohnende Eigenschaft
+* Eine vglw. breite Definition nach Klieme [-@klieme2019, S. 396]:
+*»Unterrichtsqualität wird hier also verstanden als [Gesamtheit der empirisch beobachtbaren Merkmale des Unterrichtsgeschehens {{< fa eye >}}]{style="color: #d77d00;"}, die nachweislich mit der [Entwicklung der Lernenden im Sinne der Realisierung von Bildungs- und Erziehungszielen {{< fa chart-line >}}]{style="color: #0FA5D7;"} einhergehen.«*
+
+* Im Kontext aktueller empirischer (insb. deutschsprachiger) Forschung {{< fa eye >}}
+    + wird meistens die [Leistungsentwicklung]{style="color: #0FA5D7;"} als Kriterium fokussiert [@kunter2013b]
+
+
+::: notes
+
+* Neuere UQualforschung fast ausschließlich unter effective Perspektive
+* Eckhard Klieme definiert UQ relativ breit 
+  * Kontext aktueller empirischer Forschung: 
+  * Fokus Leistungsentwicklung -> Wenn __nicht nur Leistungsentwicklung__ betrachtet wird, nennt man das oft eine __multikriteriale Perspektive auf Unterrichtsqualität__ (typisches Beispiel: Sehr starke, autoritäre Engführung im Unterricht kann sehr lernwirksamsein ist aber autonmieeinschränkend und damit motivationsentwicklungshinderlich; Deci and Ryan Selbstbestimmungstheorie (Autonomie, Fähigkeit, Zugehörigkeit))
+  
+::: 
+
+## Modelle
+
+::: {.column width='33%'}
+#### Listen {{< fa list-check >}}
+* z.B. [@meyer2021]
+    * Strukturierung
+    * Time on Task
+    * Klarheit
+    * Methodenvielfalt
+    * Intel. Üben
+    * ...
+
+:::
+
+::: {.column width='33%'}
+#### Dimensionen {{< fa ruler-combined >}}
+* z.B. [@klieme2019]
+    * Klassenführung
+    * Konstruktive Ünterstützung
+    * Kognitive Aktivierung
+
+:::
+
+::: {.column width='33%'}
+#### Stufen {{< fa stairs >}}
+* z.B. [@pietsch2010]
+    1) Lernklima sichern
+    2) Klasse führen
+    3) Schüler:innen motivieren
+    4) Differenzieren
+    
+Stufenmodell (Schaubild Eva ergänzen)
+:::
+
+
+
+::: notes
+
+- Verschiedene Modelle von UQ
+- Hier erkennen Sie die Tiefenstruktur wieder - Dimensionen 
+- Da findet man aber auch durch aus andere Modelle: 
+  - Listen, die gar nichts über das Verhältnis der Merkmale aussagen, suggerieren oft eine dichotome Ausprägung (vorhanden vs. nicht vorhanden)
+  - Stufen, die eine Hierarchie vorschlagen, also systematisch aufeinander aufbauen von Lernklima bis zur Differenzierung, und dadurch auch bissl heuristischer sind.
+    - Die Stufung ist nicht kausal zu verstehen: Eine effiziente Klassenführung führt nicht automatisch zu einer guten individuellen Förderung, aber sie erhöht die Wahrscheinlichkeit, dass diese gelingt
+    - umkehrt: Es ist unwahrscheinlich, dass es gelingt, individuelle Voraussetzungen von Schüler:innen im Unterricht angemessen zu berücksichtigen, wenn es Schüler:innen nicht möglich ist, Lernstrategien zu erwerben oder anzuwenden
+    - auf Stufe zwei ist es für eine Schule nicht realistisch kurzfristig eine weitreichende „Individualisierung“ des Unterrichts anzustreben (Stufe 4), aber es wäre realistisch ein Konzept zu entwickeln für eine umfassende Einbeziehung der Schüler:innen in die Gestaltung des Unterrichts
+    
+:::
+    
+    
+## Dimensionen {{< fa ruler-combined >}} {.smaller}
+
+Im Kontext aktueller empirischer (insb. deutschsprachiger) Forschung {{< fa eye >}}
+
+* wird meistens die [Leistungsentwicklung]{style="color: #0FA5D7;"} als Kriterium fokussiert [@kunter2013b];
+* werden meistens sog. generische Tiefenstrukturen als Unterrichtsmerkmale betrachtet [@praetorius2018]
+    * [Klassenführung]{style="color: #d77d00;"} (classroom management)
+    * [Konstruktive Unterstützung]{style="color: #d77d00;"} (student support)
+    * [Kognitive Aktivierung]{style="color: #d77d00;"} (cognitive activation)
+* ![](img/Eisberg.png){width="200"}
+
+
+::: notes
+* Basisdimensionen - Tiefenstruktur
+  * __Klassenführung__ mit dem Ziel, __time on task__ zu erhöhen, also Unterrichtszeit effektiv zu nutzen, möglichst __wenige Störungen und alle Schüler:innen beim Lernen beteiligt__ sind
+  * __Konstruktive Unterstützung__: wie gut __unterstützt Lehrperson__ die Lernenden beim Wissenserwerb + __Wertschätzung und Respekt bei Interaktion__ zwischen Lehrperson und Lernenden 
+  * __Kognitive Aktivierung__: __aktive Auseinandersetzung__ und __vertiefte Beschäftigung__ mit den Lerngegenstände
+  * Tiefenstrukturen kennzeichnen sich dadurch, dass sie nicht direkt beobachtbar sind
+  * Direkt beobachtbar sind nur Oberflächenstrukturen - methodisches Vorgehen, Organisations- und Sozialformen
+
+* __spezifisch CM. widmen__, werden Sie in den kommenden Sitzungen merken, 
+  * Ältere CM-Forschung bereits effective Persp. zuzuordnen -> Leistung nicht Kriterium, sondern Störungsfreiheit/Mitarbeit, Fehlverhalten
+  * Jüngere CM-Forschung effektive Perspektive mit Kriterium Leistung
+
+
+Zeitpuffer:
+Implikation der Definiton:
+
+* __Oberfläche weder hinreichend noch notwendig__ (»Kooperatives Lernen« kann aber muss kein guter Unterricht sein) -> Zentral, die drei Ks zu adressieren, das kann ich unter Verwendung verschiedener Methoden
+* __UQual entsteht aus Kokonstruktion von Klasse und LuL__: Störungsfreiheit als Submerkmal von __Klassenführung wird manchmal komplett schülerseitig induziert__ (brave Klasse) -> Rolle Klasse. Aber __ein und dieselbe Klasse stört je nach Lehrkraft sehr unterschiedlich stark__ -> Rolle Lehrkraft.
+
+:::
+
+
+# Die Arbeit mit Ihren Fällen
+
+## Peer-Feedback Aufgabe
+
+Stellen Sie sich Ihre Fälle vor, d.h. tragen Sie sich Ihre Fallbeschreibungen vor.
+
+Geben Sie sich gegenseitig Rückmeldung hinsichtlich der folgenden Aspekte:
+
+* Nur eine Situation ist ausgewählt und verschriftlicht, nicht eine gesamte Unterrichtsstunde.
+* Die Situation ist so konkret wie möglich verschriftlicht, z.B. auch mit wörtlicher Rede (was wurde gesprochen?).
+* Die Kontextfragen sind beantwortet (s. Foliensatz der Vorbesprechung).
+* Die Verschriftlichung ist durchgängig beschreibend und nicht wertend oder interpretierend.
+
+Überarbeiten Sie - falls notwendig - Ihre Fallbeschreibung.
+
+## Clusterung Ihres Falles
+
+> „Ein Fall ist eine exemplarische Schlüsselsituation pädagogischen
+Handelns“ (Goeze u. Hartz, 2010)
+
+* Suchen Sie einen passenden Titel für Ihren Fall.
+* Schreiben Sie Ihren Titel auf eine Karte und heften Sie diese an
+die Seminarraumwand.
+* Stellen Sie Ihren Fall in zwei bis drei kurzen Sätzen vor.
+
+
+## Wissensaktivierung 
+
+* Sie haben als Vorbereitung auf die Kompaktveranstaltung Texte zu den Basisdimensionen gelesen. Um Ihr Wissen zu aktivieren, bearbeiten Sie das Quiz "Zuordnung: Basisdimension (KKK) <-> Item im Unterrichtsfeedbackbogen". Dieses finden Sie im Innovationspace / in Stud.ip.
+* Welche Basisdimensionen kommen in Ihrem Fall zum tragen? Gibt es eine dominante Dimension? 
+* VORSTELLUNG
+
+## Komplexität des Unterrichts {.smaller .scrollable}
+
+|    |    |
+|----|----|
+| __1. Multidimensionalität:__ Das Klassenzimmer ist ein dicht bevölkerter Raum, in dem viele Personen mit unterschiedlichen Interessen aufeinander treffen und viele, sehr verschiedene Ereignisse stattfinden.| __2. Simultanität:__ Viele Dinge geschehen gleichzeitig im Unterricht und verlangen von der Lehrperson simultane Aufmerksamkeit.|
+| __3. Unmittelbarkeit:__ Der schnelle Ablauf der Ereignisse erschwert die Reflexion. Oft ist unmittelbares Lehrerhandeln nötig und es bleibt wenig Zeit zum Nachdenken.  | __4. Unvorhersehbarkeit:__ Häufig treten Störungen oder Ablenkungen und unerwartete Ereignisse auf. Unterricht kann daher nicht sicher vorhergesehen und nur beschränkt geplant werden. |
+| __5. Öffentlichkeit:__ Interaktionen finden nicht in einem privaten, sondern in einem „öffentlichen“ Raum statt und können von anderen Anwesenden beobachtet werden. Der Wirkungskreis geht so über die unmittelbar an der Interaktion Beteiligten hinaus. | __6. Historizität:__ Klassen verbringen viel Zeit miteinander. Handlungen und Ereignisse, die dort stattfinden, sind nicht nur ein gegenwärtiges Phänomen, sondern haben Wurzeln in der Vergangenheit und Auswirkungen für die Zukunft.|
+|  __7. Intransparenz__ Die am Unterricht Beteiligten vermögen sich gegenseitig nicht zu durchschauen. Nur indirekt, über Kommunikation, kann aufeinander Einfluss genommen werden und auf diesem Umweg kann vieles passieren“. | __8. Informalität:__ Unterrichten ist nur in geringem Ausmaß standardisierbar oder reglementierbar. Prinzipien, Regeln, Rezepte, Gesetze oder Techniken müssen den variierenden situativen Bedingungen angepasst werden.|
+
+(Doyle 1986, ergänzt durch Herzog 2002; vgl. Syring 2017, S.12/13)
+
+## Komplexität des Unterrichts: Arbeitsauftrag
+
+1. Finden Sie zu den aufgelisteten Merkmalen verschiedene __konkrete__, möglichst __selbst erlebte Beispiele__ aus dem __Unterrichtsalltag__, um diese Merkmale der Komplexität von Unterricht zu stützen und greifbarer zu machen. 
+
+2. Stellen Sie ein Beispiel vor - ohne das Merkmal zu nennen und lassen Sie Ihre Sitznachbarin / Ihren Sitznachbarn das Merkmal zuordnen.
+
+
+## Komplexität des Unterrichts
+
+„Aushalten können“ der komplexen Anforderungen im Klassenzimmer <br> 
+&rarr; wichtige Bedingung für Classroom Management (Syring 2017, S.22) <br>
+&rarr; CRM muss erlernt werden und bildet sich erst im Verlauf des Berufslebens heraus! <br>
+&rarr; CRM = „spezifische Expertenkompetenz“ → Erfahrene Lehrpersonen und Novizen unterscheiden sich darin deutlich! <br> 
+&rarr; Für Novizen häufig eine belastende Anforderung
+
+
+::: notes
+- Wir können die Komplexität nicht auflösen, sie uns aber bewusst machen  und Strategien / Merkmale / Techniken etc. von CRM können uns behilflich sein damit umzugehen. 
+
+:::
+
+# Vielen Dank!{.cent1}
+
+::: notes
+
+Erinnerung Anmeldung im Metaportal
+
+:::
+
+## Literatur {{< fa book-open >}}]{style="color: #8cd000;"}
+
+
+
+<style>
+div.callout {border-left-color: #8cd000 !important;}
+div.callout-tip.callout-style-default .callout-title {
+    background-color: #8cd000;
+}
+</style>

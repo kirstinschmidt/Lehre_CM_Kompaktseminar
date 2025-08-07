@@ -1,0 +1,752 @@
+---
+format: 
+  revealjs:
+    auto-stretch: true
+    self-contained: false
+    controls: true
+    slide-number: c/t
+    logo: img/PH_logo.svg
+    theme: [simple, css/custom.scss]
+    fullscreen: true
+    pdf-separate-fragments: true
+    pdfexport: true
+bibliography: references.bib
+csl: apa.csl
+editor_options: 
+  chunk_output_type: console
+lightbox: true
+---
+
+```{r hidden chunk which creates template stuff}
+#| echo: false
+
+## in terminal ########
+# quarto install extension quarto-ext/fontawesome
+# quarto install extension schochastics/academicons
+# test
+
+########################
+library(fontawesome)
+library(tidyverse)
+library(readxl)
+library(ggalt)
+library(hrbrthemes)
+library(reactable)
+
+# Change css to PH green
+if(!dir.exists("css"))
+dir.create("css")
+fileConn<-file("css/custom.scss")
+fileStyle<-file("css/custom.scss")
+writeLines(c("/*-- scss:defaults --*/",
+             "$link-color: #8cd000 !default;",
+             # line-height muss im parent der font-size gesetzt werden,
+             # daher hier und nicht inline im YAML header
+             ".reveal h1 {line-height: .8 !important;} ", 
+             # make citations a bit smaller
+             ".citation {font-size: .8em; color: #8cd000;}",
+             ".imp {color: #8cd000;}",
+             ".imp2 {color: #50B32E;}",
+             ".red {color: #A52019;}",
+             ".lightgrey {color: #ECECEC}",
+             ".cent2 h2 {text-align: center;}",
+             ".cent3 h3 {text-align: center;}",
+             ".cent1 h1 {text-align: center;}",
+             ".cent_text {text-align: center;}",
+             ".reveal h2 {color: #8cd000 !important;}"),
+           fileConn)
+close(fileConn)
+close(fileStyle)
+```
+
+## Classroom Management{.cent2}
+<center>
+<font color="#8cd000">Vorbesprechung des Kompaktseminars</font>
+
+![](img/PHKA_logo.png){width="25%"}
+</center>
+
+<center>
+
+<br> 
+Dr. Kirstin Schmidt in Kooperation mit Dr. Eva Prinz <br> 
+
+::: {style="font-size: 0.8em"}
+Pädagogische Hochschule Karlsruhe <br>
+<font color="#50B32E">Sommersemester 2025</font>
+:::
+
+</center>
+
+::: notes
+* herzlich willkommen in der ersten Sitzung
+* heute zuerst kennenlernen und organisatorische Fragen rund um das Seminar klären, bevor wir inhaltlich einsteigen
+:::
+
+## Struktur {{< fa list-ul >}}
+
+
+<!-- - Vorstellungsrunde {{< fa user-friends >}} -->
+
+- Organisation des Seminars {{< fa sitemap >}}
+  - Seminarfahrplan {{< fa receipt >}}
+  - Verwaltung der Seminarmaterialien {{< fa external-link-alt >}}
+  - Welche CP gibt es wofür? {{< fa check-circle >}}
+- Fallgenerierung
+
+
+::: notes
+
+:::
+
+<!--
+# Vorstellungsrunde {{< fa user-friends >}} {.cent1}
+
+--> 
+
+## Meine Vorstellung {{< fa user >}} 
+
+::: {style="font-size: 0.65em"}
+-   [2014 - 2017:]{.imp} Bacherlorstudium der Erziehungswissenschaft (Universität Tübingen)
+-   [2017 - 2020:]{.imp} Masterstudium der Schulforschung und -entwicklung (Universität Tübingen)
+-   [2020 - 2025:]{.imp} akademische Mitarbeiterin am Institut für
+Schul- und Unterrichtsentwicklung
+-   [2024:]{.imp} Promotion zum Thema "Teachers' Engagement With Educational Science"
+-   [seit 2025:]{.imp} akademische Rätin am Institut für
+Schul- und Unterrichtsentwicklung
+-   [Forschungsschwerpunkt:]{.imp}
+    -   Umgang von Lehrpersonen mit Evidenz (evidenzinformierte Schulpraxis)
+    -   Kommunikation von Forschungsergebnissen
+-   [Sprechstunde:]{.imp} Donnerstags, 13:00 bis 14:00 Uhr; Anmeldung per Mail
+-   [Kontakt:]{.imp} <br>
+    -   {{< fa envelope >}} kirstin.schmidt\@ph-karlsruhe.de <br>
+    -   {{< fa map-marker-alt >}} Raum 2.B312 <br>
+    -   {{< fa phone >}} 0721/925-4913 
+
+:::
+
+::: notes
+:::
+
+<!--
+
+## <font color="#8cd000"> Ihre Vorstellung {{< fa user-friends >}} </font>
+
+::: {style="font-size: 0.65em"}
+1. __Welche [Fächer]{.imp}__ und in __welchem [Semester]{.imp}__ studieren Sie?
+
+2.  __Welche [Erwartungen und Wünsche]{.imp}__ haben Sie an das Seminar?
+
+3. __In welcher [Wimmelfigur]{.imp} erkennen Sie sich wieder und warum__? Sie können sich dabei auf Ihren Alltag oder den Hochschulkontext beziehen!
+:::
+
+::: notes
+
+* entsprechend anmoderieren, dass es nicht so langweilig wird 
+* erste Person setzt häufig einen Anker, daher kreativ sein: nicht nur wiederholen & sich den Vorgänger:innen anschließen
+
+:::
+
+-->
+
+## Ihre Vorstellung {{< fa user-friends >}}
+
+<!--
+1. __Welche [Fächer]{.imp}__ und in __welchem [Semester]{.imp}__ studieren Sie?
+
+2.  __Welche [Erwartungen und Wünsche]{.imp}__ haben Sie an das Seminar?
+
+-->
+
+Stellen Sie sich mit Ihrem Namen vor und berichten Sie entweder
+
+- __in welcher [Wimmelfigur]{.imp} Sie sich warum wiedererkennen__. Sie können sich dabei auf Ihren Alltag oder den Hochschulkontext beziehen!
+
+... oder ...
+
+- __ein [positives Erlebnis aus Ihrem Schulpraktikum]{.imp}__.
+
+
+::: notes
+
+* entsprechend anmoderieren, dass es nicht so langweilig wird 
+* erste Person setzt häufig einen Anker, daher kreativ sein: nicht nur wiederholen & sich den Vorgänger:innen anschließen
+* zwischen beiden Möglichkeiten abwechseln 
+    + Erinnern Sie sich an ein besonders positives Ereignis aus Praktikum! Damit ist nicht ein allgemeiner Eindruck des Schulpraxissemesters gemeint, sondern ein ganz spezifisches Ereignis
+    + ein Ereignis jeglicher Art – nicht nur auf den Unterricht bezogen!!- Schildern Sie das Ereignis kurz!
+    + Notizen zu den Efahrungen machen
+* Am Ende nochmals darauf zurückkommen 
+* 35 Minuten 
+* eine Minute Zeit geben 
+
+:::
+
+# Organisation des Seminars {{< fa sitemap >}} {.cent1}
+
+::: notes
+
+* Organisation vermutlich etwas anders als Sie das bisher gewohnt sind
+
+:::
+
+# Hinweis zur <br> Zulassung im Seminar {{< fa info >}} {.cent1}
+
+
+::: notes
+- Ist jemand hier, der nicht zum Seminar zugelassen wurde?
+
+
+- Einem Seminartausch ist nur in gewichtigen Gründen zuzustimmen und in Absprache mit der Kollegin des anderen Seminars (der Wunsch mit Freundinnen im gleichen Seminar zu sein ist verständlich, wäre aber nicht ausreichend).
+- Wir sollten auf keinen Fall mehr Seminarplätze vergeben als wir in LSF ausgewiesen haben.
+- Sollten Studierende am Verteilverfahren bisher noch gar nicht teilgenommen haben, kann auf die noch freien Plätze (z.B. in meinem Seminar V1047) verwiesen werden. Hier ist dann eine manuelle Aufnahem in das Seminar möglich.
+
+:::
+
+## Organisationsformen {{< fa receipt >}}
+
+::: {style="font-size: 0.65em"}
+Im Seminar kommen verschiedene Organisationsformen zum Einsatz:
+
+* synchrone Sitzungen in der Seminargruppe {{< fa users >}}
+  * Einführungen in Seminarthemen
+  * Reflexionsgespräche
+* asynchrone Sitzungen in Teilgruppen {{< fa video >}} 
+  * Durchführung der Videoanalyse
+  * Skripten des eigenen Videos
+  
+:::
+
+::: notes
+
+* verschiedene Organisationsformen
+* Es werden, wie heute, synchrone Sitzungen in unserer Seminargruppe stattfinden -> wenn wir neue Themen einführen oder Reflexionen durchführen
+* neben diesem synchronen Format, auch asynchrone Sitzungen in Teilgruppen, um Videos zu analysieren und Skripte für die eigene Videoproduktion zu erstellen
+
+
+:::
+
+## Seminarfahrplan (I) {{< fa receipt >}}
+
+::: {style="font-size: 0.5em"}
+```{r, echo=F, warning=F}
+library(knitr)
+library(readxl)
+library(tidyverse)
+library(lubridate)
+
+plan_seminar <- read_xlsx("data/CM_SoSe25_Seminarplan.xlsx") %>%
+  mutate(Datum = ymd(Datum),
+         Datum = format(Datum, "%d.%m.%Y"))
+
+kable(plan_seminar[1:8,1:4])
+```
+:::
+<br>
+<center>Dieser Seminarplan ist noch vorläufig!</center>
+
+
+::: notes
+
+vorläufiger Seminarplan:
+
+
+
+:::
+
+
+## Seminarfahrplan (II) {{< fa receipt >}}
+
+::: {style="font-size: 0.5em"}
+```{r, echo=F}
+plan_seminar <- read_xlsx("data/CM_SoSe25_Seminarplan.xlsx") %>%
+  mutate(Datum = ymd(Datum),
+         Datum = format(Datum, "%d.%m.%Y"))
+
+kable(plan_seminar[9:15,1:4])
+```
+:::
+<br>
+<center>Dieser Seminarplan ist noch vorläufig!</center>
+
+
+::: notes
+
+
+:::
+
+
+## Seminarmaterialien {{< fa external-link-alt >}}
+
+
+::: {.callout-tip icon=false collapse="false"}
+## {{< fa book-open >}} Verwaltung der Seminarmaterialien
+Alle Seminarmaterialien, Ankündigungen, Arbeitsaufträge etc. werden über den Innovationspace distribuiert. Sie finden den Kurs "Classroom Management: Theoretische Auseinandersetzung und Videofallarbeit (SoSe 2025)" unter [https://innovationspace.ph-karlsruhe.de/course/view.php?id=567](https://innovationspace.ph-karlsruhe.de/course/view.php?id=567){preview-link="true"}.
+
+
+__[Wir verwenden also kein Stud-IP!]{.red}__ 
+:::
+
+
+::: notes
+
+* Seminarmaterialien werden über Innovationspace – nicht über Stud.ip verwaltet 
+* Alle: über diesen Link in den Kurs einschreiben 
+* Aufbau: wöchentliche Reiter mit den entsprechenden Unterlagen pro Woche – Materialien wie Folien, Aufgaben etc.
+* Versuch: Folien im Vorfeld hochzuladen, kann kurzfristig sein und teilweise vorläufig 
+
+* Noch weitere organisatorische Fragen?
+
+:::
+
+
+
+## Welche CP gibt es wofür? {{< fa check-circle >}}
+
+::: {style="font-size: 0.6em"}
+* Seminar ist in Modul 1B in den Bildungswissenschaften für das Masterstudium "Lehramt Grundschule" verortet (PO2022)
+* __[unbenotete 3 CP + Verbuchung einer Studienleistung]{.imp}__, wenn Sie
+  * aktiv am Seminar teilnehmen und 80% der schriftlichen Arbeitsaufträge erledigen
+  * schriftliche Reflexion des eigenen Kurzvideos (Einzelarbeit)
+      * *Ende der Abgabefrist: 01.09.2025*
+* __[benotete 3 CP (Modulleistung)]{.imp}__, wenn Sie
+  * aktiv am Seminar teilnehmen, 80% der schriftlichen Arbeitsaufträge erledigen
+  * eine schriftliche Videoanalyse (Einzelarbeit)
+      * ca. 10-15 Seiten (abzüglich Visualisierungen, Tabellen und Referenzen) 
+      * *Ende der Abgabefrist: 01.09.2025*
+      
+
+__[Genaue Informationen zur Studien- und Modulleistung finden Sie im Innovationspace unter Allgemeines!]{.red}__ 
+:::
+
+::: notes
+
+* Kommen wir nun zur für Sie vermutlich brennendsten Frage – was müssen Sie für welche CP leisten
+* In beiden Fällen: Abgabe bis zum 01.09.
+* Thema das an Bedeutung gewonnen hat: KI Nutzung
+    - kann Ihnen nicht verbieten KI zu nutzen
+    - Appell: Transparenz und hinterfragen welche Auswirkung die Nutzung auf Ihre Lernleistung hat
+    - keinen Beweis, dass Sie KI genutzt haben aber auch keinen Gegenbeweis, dass Sie es nicht getan haben
+    - keine Lust nur ChatGPT arbeiten zu bewerten
+
+:::
+
+## Welche Credit Points gibt es wofür? {{< fa check-circle >}}
+
+::: {.callout-important icon=false collapse="false"}
+## {{< fa triangle-exclamation>}} Allgemeine Hinweise
+1. Im Seminar wird es __vorbereitende und nachbereitende Arbeitsaufträge__ sowie __Arbeitsaufträge in den Seminarsitzungen__ geben. Für alle zuvor benannten Leistungsszenarien gilt daher Folgendes: __In Anlehnung an die Rahmenprüfungsordnung müssen 80% all dieser Aufträge fristgerecht bearbeitet werden.__
+<br>
+
+[2. Für __angehende Referendar\*innen__ gelten andere Fristen. Informieren Sie mich daher unbedingt rechtzeitig, wenn Sie ins Referendariat gehen.
+]{.lightgrey}
+:::
+
+
+# Einführung in Unterrichtsqualität {{< fa chalkboard-teacher >}} {.cent1}
+
+::: notes
+und wir starten tatsächlich mit den Seminarinhalten
+
+* Heute widmen wir uns der UQ, was wir in der nächsten Sitzung dann fortführen werden
+
+::: 
+
+
+
+## <font color="#8cd000">Lernziele {{< fa bullseye >}}</font>
+
+* Unterscheidung Good Teaching vs. Effective Teaching
+* Unterscheidung von Oberflächen- und Tiefenstruktur
+* Basisdimensionen des Unterrichts kennen und erklären können 
+
+::: notes
+
+- Ziele des Themenblocks
+- __schon als SuS in der Schule__ und Sie haben vielleicht auch schon ein __Praktikum hinter sich__
+- daher möchte ich mit ihnen einsteigen, indem ich Sie fragen, __welche Merkmale guten Unterrichts sie eigentlich schon kennen__ und für relevant halten
+
+:::
+
+
+## <font color="#8cd000">Ihre Merkmale guten Unterrichts {{< fa brain >}}</font> {.smaller}
+
+::: {.callout-tip icon=false collapse="false"}
+## Arbeitsauftrag {{< fa pen >}}
+__Schritt 1: Vorwissen aktivieren__<br> 
+Sammeln Sie in *Dreiergruppen »Merkmale guten Unterrichts«*. Halten Sie dabei im Innovationspache unter " Ihre Merkmale guten Unterrichts" 
+
++ auf *grünen Kärtchen, »Merkmale guten Unterrichts«, die Sie bereits im Studium* kennengelernt haben fest 
++ und auf *gelben Kärtchen, welche »Merkmale guten Unterrichts« Sie persönlich* darüber hinaus für wichtig halten.
+
+<center> {{< fa hourglass-start >}} 10 Minuten </center>
+
+__Schritt 2: Merkmale elaborieren__ <br>
+Strukturieren Sie in Ihrer Gruppe die Merkmale, die Sie und Ihre Kommiliton:innen gesammelt haben. Mit »strukturieren« ist dabei sowohl die Bildung von Gruppen, Ober- und Unterbegriffen, semantischen Netzen (Concept-Maps), etc. gemeint.
+
+<center> {{< fa hourglass-start >}} 10 Minuten </center>
+
+:::
+
+<!-- 
+Bitte notieren Sie unter [https://oncoo.de/7s16](https://oncoo.de/7s16) 
+-->
+
+::: notes
+- positiv Erlebnisse der Vorstellungsrunde hier einordnen - können Sie Erfahrungen hier einordnen?
+    + __Beziehungsebene__ (konstruktive Unterstützung: positive Rückmeldung von SuS, Sympathie, Dank
+    + __Leistungsebene__ (individueller Leistungsforschritt von SuS, guter Klassendurchschnitt)
+    + __Ebene der Selbstwirksamkeit__ (Unter Selbstwirksamkeit/ Selbstwirksamkeitsüberzeugung (self-efficacy beliefs) versteht die kognitive Psychologie die Überzeugung einer Person, auch schwierige Situationen und Herausforderungen aus eigener Kraft erfolgreich bewältigen zu können ->  Erfolgserlebnisse -> stärken die Selbstwirksamkeit 
+Unterrichtsstunde gelingt besonders gut, Schülerinnen und Schüler können motiviert werden
+    + __außerunterrichtliche Ebene__: Positive Erlebnisse auf Ausflügen, Klassenfahrten, Festen mit Schülerinnen und Schülern, Eltern, Kolleginnen und Kollegen, der Schulleitung 
+    + __Ebene der Nachhaltigkeit:__ Rückmeldung einer ehemaligen Schülerin/ eines ehemaligen Schülers über seinen Ausbildungs- und Berufsweg
+    + __Kollegiale Ebene:__ Anerkennung durch Kolleg:innen oder die Schulleitung
+
+Auf all diesen Ebenen – positive Erlebnisse – Bewusstmachung dessen – Ressourcenorientierung und Positivfokussierung -> wir kennen es alle: halten uns gerne am Negativen auf! -> Für unser psychisches Wohlbefinden ist die Positivfokussierung besonders wichtig!
+
+
+::: 
+
+<!--
+## <font color="#8cd000">Merkmale strukturieren {{< fa code-fork >}}</font>
+Elaborieren Sie die Merkmale, indem Sie
+
+* in 10 Minuten {{< fa clock >}},
+* in Dreiergruppen {{< fa users >}}
+* die Merkmale Ihrer Kommiliton:innen strukturieren .
+
+
+::: notes
+
+Kirstin
+
+* Link zum Dashboard auf dem die Antworten eingesehen werden können: https://www.oncoo.de/t/7s16
+* PW: korqi5-wocWab-bepwyd
+
+* konkret sollen Sie folgendes machen
+* Klicken Sie den unteren Link – Ende 7s16 an 
+  * Schreiben Sie auf grüne Kärtchen, Merkmale guten Unterrichts, die Sie bereits im Studium kennengelernt haben 
+  * Auf gelbe Kärtchen, weitere Merkmale die Sie persönlich für wichtig halten
+* 10 Minuten Zeit
+
+* 5 Minuten für 1-2 Beispiele
+
+:::
+
+-->
+
+## Arbeitsauftrag für nächste Sitzung {{< fa pen >}} {.smaller}
+
+__Lesen__ Sie als Vorbereitung auf die nächste Sitzung die __Kapitel 18.2 und 18.3 bis S. 359__ aus dem Text
+
+> Drechsel, B., & Schindler, A.-K. [-@drechsel2019]. Unterrichtsqualität. In D. Urhahne, M. Dresel, & F. Fischer (Hrsg.), Psychologie für den Lehrberuf (S. 353–372). Springer.https://doi.org/10.1007/978-3-662-55754-9_18
+
+
+und __stellen Sie zwei Frage__ an den Text (z.B. eine Verständnisfrage oder eine Frage zu inhaltlichen Punkten, die Sie als besonders bedeutsam ansehen bzw. über die Sie gerne diskutieren würden).
+
+Laden Sie bis zum 24.04.2025 um 10:00 Uhr Ihre Fragen im Innovationspace unter "Ihre Fragen zum Text von Drechsler & Schindler (2019)" hoch. 
+
+*Hinweis: Das eBook finden Sie im UB Katalog der PHKA.*
+
+::: notes
+ 
+- nächsten Sitzung kurz auf die Fragen eingehen und dann aber vor allem an diesen Punkten weiterarbeiten
+- Recherchekompetenz stärken
+- nächste Sitzung: Vertiefung der UQ
+::: 
+
+<!-- 
+## Unterrichtsqualität: Definition
+::: {style="font-size: 0.7em"}
+Eine vglw. breite Definition nach Klieme [-@klieme2019, S. 396]:
+*»Unterrichtsqualität wird hier also verstanden als [Gesamtheit der empirisch beobachtbaren Merkmale des Unterrichtsgeschehens {{< fa eye >}}]{style="color: #d77d00;"}, die nachweislich mit der [Entwicklung der Lernenden im Sinne der Realisierung von Bildungs- und Erziehungszielen {{< fa chart-line >}}]{style="color: #0FA5D7;"} einhergehen.«*
+
+Im Kontext aktueller empirischer (insb. deutschsprachiger) Forschung {{< fa eye >}}
+
+* wird meistens die [Leistungsentwicklung]{style="color: #0FA5D7;"} als Kriterium fokussiert [@kunter2013b];
+* werden meistens sog. generische Tiefenstrukturen als Unterrichtsmerkmale betrachtet [@praetorius2018]
+    * [Klassenführung]{style="color: #d77d00;"} (classroom management)
+    * [Konstruktive Unterstützung]{style="color: #d77d00;"} (student support)
+    * [Kognitive Aktivierung]{style="color: #d77d00;"} (cognitive activation)
+* * ![](img/Eisberg.png){width="200"}
+:::
+
+::: notes
+Zur Definition:
+
+* Neuere UQualforschung fast ausschließlich unter effective Perspektive
+* Eckhard Klieme definiert UQ relativ breit 
+  * Kontext aktueller empirischer Forschung: 
+  * Fokus Leistungsentwicklung -> Wenn __nicht nur Leistungsentwicklung__ betrachtet wird, nennt man das oft eine __multikriteriale Perspektive auf Unterrichtsqualität__ (typisches Beispiel: Sehr starke, autoritäre Engführung im Unterricht kann sehr lernwirksamsein ist aber autonmieeinschränkend und damit motivationsentwicklungshinderlich; Deci and Ryan Selbstbestimmungstheorie (Autonomie, Fähigkeit, Zugehörigkeit))
+
+
+* Basisdimensionen - Tiefenstruktur
+  * __Klassenführung__ mit dem Ziel, __time on task__ zu erhöhen, also Unterrichtszeit effektiv zu nutzen, möglichst __wenige Störungen und alle Schüler:innen beim Lernen beteiligt__ sind
+  * __Konstruktive Unterstützung__: wie gut __unterstützt Lehrperson__ die Lernenden beim Wissenserwerb + __Wertschätzung und Respekt bei Interaktion__ zwischen Lehrperson und Lernenden 
+  * __Kognitive Aktivierung__: __aktive Auseinandersetzung__ und __vertiefte Beschäftigung__ mit den Lerngegenstände
+  * Tiefenstrukturen kennzeichnen sich dadurch, dass sie nicht direkt beobachtbar sind
+  * Direkt beobachtbar sind nur Oberflächenstrukturen - methodisches Vorgehen, Organisations- und Sozialformen
+
+* __spezifisch CM. widmen__, werden Sie in den kommenden Sitzungen merken, 
+  * Ältere CM-Forschung bereits effective Persp. zuzuordnen -> Leistung nicht Kriterium, sondern Störungsfreiheit/Mitarbeit, Fehlverhalten
+  * Jüngere CM-Forschung effektive Perspektive mit Kriterium Leistung
+
+
+Zeitpuffer:
+Implikation der Definiton:
+
+* __Oberfläche weder hinreichend noch notwendig__ (»Kooperatives Lernen« kann aber muss kein guter Unterricht sein) -> Zentral, die drei Ks zu adressieren, das kann ich unter Verwendung verschiedener Methoden
+* __UQual entsteht aus Kokonstruktion von Klasse und LuL__: Störungsfreiheit als Submerkmal von __Klassenführung wird manchmal komplett schülerseitig induziert__ (brave Klasse) -> Rolle Klasse. Aber __ein und dieselbe Klasse stört je nach Lehrkraft sehr unterschiedlich stark__ -> Rolle Lehrkraft.
+
+:::
+
+-->
+
+<!-- 
+## Zur Vielfalt von<br>Unterrichtsqualitätsmodellen {.smaller}
+:::: {.columns}
+
+::: {.column width='33%'}
+#### Listen {{< fa list-check >}}
+* z.B. [@meyer2021]
+    * Strukturierung
+    * Time on Task
+    * Klarheit
+    * Methodenvielfalt
+    * Intel. Üben
+    * ...
+:::
+
+::: {.column width='33%'}
+#### Dimensionen {{< fa ruler-combined >}}
+* z.B. [@klieme2019]
+    * Klassenführung
+    * Konstruktive Ünterstützung
+    * Kognitive Aktivierung
+:::
+
+::: {.column width='33%'}
+#### Stufen {{< fa stairs >}}
+* z.B. [@pietsch2010]
+    1) Lernklima sichern
+    2) Klasse führen
+    3) Schüler:innen motivieren
+    4) Differenzieren
+:::
+
+::::
+
+
+::: notes
+
+- Verschiedene Modelle von UQ
+- Hier erkennen Sie die Tiefenstruktur wieder - Dimensionen 
+- Da findet man aber auch durch aus andere Modelle: 
+  - Listen, die gar nichts über das Verhältnis der Merkmale aussagen, suggerieren oft eine dichotome Ausprägung (vorhanden vs. nicht vorhanden)
+  - Stufen, die eine Hierarchie vorschlagen, also systematisch aufeinander aufbauen von Lernklima bis zur Differenzierung, und dadurch auch bissl heuristischer sind.
+    - Die Stufung ist nicht kausal zu verstehen: Eine effiziente Klassenführung führt nicht automatisch zu einer guten individuellen Förderung, aber sie erhöht die Wahrscheinlichkeit, dass diese gelingt
+    - umkehrt: Es ist unwahrscheinlich, dass es gelingt, individuelle Voraussetzungen von Schüler:innen im Unterricht angemessen zu berücksichtigen, wenn es Schüler:innen nicht möglich ist, Lernstrategien zu erwerben oder anzuwenden
+    - auf Stufe zwei ist es für eine Schule nicht realistisch kurzfristig eine weitreichende „Individualisierung“ des Unterrichts anzustreben (Stufe 4), aber es wäre realistisch ein Konzept zu entwickeln für eine umfassende Einbeziehung der Schüler:innen in die Gestaltung des Unterrichts
+    
+Oberflächenstruktur nicht vergessen!
+--> 
+<!--
+-> Damit theoretisches Wissen praktisch wirksam werden kann, bedarf es eines tiefen Verständnisses der Begriffe; Fokus weiterhin auf Dimensionen nach Klieme
+--> 
+
+
+<!-- 
+## Mehrschrittiger Arbeitsauftrag (II) {{< fa pencil >}}
+
+#### __Schritt 3: Konzepte recherchieren__
+Recherchieren Sie offen zum Thema Unterrichtsqualität. Welche Konzepte, Modelle, Oberbegriffe etc. finden Sie? 
+Inwiefern unterscheidet sich Ihre Strukturierung von den recherchierten Strukturierungsansätzen?
+
+Bitte führen Sie diesen Schritt erst nach Schritt 2 durch und halten Sie Ihre Ergebnisse in Stichpunkten fest.
+
+{{< fa triangle-exclamation >}} __Bitte laden Sie Ihren Strukturierungsvorschlag sowie Ihre Rechercheergebnisse unter "Merkmale von Unterrichtsqualität strukturieren" bis spätestens Mittwoch, 23.10. 14:30 Uhr, hoch.__ 
+
+
+::: notes
+
+Kirstin
+
+* Link zum Dashboard auf dem die Antworten eingesehen werden können: https://www.oncoo.de/t/7s16
+* PW: korqi5-wocWab-bepwyd
+
+* konkret sollen Sie folgendes machen
+* Klicken Sie den unteren Link – Ende 7s16 an 
+  * Schreiben Sie auf grüne Kärtchen, Merkmale guten Unterrichts, die Sie bereits im Studium kennengelernt haben 
+  * Auf gelbe Kärtchen, weitere Merkmale die Sie persönlich für wichtig halten
+* 10 Minuten Zeit
+
+:::
+
+-->
+
+<!-- 
+
+## Merkmale strukturieren {{< fa code-fork >}}
+Elaborieren Sie die Merkmale, indem Sie
+
+* in 10 Minuten {{< fa clock >}},
+* in Dreiergruppen {{< fa users >}}
+* die Merkmale Ihrer Kommiliton:innen strukturieren .
+
+> Mit »strukturieren« ist dabei sowohl die Bildung von Gruppen, Ober- und Unterbegriffen, semantischen Netzen (Concept-Maps), etc. gemeint.
+
+
+::: notes
+
+* 5 Minuten für 1-2 Beispiele
+
+:::
+
+
+## &nbsp;{.center}
+![Struktur nach [@berliner2005]](images/berliner0.png){width="850"}
+
+::: notes
+
+* Sie haben jetzt Einteilungen gemacht, jetzt ich Ihnen eine Einteilung aus der Literatur
+* Dieser Einteilung nach besteht UQ aus gutem Unterricht / „good teaching“ und effektivem Unterricht „effective teaching“
+* Die Idee stammt von David Berliner (amerikanischer Päd. Psych.) und hier ein wenig ausgebaut
+* Good teaching: hierbei geht es darum sich Gedanken zu machen, __was denn eigentlich erreicht werden soll__
+* Effective teaching hingegen prüft, __inwiefern ein festgelegtes Ziel erreicht wird__
+
+::: 
+
+## &nbsp;{.center}
+![Struktur nach [@berliner2005]](images/berliner1.png){width="850"}
+
+::: notes
+
+* Good teaching basiert auf theoretischer Forschung
+* Effective teaching auf empirischer Forschung
+
+::: 
+
+## &nbsp;{.center}
+![Struktur nach [@berliner2005]](images/berliner2.png){width="850"}
+
+::: notes
+
+* Good teaching basiert auf theoretischer Forschung
+  * Theoretische Forschung meint z.B. in der Ideengeschichte nachzuschauen, was bestimme Klassiker zu einem Thema sagen
+  * Was taucht zu Autonomie bei Rousseau auf?
+  * Was sagen didaktische Ratgeber zu kooperativem Lernen? 
+  * Normativ: theoretische Forschung und practical wisdom
+  * anders formuliert, __Unterricht der bestimmten normativen Erwartungen gerecht wird / normative Prinzipien / pädagogische Wertvorstellungen__
+  * Bspe.
+    - „tradierten Konzepten des professionellen pädagogischen Handelns oder ethischen Normen“ 
+    - In einer modernen Gesellschaft: Es wird nicht akzeptiert, wenn Lernende psychischer oder körperlicher Gewalt ausgesetzt sind
+
+
+* Effective teaching auf empirischer Forschung
+  * Systematische, strukturierte und zielgerichtete Beobachtungen (Videoanalysen, Unterrichtsbeobachtungen, Leistungstests)
+  * __Kriterium meistens die fachliche Leistung__, aber auch Motivation/Emotion, Persönlichkeit kann als Kriterium festgelegt werden, mittlerweile auch verstärkt Wohlbefinden
+  * __Unterricht, der seine pädagogischen Ziele nachweislich einlöst__
+
+::: 
+
+## &nbsp;{.center}
+![Struktur nach [@berliner2005]](images/berliner4.png){width="850"}
+
+::: notes
+
+* __Outcomes von good teaching sind der Didaktik und der theoretischen Erziehungswissenschaft zuzuordnen__
+  * Didaktische Modelle wie das Hamburger oder Berliner Modell oder so etwas wie das EEE-Schema, das für Einstieg, Erarbeitung und Ergebnissicherung steht, aber auch Unterrichtstheorien usw.
+
+* Outcomes von __effective teaching__ stammen eher aus der __Pädagogischen Psychologie__:
+
+  * Qualitätskriterien, __Merkmale im Unterricht, die positiv mit Leistung von Schüler:innen zusammenhängen__ z.B. nach Hilbert Mayer – Strukturierung des Unterrichts, time on task, Klima
+  * __Wirkmodelle nennen nicht nur die Kriterien, sondern beschreiben die Prozesse dahinter__ z.B., kognitive Aktivierung (aktive Auseinandersetzung und vertiefte Beschäftigung mit den Lerngegenstände) = Qualitätskriterium 
+  * Wirkmodell: offene Aufgaben wirken kognitiv aktivierender weil Lernende nicht ein Ritual abspulen können, sondern wirklich das zu Verstehende elaborieren/durchdenken müssen
+  * Angebot-Nutzungs-Modell = Wirkmodell
+
+* Qualitätsvoller Unterricht integriert beide Seiten: 
+* „Direkte Instruktion“: zeigt sich konsistent lernwirksam in Bezug auf fachliche Lernziele, genügt somit den Kriterien effektiven Unterrichts, entspricht jedoch u.a. aufgrund der starken Lehrersteuerung nicht den aktuellen pädagogischen Vorstellungen guten Unterrichts
+
+:::
+
+## [Ihre Merkmale nach @berliner2005 strukturieren:]{style="font-size: 0.7em; color: #8cd000"}
+
+::: {style="font-size: 0.7em"}
+Stimmen Sie 
+
+* durch Positionierung im Raum ab, ob Sie 
+* ein von mir aufgerufenes Merkmal guten Unterrichts einer Kommilitonen oder eines Kommilitonen     
+    * für einen Aspekt von »good teaching« halten (auf der Fensterseite positionieren) oder 
+    * für einen Aspekt von »effective teaching« halten (auf der Flurseite positionieren).
+* Für »sowohl als auch« stimmen Sie in der Mitte des Raumes ab.
+* Für »unentscheidbar« stimmen Sie ab in dem Sie sitzen bleiben.
+
+> Der Begriff wird aufgerufen, dann gibt es 10 Sekunden Bedenkzeit, dann bewegen Sie sich bitte an Ihren Abstimmungsort.
+::: 
+
+::: notes
+
+* jetzt versuchen wir mal das Modell auf Ihre Merkmale anzuwenden und manche Merkmale beispielhaft good oder effective teaching zuzuordnen
+
+* Begründungen der Studis für Ihre Position anhören und ins Gespräch kommen
+
+:::
+
+
+## Unterrichtsqualität: Definition
+::: {style="font-size: 0.7em"}
+Eine vglw. breite Definition nach Klieme [-@klieme2019, S. 396]:
+*»Unterrichtsqualität wird hier also verstanden als [Gesamtheit der empirisch beobachtbaren Merkmale des Unterrichtsgeschehens {{< fa eye >}}]{style="color: #d77d00;"}, die nachweislich mit der [Entwicklung der Lernenden im Sinne der Realisierung von Bildungs- und Erziehungszielen {{< fa chart-line >}}]{style="color: #0FA5D7;"} einhergehen.«*
+
+Im Kontext aktueller empirischer (insb. deutschsprachiger) Forschung {{< fa eye >}}
+
+* wird meistens die [Leistungsentwicklung]{style="color: #0FA5D7;"} als Kriterium fokussiert [@kunter2013b];
+* werden meistens sog. generische Tiefenstrukturen als Unterrichtsmerkmale betrachtet [@praetorius2018]
+    * [Klassenführung]{style="color: #d77d00;"} (classroom management)
+    * [Konstruktive Unterstützung]{style="color: #d77d00;"} (student support)
+    * [Kognitive Aktivierung]{style="color: #d77d00;"} (cognitive activation)
+:::
+
+::: notes
+Zur Definition:
+
+* Neuere UQualforschung fast ausschließlich unter effective Perspektive
+* Eckhard Klieme definiert UQ relativ breit 
+  * Kontext aktueller empirischer Forschung: 
+  * Fokus Leistungsentwicklung -> Wenn __nicht nur Leistungsentwicklung__ betrachtet wird, nennt man das oft eine __multikriteriale Perspektive auf Unterrichtsqualität__ (typisches Beispiel: Sehr starke, autoritäre Engführung im Unterricht kann sehr lernwirksamsein ist aber autonmieeinschränkend und damit motivationsentwicklungshinderlich; Deci and Ryan Selbstbestimmungstheorie (Autonomie, Fähigkeit, Zugehörigkeit))
+
+
+* Basisdimensionen - Tiefenstruktur
+  * __Klassenführung__ mit dem Ziel, __time on task__ zu erhöhen, also Unterrichtszeit effektiv zu nutzen, möglichst __wenige Störungen und alle Schüler:innen beim Lernen beteiligt__ sind
+  * __Konstruktive Unterstützung__: wie gut __unterstützt Lehrperson__ die Lernenden beim Wissenserwerb + __Wertschätzung und Respekt bei Interaktion__ zwischen Lehrperson und Lernenden 
+  * __Kognitive Aktivierung__: __aktive Auseinandersetzung__ und __vertiefte Beschäftigung__ mit den Lerngegenstände
+  * Tiefenstrukturen kennzeichnen sich dadurch, dass sie nicht direkt beobachtbar sind
+  * Direkt beobachtbar sind nur Oberflächenstrukturen - methodisches Vorgehen, Organisations- und Sozialformen
+
+* __spezifisch CM. widmen__, werden Sie in den kommenden Sitzungen merken, 
+  * Ältere CM-Forschung bereits effective Persp. zuzuordnen -> Leistung nicht Kriterium, sondern Störungsfreiheit/Mitarbeit, Fehlverhalten
+  * Jüngere CM-Forschung effektive Perspektive mit Kriterium Leistung
+
+
+Zeitpuffer:
+Implikation der Definiton:
+
+* __Oberfläche weder hinreichend noch notwendig__ (»Kooperatives Lernen« kann aber muss kein guter Unterricht sein) -> Zentral, die drei Ks zu adressieren, das kann ich unter Verwendung verschiedener Methoden
+* __UQual entsteht aus Kokonstruktion von Klasse und LuL__: Störungsfreiheit als Submerkmal von __Klassenführung wird manchmal komplett schülerseitig induziert__ (brave Klasse) --> <!-- Rolle Klasse. Aber __ein und dieselbe Klasse stört je nach Lehrkraft sehr unterschiedlich stark__ --> <!-- Rolle Lehrkraft.
+
+:::
+
+--> 
+
+# Vielen Dank!{.cent1}
+
+
+## Literatur {{< fa book-open >}}]{style="color: #8cd000;"}
+
+
+
+<style>
+div.callout {border-left-color: #8cd000 !important;}
+div.callout-tip.callout-style-default .callout-title {
+    background-color: #8cd000;
+}
+</style>

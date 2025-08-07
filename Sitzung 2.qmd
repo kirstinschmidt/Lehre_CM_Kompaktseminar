@@ -1,0 +1,513 @@
+---
+title: "Sitzung 2:" 
+subtitle: "Einführung in die Unterrichtsqualität (II)"
+format:
+  revealjs:
+    auto-stretch: true
+    self-contained: false
+    controls: true
+    slide-number: c/t
+    logo: img/PH_logo.svg
+    theme: [simple, css/custom.scss]
+    fullscreen: true
+    pdf-separate-fragments: true
+    pdfexport: true
+bibliography: references.bib
+csl: apa.csl
+editor_options: 
+  chunk_output_type: console
+lightbox: true
+---
+
+```{r hidden chunk which creates template stuff}
+#| echo: false
+
+## in terminal ########
+# quarto install extension quarto-ext/fontawesome
+# quarto install extension schochastics/academicons
+# test
+
+########################
+library(fontawesome)
+library(tidyverse)
+library(readxl)
+library(ggalt)
+library(hrbrthemes)
+library(reactable)
+
+# Change css to PH green
+if(!dir.exists("css"))
+dir.create("css")
+fileConn<-file("css/custom.scss")
+fileStyle<-file("css/custom.scss")
+writeLines(c("/*-- scss:defaults --*/",
+             "$link-color: #8cd000 !default;",
+             # line-height muss im parent der font-size gesetzt werden,
+             # daher hier und nicht inline im YAML header
+             ".reveal h1 {line-height: .8 !important;} ", 
+             # make citations a bit smaller
+             ".citation {font-size: .8em; color: #8cd000;}",
+             ".imp {color: #8cd000;}",
+             ".imp2 {color: #50B32E;}",
+             ".cent2 h2 {text-align: center;}",
+             ".cent3 h3 {text-align: center;}",
+             ".cent1 h1 {text-align: center;}",
+             ".cent_text {text-align: center;}",
+             ".reveal h2 {color: #8cd000 !important;}"),
+           fileConn)
+close(fileConn)
+close(fileStyle)
+```
+
+## Heutige Sitzung {{< fa list-ul >}}
+
+- Good Teaching vs. Effective Teaching
+- Wozu Forschung zu Unterrichtsqualität (UQual)? 
+- Vielfalt der Konzepte von Unterrichtsqualität
+    * Listen
+    * Dimensionen
+    * Stufen
+- Operationalisierungen der Basisdimensionen 
+
+::: notes
+
+- KORREKTUR: 4 CP
+- heute nochmals UQ widmen
+
+-	einsteigen möchte ich damit, nochmals näher zu erörtern, wozu UQ-Forschung gut ist
+-	dann WDH Definition von UQ letzte Woche 
+-	bevor wir uns noch ausführlicher der UQ widmen und schauen, welche Möglichkeiten es gibt UQ zu konzeptualisieren
+  - wir schauen uns – aber eher kurz – Listen, Dimensionen und Stufen an
+-	im letzten Block wollen wir die Basisdimensionen KKK, die wir in der letzten Stunde schon kurz angedeutet haben, noch operationalisieren -> was genau versteht man darunter und wie kann man sie herunterbrechen, um für Praxis greifbarer zu machen
+
+:::
+## <font color="#8cd000">Lernziele {{< fa bullseye >}}</font>
+
+* Unterscheidung Good Teaching vs. Effective Teaching
+* Unterscheidung von Oberflächen- und Tiefenstruktur
+* Basisdimensionen des Unterrichts kennen und erklären können 
+
+::: notes
+
+-	daher folgende Lernziele, die auch nochmal die Lernziele der letzten Sitzung aufgreifen
+
+::: 
+
+## Arbeitsauftrag {{< fa pen >}} {.smaller}
+
+Stellen und beantworten Sie in...
+
+- Partner:innenarbeit {{< fa user-group >}}
+- in 10 Minuten {{< fa hourglass-start >}}
+- Ihre Fragen, die Sie an den Text von Drechsel, B., & Schindler, A.-K. [-@drechsel2019]. Unterrichtsqualität. In D. Urhahne, M. Dresel, & F. Fischer (Hrsg.), Psychologie für den Lehrberuf (S. 353–372). Springer. https://doi.org/10.1007/978-3-662-55754-9_18 gestellt haben.
+
+<center> *Wenn Sie Ihre Fragen gemeinsam nicht beantworten können oder sich weitere Unklarheiten ergeben, fragen Sie gerne bei mir nach!* </center> 
+
+::: notes
+
+- weitere Vertiefung im Nachgang
+
+:::
+
+## &nbsp;{.center}
+![Struktur nach [@berliner2005]](img/berliner4.png){width="850"}
+
+
+::: notes
+
+- Schaubild von Studierenden erklären lassen
+
+-	was war nochmal der Unterschied von Good Teaching vs. Effective Teaching?
+  - Typisches Beispiel: sehr starke und autoritäre Engführung im Unterricht kann sehr lernwirksam sein, schränkt aber die Autonomie der Schüler:innen ein und wirkt sich dadurch negativ auf die Motivationsentwicklung aus (Selbstbestimmungstheorie von Deci and Ryan: Motivation wird beeinflusst durch 1) Autonomie, 2) Fähigkeit, 3) Zugehörigkeit)
+:::
+
+## [Ihre Merkmale nach @berliner2005 strukturieren:]{style="font-size: 0.7em; color: #8cd000"}
+
+::: {style="font-size: 0.7em"}
+Stimmen Sie 
+
+* durch Positionierung im Raum ab, ob Sie 
+* ein von mir aufgerufenes Merkmal guten Unterrichts einer Kommilitonen oder eines Kommilitonen     
+    * für einen Aspekt von »good teaching« halten (auf der Tafelseite positionieren) oder 
+    * für einen Aspekt von »effective teaching« halten (auf der Türseite positionieren).
+* Für »sowohl als auch« stimmen Sie in der Mitte des Raumes ab.
+* Für »unentscheidbar« stimmen Sie ab in dem Sie sitzen bleiben.
+
+> Der Begriff wird aufgerufen, dann gibt es 10 Sekunden Bedenkzeit, dann bewegen Sie sich bitte an Ihren Abstimmungsort.
+::: 
+
+::: notes
+
+* jetzt versuchen wir mal das Modell auf Ihre Merkmale anzuwenden und manche Merkmale beispielhaft good oder effective teaching zuzuordnen
+
+* Begründungen der Studis für Ihre Position anhören und ins Gespräch kommen
+
+(15 Minuten)
+:::
+
+
+## Wozu Forschung zu UQual? {{< fa list-ul >}}{.center}
+> Lehrer:innen und Studierende sind immer wieder der Meinung die Frage nach »Merkmalen guten Unterrichts« können mit dem »Alltagsverstand« genauso beantwortet werden, wie mit Unterrichtsforschung.
+
+> Dazu ein kleines Experiment: Klicken Sie im Innovationspace auf "Quiz: Unterrichtsqualität - eine Frage der Intuition?"
+
+::: notes
+-	Lehrer:innen und Lehramtsstudierende sind oft der Meinung, dass man mit dem Alltagsverstand - Erfahrungen, practical wisdom ... - genauso gut wie mit Unterrichtsforschung beantworten kann, was Merkmale guten Unterrichts sind 
+-	starten wir daher mal mit einem kleinen Experiment, warum UQual-Forschung (effective teaching-Perspektive) überhaupt sinnig ist
+
+-	Ergebnisse der Studis anschauen
+-	Schauen wir mal, was die Forschung dazu sagt
+
+::: 
+
+## Wozu Forschung zu UQual? {{< fa list-ul >}} {.scrollable}
+```{r}
+#| echo: false
+#| cache: true
+#| message: false
+#| results: hide
+library(haven)
+library(tidyverse)
+library(ggforce)
+library(hrbrthemes)
+library(ggplot2)
+
+data_star <- read_spss("data/star_math3_per_class.sav") |> 
+  mutate(Klassentyp = case_when(g3classtype == 3 ~ 
+                                "Normale Klasse + Hilfslehrkraft",
+                                g3classtype == 2 ~ 
+                                "Normale Klasse",
+                                T ~ "Kleine Klasse"))
+
+ggsave(
+  "img/STAR.png",
+  ggplot(data_star, aes(Klassentyp, math_per_class)) + 
+    geom_boxplot(width = .2, color = "lightgrey", fill = "darkgrey") +
+    geom_sina(color = "#8cd000") + 
+    theme_modern_rc() + 
+    ylab("Mittelwert Matheleistung je Klasse")+
+    xlab("") +
+    labs(title = "Mathematikleistung",
+         subtitle = "je Klassengröße",
+         caption = "nach drei jahren Unterricht in verschiedener Klassengröße. Daten von   Achilles et al., 1985"))
+
+```
+
+
+::: {style="font-size: 0.5em"}
+* Klassengröße: 
+    * ~~Eine Reduktion der durchschnittlichen Klassengröße von 25 auf 15 steigert die Leistungsfähigkeit der Schüler\*innen deutlich.~~
+    * Im STAR-Experiment [@achilles1985] waren die Effektstärken eher klein: ![](img/STAR.png){width="25%"}
+* Much Pain - no Gain: 
+    * ~~Wenn Schüler\*innen berichten, eine Lernaktivität fühle sich anstrengend an, spricht das dafür, dass diese Lernaktivität nicht optimal adaptiv geplant war.~~
+    * Retrieval Practice wird als viel anstrengender als Restudying empfunden, kann aber als klar lernwirksamer bezeichnet werden [@kirk-johnson2019] 
+* Der Hans machts eh: 
+    * ~~Gruppenarbeit ist meist weniger effektiv als Standardmethoden und fördert auch affektive Outcomes wie Motivation und Emotionen von Lernenden nicht.~~
+    * Eine Review von qualitativ hochwertigen Studien zeigt eine klare Überlegenheit kooperativen Lernens bzgl. affektiver Outcomes. Bzgl. des Lernzuwachses sind »Gruppenziele bei individueller Verantwortlichkeit« notwendige Kriterien für die Überlegenheit [@slavin2010].
+* Lernstile: 
+    * ~~Bedient man den von Schülern bevorzugten VARK Lernstil (visual [V], auditiv [A], read/write [R], kinesthetic [K]) nach Fleming lernen diese mehr.~~
+    * Qualitativ hochwertige Studien  [z.B. @rogowsky2015] finden keine Bestätigung für die »Verzahnungshypothese«.
+    
+<!--
+* Gendern im Unterricht: 
+    * ~~Wenn Lehrer »Schüler« (generisches Maskulinum) sagen, werden weibliche und männliche Personen gleichermaßen adressiert. »Schülerinnen und Schüler« zu sagen ist also eher überkompliziert.~~
+    * Eher das Gegenteil ist der Fall: Der »Malebias« des Generischen Maskulinums ist sogar größer als der »Femalebias« des »Gendersterns« [@korner2022]
+    
+--> 
+
+:::
+
+::: notes
+
+__Klassengröße__
+
+- STAR (Student-Teacher Achievement Ratio) war eine experimentelle Studie
+- In vier Jahren wurde in Amerika in Tennessee die Effektivität von reduzierten Klassengrößen analysiert 
+  - Mehrere Kohorten: Kindergarten, 1-3, Klasse
+  - Klassengröße 13-17 vs. 22-25 Schüler:innen
+  - Ca. 330 Klassen in ca. 80 Schulen
+  - Lehrpersonen und Schüler:innen wurden jedes Jahr zufällig einer Klasse zugeteilt
+  - Bereiche: Lesen, Mathematik, „basic study skills“
+- kleinerer Klassen kleine positive Effekte auf die Leistung von Schüler:innen gezeigt
+-	Aber wenn Sie sich die Visualisierung anschauen, viel kleinere Effekte als man eigentlich sich das ganze vorstellt
+  - Hier Ergebnis abgetragen und das war noch einer der größten Effekte, der gefunden wurde 
+
+
+__Much Pain – no Gain__
+
+-	retrieval practice / "Abrufpraxis": Informationen auslassen, um Sie selbst abzurufen z.B. Materialien einmal durcharbeiten und dann ein Quiz bearbeiten; Vokablen einmal durchlesen und dann abdecken; Lückentexte
+-	Forschung zeigt, dass durch retrieval practice Lerninhalte längerfristig behalten werden können (Lerninhalte gelangen ins Langzeitgedächtnis) bzw. länger als bei restudying (Materialien mehrfach durcharbeiten) 
+  - während restudying ein passives Lesen erfordert, 
+  - ist für die retrieval practice eine aktive Gedächtnissuche erforderlich - eine kognitiv anstrengende Aufgabe
+
+<!--
+__Gendern im Unterricht__
+
+-	Tatsächlich Male Bias
+-	Argumentiert, dass bei Gendersternchen eher ein Female Bias, aber wurde gezeigt, dass der Male Bias größer ist als der Female Bias
+-	am ausgewogensten waren die Darstellungen, wenn sowohl männliche als auch weibliche Formen genannt wurden
+- wie wird das untersucht: mentale Geschlechterdarstellungen/-repräsentationen, die beim Lesen hervorgerufen werden z.B. zwei Sätze und die Teilnehmenden sollen entscheiden, ob der zweite Satz eine plausible Fortsetzung des ersten Satzes ist. Im ersten Satz wird eine Gruppe an Menschen in Gender-Schreibweise, generischem Maskulinum oder in Beidnennung, im Folgesatz wird dann Bezug zu Männern/Frauen aus der Gruppe hergestellt
+
+--> 
+__Der Hans machts eh__
+
+-	Überlegenheit kooperativen Lernens bezüglich affektiver Outcomes 
+  - Kooperatives Lernen verbessert diese fast immer
+  - Beispiele: Studierende arbeiten gerne in Gruppen (lieber als alleine), fühlen sich dann erfolgreicher etc.
+-	Aber um positive Effekte auf die Leistung zu erzielen, müssen Gruppenziele und individuelle Verantwortlichkeit vorliegen
+  - Gruppenziele und individuelle Verantwortlichkeit (Erfolg der Gruppenarbeit ist abhängig von jedem einzelnen Gruppenmitglied) als Mediatorvariable
+  - Hier geht es auch immer darum, dass die Schüler:innen etwas lernen
+  - Alternative: gleiche Aufgabe gemeinsam bearbeiten (nicht unterschiedliche Verantwortlichkeiten festlegen); Fokus eher auf „etwas machen“ statt „etwas lernen“  z.B. schwächere Schüler:innen werden eher als Störfaktor und nicht als Hilfe angesehen
+-	Zusatzinfos: Schüler:innen, die am meisten in GA lernen sind diejenigen, die Erklärungen geben/erhalten; auch high-achievers profitieren von GA
+
+
+__Lernstile__
+
+-	Studien finden keine Bestätigung für Lernstile, die über alle Fächer hinweg zu besseren Leistungen führen
+- Kogowsky und Kolleg:innen (2014) fokussierten auditory and visual learning style
+
+
+-	Was schließen wir daraus: unser Alltagsverstand kann uns doch auch immer in die Irre führen
+-	Lassen Sie uns jetzt die Eigenschaften von wissenschaftlichem Wissen und praktischem Wissen / Handlungswissen noch einander gegenüberstellen, die jeweiligen Eigenschaften und die damit einhergehenden Vor- und Nachteile anschauen
+
+
+::: 
+
+
+## Wiss. Wissen & Handlungswissen {.smaller}
+#### Charakteristika
+* Wissenschaftliches Wissen: Formal, explizit, propositional, diskursiv [@habermas2014]
+* Praktisches Wissen: Implizit, »embodied in action« [@massingham2019]
+<br><br>
+
+
+#### Resultierende Vor- und Nachteile
+{{< fa circle-plus >}} wiss. Wissen: Hoher Gültigkeitsanspruch, breiter anwendbar (generisch) <br>
+{{< fa circle-plus >}} prakt. Wissen: Schnell generierbar, unmittelbar anwendbar<br>
+<br>
+{{< fa circle-minus >}} wiss. Wissen: Aufwändige Genese, begrenzte Modi der »Verwendbarkeit« <br>
+{{< fa circle-minus >}} prakt. Wissen: Geringer Gültigkeitsanspruch, hochgradig spezifisch
+
+::: notes
+
+Wissenschaftliches Wissen: 
+
+- __Formal__: z.B. Mathe Physik, aber auch z.B. Jura/Medizin vergleichsweise klar definierte Begriffe/Sprache
+- __Explizit__: jede Kleinigkeit wird ausgedrückt, es wird vermieden zwischen den Zeilen zu sprechen // Konnotationen werden vermieden, nur was publiziert ist zählt
+- __Propositional__: Claims werden möglichst in Aussagen (Proposition Konklusion) verpackt. z.B. "Wenn Lernende einen zuvor gelesenen Text versuchen aktiv zu reproduzieren, steigt ihre Behaltensleistung im Vergleich zu nochmaligem Lesen" statt "ich hab den Eindruck ..."
+- __Diskusiv__: Wissenschaft gilt Wissenschaft, wenn ihre Ergebnisse in der Fachöffentlichkeit diskutiert wurden (Konferenzen, Publikationen mit Stellungnahmen ...)
+
+Praktisches Wissen:
+
+- __Implizit__: Man muss im LuL Alltag so viele Entscheidungen treffen, dass man nicht alle "bewusst" treffen kann - viel läuft automatisiert ab. Thinking slow - thinking fast, um hervorzuheben, dass das nicht negativ gemeint ist, sondern sehr hilfreich/notwendig, um Komplexität zu reduzieren
+- __embodied in action__: Kann nicht kognitiv manifestiert werden. Wechsel in Muttersprache, keine Spitznamen, bestimmte Position in Klassenzimmer
+
+- Bsp. für __Generik wiss. Wiss.__: CTML (wann Bild, wann Text, wann bewegtes Bild) in Präsenz- und Distanzunterricht
+  - aber aufwendig in der Genese, vielzählige Forschungsprojekte 
+  - begrenzt anwendbar -> aus dem Allgemeinen müssen erst einmal die spezifischen Infos z.B. Highlighting von Texten ist sinnvoll, abgeleitet werden
+- __Unmittelbar anwendbar__: Bsp.: Namen lernen
+  - aber hochgradig spezifisch
+- Geringer Gültigkeitsanspruch: Mythen ..
+
+:::
+
+
+## Unterrichtsqualität: Definition
+::: {style="font-size: 0.7em"}
+Eine vglw. breite Definition nach Klieme [-@klieme2019, S. 396]:
+*»Unterrichtsqualität wird hier also verstanden als [Gesamtheit der empirisch beobachtbaren Merkmale des Unterrichtsgeschehens {{< fa eye >}}]{style="color: #d77d00;"}, die nachweislich mit der [Entwicklung der Lernenden im Sinne der Realisierung von Bildungs- und Erziehungszielen {{< fa chart-line >}}]{style="color: #0FA5D7;"} einhergehen.«*
+
+Im Kontext aktueller empirischer (insb. deutschsprachiger) Forschung {{< fa eye >}}
+
+* wird meistens die [Leistungsentwicklung]{style="color: #0FA5D7;"} als Kriterium fokussiert [@kunter2013b];
+* werden meistens sog. generische Tiefenstrukturen als Unterrichtsmerkmale betrachtet [@praetorius2018]
+    * [Klassenführung]{style="color: #d77d00;"} (classroom management)
+    * [Konstruktive Unterstützung]{style="color: #d77d00;"} (student support)
+    * [Kognitive Aktivierung]{style="color: #d77d00;"} (cognitive activation)
+:::
+
+
+::: notes
+
+- AUSBLENDEN (b)
+- nochmal wiederholen
+
+- Basisdimensionen vs. Tiefenstruktur
+  - Klassenführung: time on task zu erhöhen, also Unterrichtszeit effektiv zu nutzen, möglichst wenige Störungen und alle Schüler:innen beim Lernen beteiligt sind
+  - Konstruktive Unterstützung: wie gut unterstützt Lehrperson die Lernenden beim Wissenserwerb + Wertschätzung und Respekt bei Interaktion zwischen Lehrperson und Lernenden 
+  - Kognitive Aktivierung: aktive Auseinandersetzung und vertiefte Beschäftigung mit den Lerngegenstände
+- Tiefenstrukturen kennzeichnen sich dadurch, dass sie nicht direkt beobachtbar sind
+  - Verhältnis der Tiefenstrukturen ist beliebig (Ko hoch, Kog niedrig, Kl hoch möglich genauso wie ...)
+- Direkt beobachtbar sind nur Oberflächenstrukturen - methodisches Vorgehen, Organisations- und Sozialformen
+- Oberfläche weder hinreichend noch notwendig (»Kooperatives Lernen« kann aber muss kein guter Unterricht sein) -> Zentral, die drei Ks zu adressieren, das kann ich unter Verwendung verschiedener Methoden
+
+Oberflächenstruktur nicht vergessen!
+
+::: 
+
+## Zur Vielfalt von<br>Unterrichtsqualitätsmodellen {.smaller}
+:::: {.columns}
+
+::: {.column width='33%'}
+#### Listen {{< fa list-check >}}
+* z.B. [@meyer2021]
+    * Strukturierung
+    * Time on Task
+    * Klarheit
+    * Methodenvielfalt
+    * Intel. Üben
+    * ...
+:::
+
+::: {.column width='33%'}
+#### Dimensionen {{< fa ruler-combined >}}
+* z.B. [@klieme2019]
+    * Klassenführung
+    * Konstruktive Unterstützung
+    * Kognitive Aktivierung
+:::
+
+::: {.column width='33%'}
+#### Stufen {{< fa stairs >}}
+* z.B. [@pietsch2010]
+    1) Lernklima sichern
+    2) Klasse führen
+    3) Schüler:innen motivieren
+    4) Differenzieren
+:::
+
+::::
+
+
+::: notes
+
+- Verschiedene Modelle von UQ
+- Hier erkennen Sie die Tiefenstruktur wieder - Dimensionen 
+- Da findet man aber auch durch aus andere Modelle: 
+  - Listen, die gar nichts über das Verhältnis der Merkmale aussagen, suggerieren oft eine dichotome Ausprägung (vorhanden vs. nicht vorhanden)
+  - Stufen, die eine Hierarchie vorschlagen, also systematisch aufeinander aufbauen von Lernklima bis zur Differenzierung, und dadurch auch bissl heuristischer sind.
+    - Die Stufung ist nicht kausal zu verstehen: Eine effiziente Klassenführung führt nicht automatisch zu einer guten individuellen Förderung, aber sie erhöht die Wahrscheinlichkeit, dass diese gelingt
+    - umkehrt: Es ist unwahrscheinlich, dass es gelingt, individuelle Voraussetzungen von Schüler:innen im Unterricht angemessen zu berücksichtigen, wenn es Schüler:innen nicht möglich ist, Lernstrategien zu erwerben oder anzuwenden
+    - auf Stufe zwei ist es für eine Schule nicht realistisch kurzfristig eine weitreichende „Individualisierung“ des Unterrichts anzustreben (Stufe 4), aber es wäre realistisch ein Konzept zu entwickeln für eine umfassende Einbeziehung der Schüler:innen in die Gestaltung des Unterrichts
+    
+Oberflächenstruktur nicht vergessen!
+
+--> Damit theoretisches Wissen praktisch wirksam werden kann, bedarf es eines tiefen Verständnisses der Begriffe; Fokus weiterhin auf Dimensionen nach Klieme
+
+:::
+
+## Erarbeitung Klieme-Modell (KKK) {{< fa brain >}} {.smaller}
+Erarbeiten Sie sich ein vertieftes Verständnis der Basisdimensionen von Unterrichtsqualität nach Klieme [@klieme2019], indem Sie 
+
+* die Ihnen zugewiesenen Expert:innentexte durcharbeiten (10 Min.) {{< fa clock >}},
+* sich in den Tandems gegenseitig zu den Texten--v.a. demjenigen, den Sie nicht beide gelesen haben--briefen (10 Min.) {{< fa user-group >}} und
+* in Einzelarbeit unter https://bit.ly/schmidt-01 die Fragen des Unterrichtsfeedbackbogens des IBBW der jeweiligen Unterrichtsqualitätsdimension zuordnen (8 Minuten) {{< fa user >}}.
+
+Im Anschluss besprechen wir noch offene Fragen gemeinsam.
+
+::: notes
+- Klassenführung eher einfach, für andere Dimensionen ergänzend
+- offene Fragen
+
+::: 
+
+## Videoanalyse {{< fa video >}} {.smaller}
+* Lesen Sie Kapitel 3 des *Beobachtungsmanuals zum Unterrichtsfeedbackbogen Tiefenstrukturen* und klären Sie Unklarheiten mit den Sitznachbar:innen bzw. dem/der Dozent:in.
+
+* Gemeinsam schauen wir das Video "Fall Daniel" an
+* Gehen Sie nochmals die Indikatoren der drei Items zur Klassenführung aus dem Manual durch und notieren Sie Videostellen, in denen Ihrer Meinung nach ein Indikator beobachtbar ist. Notieren Sie sich auch welchen Indikator Sie beobachten.
+
+::: notes
+
+- jetzt bei Klassenführung angelangt
+
+Fall Daniel - Fallbeispiel für typische Störungsverläufe
+https://tetfolio.fu-berlin.de/tet/770673; (dysfunktion)
+
+__Störungen__
+
+Positiv-Indikatoren 
+
+-	Es kommt nur sehr selten zu Störungen
+-	Der Unterricht verläuft ruhig und geordnet
+-	Die Lautstärke während der Stunde ist der jeweiligen Phase angemessen
+
+Negativ-Indikatoren
+
+-	Intensive Störungen (Schüler:innen schwätzen, werfen Gegenstände umher, tauschen Zettel, machen Faxen hinter dem Rücken der Lehrkraft, usw.)
+-	Lautstärke ist während der Stunde zu hoch, um Unterrichtsgeschehen folgen zu können
+-	Gelingt Lehrkraft nicht oder nur schwer, für Ruhe und Ordnung zu sorgen
+
+
+__Monitoring (Allgegenwärtigkeit + Präsenz der Lehrperson)__
+
+Positiv-Indikatoren
+
+-	Lehrkraft hat alle Schüler:innen im Blick
+-	Lehrkraft ist im ganzen Klassenzimmer präsent (z.B. durch Blicke oder Bewegungen), auch während Einzelarbeitsphasen
+-	Lehrkraft kehr den Schüler:innen nur selten den Rücken zu und richtet ihren Blick meist zur Klasse
+-	Schüler:innengespräche, die nicht zum Unterricht gehören, unterbindet die Lehrperson sehr schnell
+-	Aufkeimende Störungen behebt die Lehrperson frühzeitig und beiläufig, sodass es erst gar nicht zu Unruhe / Störung kommt (z.B. durch nonverbale/verbale Signale wie räumliches Annähern, Blicke oder Gesten)
+
+Negativ-Indikatoren
+
+-	Lehrperson verliert im Gespräch mit einzelnen Schüler:innen die restliche Klasse aus dem Blick
+-	Lehrkraft steht häufig mit dem Rücken zur Klasse
+-	Lehrkraft bemerkt einzelne Schüler:innenmeldungen oft nicht oder erst spät
+-	Beruhigungs- und Aufmerksamkeitssignale oder Ermahnungen der Lehrkraft führen zu keiner oder nur kurzer Verbesserung
+-	Lehrkraft verfügt über ein eingeschränktes Verhaltensrepertoire zur Reaktion auf Störungen (z.B. häufig Psst)
+-	Lehrkraft gibt Störungen viel Raum
+
+
+__Zeitnutzung__
+
+Positiv-Indikatoren
+
+-	Unterrichtsstunde beginnt und endet pünktlich
+-	Unterrichtszeit wird für fachliche Themen genutzt, nicht-fachliche Dinge werden auf vor oder nach dem Unterricht verschoben bzw. schnellstmöglich besprochen
+-	Keine unnötigen Warte- oder Leerzeiten zwischen einzelnen Unterrichtsphasen oder AA
+-	Stunde macht einen geplanten und strukturierten Eindruck, der eine gute Unterrichts- und Zeitplanung zugrunde liegt
+-	Lehrperson plant genügend Zeit für die Bearbeitung von Aufgaben ein, sodass einzelne Unterrichtsphasen nicht stark verkürzt oder abgebrochen werden müssen
+-	Lehrperson gerät nicht unter Zeitdruck
+
+Negativ-Indikatoren
+
+-	Durch die Art der Unterrichtsorganisation wird unnötig Zeit verschwendet
+-	Zu Beginn neuer Arbeitsphasen dauert es lange, bis die Schüler:innen zur Ruhe kommen und mit der Arbeit beginnen
+-	Lehrperson scheint unvorbereitet (hat z.B. Materialien nicht griffbereit, ist unsicher im Ablauf der Unterrichtsstunde)
+-	Lehrperson gerät zum Stundenende unter Zeitdruck und wird hektisch
+-	Lehrperson plant zu viel Zeit für die Bearbeitung von Aufgaben ein, sodass Leerlauf für Schüler:innen entsteht
+
+
+- __Abschlussbemerkung__: 
+  - Indikatoren, die eher deskriptiver Art sind z.B. bei Störungen "Es kommt nur selten zu Störungen", "Unterricht verläuft ruhig und geordnet" --> kann ich beobachten, aber ich weiß nicht was ich tun soll, um dieses Ziel zu erreichen
+  - Indikatoren, die eher heuristisch sind z.B. bei Monitoring "Die Lehrkraft ist im ganzen Klassenzimmer präsent (z. B. durch Blicke oder Bewegungen), auch während Einzelarbeitsphasen", "Aufkeimende Störungen behebt die Lehrkraft frühzeitig und beiläufig, sodass es erst gar nicht zu Unruhe oder Störungen kommt (z. B. durch nonverbale/verbale Signale wie räumliches Annähern, Blicke oder Gesten)"
+
+
+:::
+
+## Arbeitsauftrag für nächste Sitzung {{< fa pen >}}
+
+Lesen Sie als Vorbereitung auf die nächste Sitzung in der Sekundärliteratur von Haag & Streber (2020) Auszüge aus Kapitel 5.2 zu den Techniken der Klassenführung nach Kounin (S. 66 - 74)
+
+> Haag, L., & Streber, D. (2012). *Klassenführung: Erfolgreich unterrichten mit Classroom Management*. Beltz.
+
+Den Text finden Sie im Innovationspace in der Sitzung "Classroom Management (CM): Einführung in Kounin" unter "Haag & Streber (2012)"
+
+::: notes
+ 
+- nächsten Sitzung kurz auf die Fragen eingehen und dann aber vor allem an diesen Punkten weiterarbeiten
+- Recherchekompetenz stärken
+- nächste Sitzung: Vertiefung der UQ
+::: 
+
+
+## Literatur {{< fa book-open >}}
+
+
+<style>
+div.callout {border-left-color: #8cd000 !important;}
+div.callout-tip.callout-style-default .callout-title {
+    background-color: #8cd000;
+}
+</style>
