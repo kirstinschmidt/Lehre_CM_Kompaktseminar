@@ -123,16 +123,16 @@ Auf all diesen Ebenen – positive Erlebnisse – Bewusstmachung dessen – Ress
 
 ::: 
 
-## Organisatorische Informationen {{< fa list >}}
+## Organisatorische Informationen {{< fa list >}}{.smaller}
 
 * Blockzeiten jeweils von 08:00 bis 13:00 Uhr
     + pro Tag mind. 40 Minuten Pause 
     + geplante Pausen können flexibel angepasst werden
-* Bis spätestens Dienstagvormittag Vertiefung wählen
-* Informationsblock zur Studienleistung/Modulprüfung am Freitag 
+* Bis spätestens Dienstagvormittag Ihre Wunschvertiefung in Liste eintragen
+* Informationsblock zur Studienleistung/Modulprüfung findet am Freitag statt
 * Seminar steht und fällt mir Ihrer Aktivität
-    + Tag 1 und 2 viele Inputphasen
-    + Tag 3, 4 und 5 viel Aktivität
+    + Tag 1 und 2 verschiedene Inputphasen
+    + Tag 3, 4 und 5 viele Aktivitätsphasen
 * Noch offene Fragen Ihrerseits?
 
 ## Geplante Pausen {{< fa mug-hot >}}
@@ -176,7 +176,7 @@ Auf all diesen Ebenen – positive Erlebnisse – Bewusstmachung dessen – Ress
 
 ## Gespräch im Lehrer:innenzimmer {{< fa chalkboard-teacher >}} {.smaller}
 
-Frau Müller: „Heute haben wir in Mathe wieder Stationenarbeit gemacht. Da war wieder was los in der Klasse. Meinen Viertklässlern hat‘s eine Menge Spaß gemacht. Und alle waren sie dabei.“
+Frau Müller: „Heute haben wir in Mathe wieder Stationenarbeit gemacht. Da war wieder was los in der Klasse. Meinen Viertklässlern hat's eine Menge Spaß gemacht. Und alle waren sie dabei.“
 
 Herr Meyer: „Für mich sind diese neumodischen Methoden ja nichts. Das ist mir viel zu viel Unruhe in der Klasse. Am besten funktioniert es immer noch, wenn ich ein neues Verfahren einführe, dann erkläre ich das für alle an der Tafel und danach wird geübt. Ohne Fleiß kein Preis, sage ich immer! Und in der Schule muss
 eben auch geübt werden.“
@@ -390,7 +390,9 @@ Praktisches Wissen:
 * Unterrichtsqualität ein Kompositum aus Unterricht und Qualität 
     + Bestimmungsmerkmale von Unterricht: Planmäßigkeit, Professionalisierung, Institutionalisierung, Intentionalität
     + Qualität: keine stabile, einem Objekt innenwohnende Eigenschaft
-* ![Struktur nach [@berliner2005]](img/berliner4.png){width="200"}
+
+<center> ![Struktur nach [@berliner2005]](img/berliner4.png){width="200"} </center> 
+
 * Eine vglw. breite Definition nach Klieme [-@klieme2019, S. 396]:
 *»Unterrichtsqualität wird hier also verstanden als [Gesamtheit der empirisch beobachtbaren Merkmale des Unterrichtsgeschehens {{< fa eye >}}]{style="color: #d77d00;"}, die nachweislich mit der [Entwicklung der Lernenden im Sinne der Realisierung von Bildungs- und Erziehungszielen {{< fa chart-line >}}]{style="color: #0FA5D7;"} einhergehen.«*
 * Im Kontext aktueller empirischer (insb. deutschsprachiger) Forschung {{< fa eye >}}
@@ -399,10 +401,32 @@ Praktisches Wissen:
 
 ::: notes
 
-* Kompositum
+* Kompositum aus Unterricht und Qualität
+* Die beiden Begriffe einzeln betrachtet: 
+    * Unterricht:
+    * keine einheitliche Definition von Unterricht in der pädagogischen Fachliteratur zu finden – Beschäftigung von Unterricht findet aus unterschiedlichen Perspektiven statt, führt zu unterschiedlichen Vorstellungen von Unterricht und damit Definitionen, z.B. Unterricht als sprachlicher Diskurs (sprachtheoretisch fundierte Bestimmung), Unterricht als soziomaterieller Zusammenhang von Praktiken (praxistheoretisch fundierte Bestimmung) – Beispiele aus der qualitativen Unterrichtsforschung
+    * Minimaldefinition von Terhart (1994): „Unterricht kann als langfristig organisierte Abfolge von Lehr- und Lernsituationen verstanden werden, die von ausgebildeten Lehrpersonen absichtsvoll geplant und initiiert werden und die dem Aufbau von Wissen sowie dem Erwerb von Fertigkeiten und Fähigkeiten der Lernenden dienen. Sie finden in der Regel in bestimmten dafür vorgesehenen Institutionen unter regelhaften Bedingungen statt.“  eignet sich, um Unterricht von anderen sozialen Situationen wir Erziehung und Sozialisation abzugrenzen.
+    * Bestimmungsmerkmale von Unterricht, die benannt werden: 
+        * Planmäßigkeit:  Verlaufsplanung, Jahresplanung, ... (im Vergleich zur Erziehung: Lehrplan liegt jedem Unterricht zugrunde) / Aufstellen von Regeln, Unterrichtszeiten / Kontrolle des Grades der Zielerreichung: Klausuren, … -> Planmäßigkeit wird in zeitlicher und sachlicher Struktur sichtbar   ABER: Planmäßigkeit darf nicht mit Determinismus verwechselt werden. 
+        * Professionalisierung: staatlich organisierte Lehrerbildung
+        * Institutionalisierung: Lehrpläne, Kerncurricula, Schulgesetze, … -> Sicherheit der Ausbildung, Gleichwertigkeit der Abschlüsse. 
+        * Intentionalität: Lehrauftrag, Erziehungsauftrag
+* Qualität
+    * Lat. : qualitas = Beschaffenheit, Eigenschaft ~  wertneutraler Begriff
+    * Impliziert der Qualitätsbegriff eine Bewertung, wird eine Bezugsbasis benötigt. Diese Bezugsbasis muss ausgewählt und begründet werden. Was gut ist, hängt vom Kriterium ab. 
+    * Qualität ist keine stabile, einem Objekt innewohnende Eigenschaft, sondern stets kriterienabhängig, d.h. welche Ziele definiert werden, bezüglich des Unterrichts z.B. kognitive und motivationale Ziele
+    * Qualität von Unterricht  eine veränderbare, von LuL beeinflussbare Größe (im Gegensatz zu den individuellen Eingangsvoraussetzungen der SuS)
+
+* Unterrichtsqualität
+    * = Konstrukt:  nicht direkt beobachtbarer Sachverhalte
+    * muss aus anderen, leichter beobachtbaren Sachverhalten (Indikatoren) erschlossen werden (= Operationalisierung) 
+    * Definition: Unterrichtsqualität = Bündel solcher empirisch identifizierter Merkmale, die sich nachweislich positiv auf die Unterrichts- und Erziehungsziele auswirken – Zielfestlegung normativ
+    * Keine endgültig abgeschlossene Liste an Merkmalen, nicht ein erfolgreiches methodisches Vorgehen. 
+    * Definition muss offen bleiben -> müssen LuL aushalten.
+
 * umfasst sowohl theoretische als auch empirische Forschung
 
-* Sie haben jetzt Einteilungen gemacht, jetzt ich Ihnen eine Einteilung aus der Literatur
+
 * Dieser Einteilung nach besteht UQ aus gutem Unterricht / „good teaching“ und effektivem Unterricht „effective teaching“
 * Die Idee stammt von David Berliner (amerikanischer Päd. Psych.) und hier ein wenig ausgebaut
 * Good teaching: hierbei geht es darum sich Gedanken zu machen, __was denn eigentlich erreicht werden soll__
@@ -445,7 +469,7 @@ Praktisches Wissen:
 #### Dimensionen {{< fa ruler-combined >}}
 * z.B. [@klieme2019]
     * Klassenführung
-    * Konstruktive Ünterstützung
+    * Konstruktive Unterstützung
     * Kognitive Aktivierung
 
 :::
@@ -473,7 +497,7 @@ Praktisches Wissen:
 :::
     
     
-## Begriffsverständnisse (II) {{< fa chalkboard-teacher >}}{.smaller}
+## Begriffsverständnisse: Basisdimensionen {{< fa chalkboard-teacher >}}{.smaller}
 
 * ... 
 * Im Kontext aktueller empirischer (insb. deutschsprachiger) Forschung {{< fa eye >}}
@@ -482,7 +506,7 @@ Praktisches Wissen:
         * [Klassenführung]{style="color: #d77d00;"} (classroom management)
         * [Konstruktive Unterstützung]{style="color: #d77d00;"} (student support)
         * [Kognitive Aktivierung]{style="color: #d77d00;"} (cognitive activation)
-    + ![](img/Eisberg.png){width="200"}
+<center> ![](img/Eisberg.png){width="200"} </center>
 
 
 ::: notes
@@ -528,7 +552,7 @@ Tragen Sie sich Ihre Fallbeschreibungen gegenseitig vor und geben Sie sich dabei
 
 Überarbeiten Sie - falls notwendig - Ihre Fallbeschreibung und laden Sie diese überarbeitete Version in Innovationspace unter "Ihr herausforderndes Ereignis (überarbeitet)" hoch.
 
-## Aktivität {{< fa sitemap >}} {.smaller}
+## Basisdimensionen in Ihren Fällen {{< fa sitemap >}} {.smaller .scrollable}
 
 __Teil 1: Betiteln Sie Ihren Fall__
 
@@ -538,16 +562,16 @@ __Teil 1: Betiteln Sie Ihren Fall__
 
 __Teil 2: Anwendung der Basisdimensionen__ 
 
-* Sie haben als Vorbereitung auf die Kompaktveranstaltung Texte zu den Basisdimensionen gelesen. Um Ihr Wissen zu aktivieren, bearbeiten Sie das Quiz "Zuordnung: Basisdimension (KKK) <-> Item im Unterrichtsfeedbackbogen". Dieses finden Sie im Innovationspace.
+* Sie haben als Vorbereitung auf die Kompaktveranstaltung Texte zu den Basisdimensionen gelesen. Um Ihr Wissen zu aktivieren, bearbeiten Sie das Quiz "Zuordnung: Basisdimension (KKK) <-> Item im Unterrichtsfeedbackbogen". Dieses finden Sie im Innovationspace unter "Themenblock 1: Unterrichtsqualität".
 * Welche Basisdimensionen kommen in Ihrem Fall zum tragen? Gibt es eine dominante Dimension? 
-* Notieren Sie wenige Stichpunkte für die Vorstellung. Begründen Sie dabei auch, warum Sie sich für welche Basisdimension(en) entschieden haben.
+* Notieren Sie wenige Stichpunkte für die Vorstellung. Vergessen Sie dabei nicht zu begründen, warum Sie sich für welche Basisdimension(en) entschieden haben.
 
 __Teil 3: Vorstellung & Clusterung Ihres Falles__
 
-* Stellen Sie Ihren Fall in zwei bis drei kurzen Sätzen vor.
+* Stellen Sie Ihren Fall inklusive Ihrer Zuordnung zu den Basisdimensionen in zwei bis drei Sätzen vor.
 * Gemeinsam clustern wir Ihre Fälle hinsichtlich der Basisdimensionen.
 
-# Komplexität des Unterrichts {{< fa layer-group >}}
+# Komplexität des Unterrichts {{< fa layer-group >}}{.cent1}
 
 ## Komplexität des Unterrichts {{< fa layer-group >}} {.smaller .scrollable}
 
@@ -563,7 +587,15 @@ __Teil 3: Vorstellung & Clusterung Ihres Falles__
 
 ::: notes
 
-Informalität - Technologiedefizit
+* Schulischer Unterricht -> einzigartige, äußerst komplexe Situation
+* Für eine angemessene Beschreiben und für eine präzise Argumentation: Merkmale identifizieren, die besonders relevant zur Charakterisierung der Situation sind.
+* Unterrichtsforscher Walter Doyle (2006) -> treffende Beschreibung der Herausforderung anhand von sechs (bzw. acht) Punkten.
+* Ausdruck der Vielschichtigkeit von Unterricht – in Praxis bekannt und in vielen Forschungsarbeiten beschrieben
+* Aufgabe für Lehrpersonen: Sich dieser Unsicherheit gewahr sein und verstehen, dass es kaum situationsübergreifende ‚Techniken‘ und ‚Rezepte‘ gibt, die in allen Situationen zum Erfolg führen.  
+* -> Flexible und rasche Reaktion sind erforderlich, gleichzeitig eine umsichtige, vorausschauende Planung, die Unsicherheiten im Vorfeld berücksichtigt -> Planung ermöglicht Analyse und situative Auswahl einer Alternative aus Handlungsrepertoire. 
+* Komplexität ist nicht auflösbar -> ein effektives CRM hilft der Lehrperson mit dieser Komplexität umzugehen und sicherer zu agieren. 
+
+Informalität: Ähnlich wie bereits beim Aspekt der »Unvorhersehbarkeit« beschrieben, ist Unterricht nur in geringem Ausmaß standardisierbar oder reglementierbar (sogenanntes Technologiedefizit). Eine feste Form bieten zwar institutionelle Rahmungen und Regelungen, z. B. die Schulordnung, oder allgemeine Prinzipien (z. B. für den Umgang miteinander), jedoch müssen für jede Klasse Regeln, Rezepte, Gesetze oder Techniken den variierenden situativen Bedingungen angepasst werden.
 
 :::
 
@@ -574,7 +606,7 @@ Informalität - Technologiedefizit
 
 <center> 15 Minuten {{< fa clock >}} </center>
 
-2. Stellen Sie ein Beispiel vor - ohne das Merkmal zu nennen und lassen Sie Ihre Sitznachbarin / Ihren Sitznachbarn das Merkmal zuordnen.
+2. Stellen Sie ein Beispiel vor - ohne das Merkmal zu nennen - und lassen Sie Ihre Sitznachbarin / Ihren Sitznachbarn das Merkmal zuordnen.
 
 <center> 10 Minuten {{< fa clock >}} </center>
 
@@ -612,17 +644,6 @@ Pädagogische Hochschule Karlsruhe <br>
 
 :::
 
-# Classroom Management {{< fa users >}}{.cent1}
-
-::: notes
-
-- Motivation: CM wird von Novizen als Herausforderung wahrgenommen
-  - kann erlernt werden
-  - einer der zentralsten Prädiktoren für Schüler:innenlernen
-  - wichtiger Faktor um Belastungserleben entgegen zu wirken 
-  - Strategien erlernen, um mit Komplexität umzugehen
-  
-:::
 
 ## Geplante Pausen {{< fa mug-hot >}}
 
@@ -636,14 +657,7 @@ Pädagogische Hochschule Karlsruhe <br>
 
 > ca. 11:50 Uhr - 12:10 Uhr
 
-
-## Lernziele {{< fa bullseye >}}
-
-* Techniken der Klassenführung nach Kounin kennen und anwenden können 
-* Potenziale und Herausforderungen im Umgang mit Unterrichtsvideos kennen
-* Grundlegende Herangehensweisen videobasierter Reflektion anwenden können
-
-## Was erwartet Sie heute?
+## Was erwartet Sie heute? {{< fa list-ol >}}
 
 * Classroom Management 
     + Historische Entwicklung
@@ -653,9 +667,27 @@ Pädagogische Hochschule Karlsruhe <br>
     + Einführung in die Analyseschritte 
     + Durchführung der Videoanalyse
 
-# Classroom Management
+## Lernziele {{< fa bullseye >}}
 
-## Komplexität des Unterrichts
+* Techniken der Klassenführung nach Kounin kennen und anwenden können 
+* Potenziale und Herausforderungen im Umgang mit Unterrichtsvideos kennen
+* Grundlegende Herangehensweisen videobasierter Reflektion anwenden können
+
+
+# Classroom Management {{< fa users >}} {.cent1}
+
+
+::: notes
+
+- Motivation: CM wird von Novizen als Herausforderung wahrgenommen
+  - kann erlernt werden
+  - einer der zentralsten Prädiktoren für Schüler:innenlernen
+  - wichtiger Faktor um Belastungserleben entgegen zu wirken 
+  - Strategien erlernen, um mit Komplexität umzugehen
+  
+:::
+
+## Komplexität des Unterrichts {{< fa layer-group >}}
 
 „Aushalten können“ der komplexen Anforderungen im Klassenzimmer <br> 
 &rarr; wichtige Bedingung für Classroom Management (Syring 2017, S.22) <br>
@@ -1022,12 +1054,14 @@ ADD NEGATIVBEISPIEL Digitalisierung bei Cocabora
 |
 <center> Kiel, Frey & Weiß (2016; S. 82) </center>
 
+
+::: {.fragment}
 <br> 
 <br> 
 &rarr; Unterrichtsfluss wird erst dann zum Thema, wenn er nicht vorhanden ist. <br>
 &rarr; Positivbeispiele fallen in der Unterrichtsbeobachtung eher weniger auf. <br>
 &rarr; Führt dazu, dass die Gesamtklasse in ihrem Aufmerksamkeitsstrom unterbrochen wird, d.h. sie muss mit dem Aufnehmen der eigentlichen Aufgabe wieder neu fokussiert werden.
-
+:::
 
 ::: notes
 
@@ -1037,7 +1071,7 @@ ADD NEGATIVBEISPIEL Digitalisierung bei Cocabora
 :::
 
 
-## [Vertiefung der Techniken {{< fa wrench >}}]{style="color:black;"} {background-image="img/Fluss.png"}
+## [Vertiefung: Reibungslosigkeit und Schwung {{< fa wrench >}}]{style="color:black;"} {background-image="img/Fluss.png"}
 
 
 ::: {.fragment} 
@@ -1074,9 +1108,9 @@ Was unterstützt den Unterrichtsfluss?
 :::
 
 
-## [Vertiefung der Techniken {{< fa wrench >}}]{style="color:black;"} {background-image="img/Fluss.png"}
+## [Vertiefung: Reibungslosigkeit und Schwung {{< fa wrench >}}]{style="color:black;"} {background-image="img/Fluss.png"}
 
-::: {style="font-size: 0.60em"}
+::: {style="font-size: 0.50em"}
 
 ::: {.column width='50%'}
 __1. Orientierungssicherheit__
@@ -1136,7 +1170,7 @@ Zurück zum Fluss: Notieren sie sich den Stolperstein oder den Ast, der für sie
 
 :::
 
-# Einführung in die Analyse von Unterrichtsvideos {{< fa video >}}
+# Einführung in die Analyse von Unterrichtsvideos {{< fa video >}}{.cent1}
 
 
 
@@ -1237,12 +1271,16 @@ Herausforderungen:
 | Analyseschritt | Mögliche Leitfragen | Beispielantworten |
 |--|----------|----------|
 |1. [__relevante Situationen identifizieren__]{.imp2}| - Welche Situationen sind relevant bzw. interessant vor dem Hintergrund der gewählten Theorie (im Seminar: Classroom Management)? <br>*Tipp: Schauen Sie sich das Video zunächst einmal am Stück an, bevor Sie in der zweiten Runde die relevanten Situationen identifizieren.*| Unterrichtsbeginn|
-2. ausgewählte [__Situationen beschrieben__]{.imp2}|- Was geschieht? <br> - Wen sehe ich? <br> - Was sehe ich? <br> - Was wird gesprochen? | - Unterricht ist seit einigen Minuten in Gang <br> - Ein Schüler kommt zu spät <br> - Lehrperson unterbricht ihre aktuellen Erklärungen und widmet sich dem zuspätkommenden Schüler. |
-3. ausgewählte [__Situationen erklären__]{.imp2}, auch durch das Anwenden des konzeptuellen [__Wissens zum Thema Classroom Management__]{.imp2} auf die Unterrichtssituation [__anwenden__]{.imp2} | - Wie handelt die Lehrperson? <br> - Welche Ursachen haben diese Handlungen?  <br> - Welche Konsequenzen haben diese Handlungen? | - Lehrperson unterbricht ihren Unterricht, widmet sich ausschließlich dem Schüler. Da sie nur diesem Schüler ihre volle Aufmerksamkeit widmet, ist die Überlappung eingeschränkt. <br> - Sie hält dem Schüler eine ausführliche Standpauke, die insgesamt 20 Sekunden dauert. Möglicherweise ist der Schüler schon häufiger zu spät gekommen, obwohl "Pünktlichkeit" als Regel festgelegt ist. Die Lehrperson überproblematisiert das Zuspätkommen und verliert so den Schwung ihres Unterrichts. |
-4. [__mögliche Handlungsalternativen erörtern__]{.imp2} | Wie könnte die Lehrkraft alternativ handeln? | - Variante A: Die Lehrperson nickt dem zuspätkommenden Schüler zu und oder spricht ihn nach der Schule an. <br> - Variante B: Die Lehrperson hat ein System etabliert (z.B. Kärtchen oder Name an bestimmter Tafelstelle), das Schüler:innen darauf hinweist, dass sie am Ende der Stunde zu ihr kommen sollen. |
-5. [__Beurteilung/Entscheidung vor dem Hintergrund der Theorie (im Seminar: Classroom Management)__]{.imp2} | - Wie beurteile ich die Handlungen der Lehrkraft? <br> - Welche Handlungsalternative würde ich wählen? | - Die Handlung der Lehrkraft ist problematisch, da eine effektive Klassenführung gefährdet ist. <br> - Ich würde mich für Variante B entscheiden, um zentrale Merkmale der Klassenführung - Überlappung und Schwung - zu gewährleisten und zusätzlich mit Ritualen zu arbeiten.|
+2. ausgewählte [__Situation beschreiben__]{.imp2}|Was ist die Ausgangssituation ? (z.B. Was geschieht? Wen sehe ich? Was sehe ich?; Hilfestellung: Standbild) | Schüler:innen sitzen auf ihren Plätzen. Lehrperson steht vor der Klasse. Ein Schüler betritt den Raum. |
+3. [__mögliche Handlungsalternativen (inklusive der Handlung der Lehrperson) erörtern__]{.imp2} | - Wie handelt die Lehrperson? <br> - Welche Handlungen sind noch denkbar? | - Handlungsalternative 1 (tatsächliche Handlung der Lehrperson): Lehrperson unterbricht ihren Unterricht, widmet sich ausschließlich dem Schüler zu. <br> - Sie hält dem Schüler eine ausführliche Standpauke, die insgesamt 20 Sekunden dauert. <br> - Handlungsalternative 2: Die Lehrperson nickt dem zuspätkommenden Schüler zu und spricht ihn nach der Schule an.|
+4.[__Handlungsalternativen erklären__]{.imp2}, insbesondere durch das Anwenden des konzeptuellen [__Wissens zum Thema Classroom Management__]{.imp2} | - Welche Ursachen haben diese Handlungen?  <br> - Welche Konsequenzen haben diese Handlungen? - Welche Merkmale des Classroom Managements werden (nicht) angewendet ? | - Handlungsalternative 1: Da die Lehrperson nur diesem Schüler ihre volle Aufmerksamkeit widmet, ist die Überlappung eingeschränkt (-). <br> - Möglicherweise ist der Schüler schon häufiger zu spät gekommen, obwohl "Pünktlichkeit" als Regel festgelegt ist. Die Lehrperson überproblematisiert das Zuspätkommen und verliert so den Schwung ihres Unterrichts (-). <br> - Handlungsalternative 2: Da die Lehrperson dem Schüler zu nickt und ihre Erklärungen weiterführt, handelt sie überlappend (+). Außerdem verlagert sie das Gespräch auf die Zeit nach dem Unterricht, wodurch Reibungslosigkeit und Schwung gewährleistet ist (+). |
+5. [__Beurteilung/Entscheidung vor dem Hintergrund der Theorie (im Seminar: Classroom Management)__]{.imp2} | - Wie beurteile ich die Handlungen der Lehrkraft? <br> - Welche Handlungsalternative würde ich wählen? | - Die Handlung der Lehrkraft ist problematisch, da eine effektive Klassenführung gefährdet ist. <br> - Ich würde mich für Handlungsalternative 2 entscheiden, um zentrale Merkmale der Klassenführung - Überlappung, Reibungslosigkeit und Schwung - zu gewährleisten.|
 
+::: notes
 
+optional, gerade bei fremden Videos wie in der Hausarbeit: Kontextinformationen 3. Stunde, zuvor große Pause etc. nennen
+
+:::
 
 ## Unterrichtssequenz analysieren {{< fa file-pen >}}{.scrollable}
 
@@ -1253,7 +1291,7 @@ Herausforderungen:
 3. Wie beschreiben Sie die ausgewählte Situation? Machen Sie sich hierfür bitte Notizen! Diese brauchen Sie zu einem späteren Zeitpunkt.
 
 > Einzelarbeit: <br>
-4. Öffnen Sie die Aktivität "Videoanalyse: Experimente zum Thema Magnetismus" im Innovationspace. Nutzen Sie gerne auch die Datei "Techniken der Klassenführung - ein Überblick". Erklären Sie gemäß des dritten Analyseschritts "Erklären" (F.10) die Unterrichtssituation, die wir gemeinsam beschrieben haben. Greifen Sie dabei auch auf die Techniken der Klassenführung nach Kounin zurück. Halten Sie Ihre Teilanalyse im in Stichpunkten __im Online-Textfeld im Innovationspace__ fest.
+4. Öffnen Sie die Aktivität "Videoanalyse: Experimente zum Thema Magnetismus" im Innovationspace. Nutzen Sie gerne auch die Datei "Techniken der Klassenführung - ein Überblick". Erklären Sie gemäß des dritten Analyseschritts "Erklären" (F.46) die Unterrichtssituation, die wir gemeinsam beschrieben haben. Greifen Sie dabei auch auf die Techniken der Klassenführung nach Kounin zurück. Halten Sie Ihre Teilanalyse im in Stichpunkten __im Online-Textfeld im Innovationspace__ fest.
 
 > Plenum <br> 
 5. Sammlung der Erklärungen <br> 
@@ -1295,8 +1333,8 @@ Herausforderungen:
 
 2. Wählen Sie gemeinsam in der Gruppe __1 Szene des Unterrichtsvideos__ aus, die Sie gemäß der im Seminar formulierten Analyseschritte analysieren (vgl. Folie 46). *Hinweis: Der theoretische Hintergrund auf den Sie sich in Analyseschritt 3 beziehen sollen, umfasst Kounins Techniken der Klassenführung. Halten Sie Ihre Gedanken für den jeweiligen Analyseschritt schriftlich in Stichpunkten fest.*
 
-3. Laden Sie am Ende Ihrer Analyse die Stichpunkte unter der Aktivität "Videoanalyse: Schwimmen und Sinken" im Innovationspace hoch und bereiten Sie sich auf eine fünfminütige Vorstellung Ihres Analyseprozesses morgen vor.
-    - Legen Sie fest wer aus Ihrer Gruppe (max. 2 Personen) das Beispiel vorstellt. Beschreiben Sie was in dieser Situation passiert ist, wie Sie diese vor dem Hintergrund der Techniken nach Kounin erklären, welche Handlungsalternativen Sie sehen und wie Sie diese bewerten.
+3. Laden Sie am Ende Ihrer Analyse die Stichpunkte unter der Aktivität "Videoanalyse: Schwimmen und Sinken" im Innovationspace hoch und bereiten Sie sich auf eine fünfminütige Vorstellung Ihres Analyseprozesses vor.
+    - Legen Sie fest wer aus Ihrer Gruppe (max. 2 Personen) das Beispiel vorstellt. Beschreiben Sie in der Vorstellung was in dieser Situation passiert ist, wie Sie diese vor dem Hintergrund der Techniken nach Kounin erklären, welche Handlungsalternativen Sie sehen und wie Sie diese bewerten.
     - Die Vorstellung findet in der Großgruppe statt.
 
 [{{< fa exclamation >}}]{.imp2} Die Gruppenzusammensetzung (8 x 4-er und 1x 3-er Gruppen) dürfen Sie selbst entscheiden; tragen Sie ihre Gruppe in die Liste ein.
@@ -1378,7 +1416,7 @@ Pädagogische Hochschule Karlsruhe <br>
 
 > ca. 11:50 Uhr - 12:10 Uhr
 
-## Was erwartet Sie heute?
+## Was erwartet Sie heute? {{< fa list-ol >}}
 
 * Einführung in die Analyse von Unterrichtsvideo
     + Durchführung der Videoanalyse (Fortsetzung)
@@ -1395,15 +1433,7 @@ Pädagogische Hochschule Karlsruhe <br>
 
 ## Ihr Arbeitsauftrag - Teil 2 {{< fa pen >}}{.scrollable}
 
-
-1. ...
-
-2. ...
-
-3. 5-minütige Vorstellung Ihres Analysebeispiels. 
-
-4. 10-minütige Diskussion Ihrer Vorstellungen in der Großgruppe.
-
+> Nun hören wir uns in der Großgruppe die Analysebeispiele aller Gruppen an. Bitte beachten Sie, dass Sie als Gruppe jeweils 5 Minuten Zeit für Ihre Vorstellung haben. Anschließend diskutieren wir gemeinsam ca. 10 Minuten über Ihre Vorstellungen.
 
 ::: notes
 - in 10 Minuten Präsentationen rahmen
@@ -1636,17 +1666,17 @@ weitere Differenzierung:
 ::: 
 
 
-##  Arbeitsauftrag Videoanalyse (Teil 2) {{< fa pen >}} {.smaller}
+##  Peer Feedback zur Videoanalyse (Teil 2) {{< fa pen >}} {.smaller .scrollable}
 
-__Teil 1:__ 
+__Teil 1:__ <br>
 Schauen Sie sich Ihren Videoausschnitt nochmals an, den Sie heute morgen in Ihrer Gruppe vorgestellt haben. Analysieren Sie diesen Videoausschnitt erneut, indem Sie 
 
-* in Einzelarbeit {{< fa user >}}
-* gemäß der Analyseschritte nach Syring (2017) und Kohler et al. (2015) auch die Classroom Management-Merkmale nach Evertson und Kolleg:innen berücksichtigen {{< fa list >}}. D.h. Formulieren Sie Ihre bereits erstellten Stichpunkte für die Beschreibung aus und überarbeiten Sie die Schritte Erklären, Handlungsalternativen und ggf. die Entscheidung.  
-* Verfassen Sie Ihren __Fließtext im Online-Textfeld__ der Aktivität "Videoanalyse - Teil 2: Schwimmen und Sinken (Peerfeedback)" {{< fa upload >}} (Einreichungsphase).
+* in Einzelarbeit
+* gemäß der Analyseschritte nach Syring (2017) und Kohler et al. (2015) auch die Classroom Management-Merkmale nach Evertson und Kolleg:innen berücksichtigen. D.h. Formulieren Sie Ihre bereits erstellten Stichpunkte für die Beschreibung aus und überarbeiten Sie die Schritte Erklären, Handlungsalternativen und ggf. die Entscheidung.  
+* Verfassen Sie Ihren __Fließtext im Online-Textfeld__ der Aktivität "Videoanalyse - Teil 2: Schwimmen und Sinken (Peerfeedback)" (Einreichungsphase).
 
-__Teil 2__
-Sie erhalten zufällig eine Ausarbeitung einer Kommilitonin / eines Kommilitonen (diese Ausarbeitung kann auch aus der anderen Seminargruppe stammen). Geben Sie nun anhand vorgegebener Fragen ein Feedback zur zugeteilten Analyse.
+__Teil 2:__ <br>
+Sie erhalten zufällig eine Ausarbeitung einer Kommilitonin / eines Kommilitonen (diese Ausarbeitung kann auch aus der anderen Seminargruppe stammen). Geben Sie nun unter "" der Aktivität Aktivität "Videoanalyse - Teil 2: Schwimmen und Sinken (Peerfeedback)" anhand der vorgegebenen Fragen ein Feedback zur zugeteilten Analyse.
 
 ::: notes
 
@@ -1661,3 +1691,23 @@ Zusammenfassung des aktuellen Forschungsstandes rund um Classroom Management fin
 
 > Gold, B., & Syring, M. (2025). Klassenführung/Klassenmangagement. In M. Syring, T. Bohl, A. Gröschner, & A. Scheunpflug (Hrsg.). *Studienbuch Bildungswissenschaften 2. Unterricht und Schule gestalten.* https://doi.org/10.36198/9783838562193
 
+
+## Literatur
+
+Achilles, C. M., Bain, H. P., Bellot, F., Boyd-Zaharias, J., Finn, J., Folger, J., … Word, E. (1985). The state of Tennessee’s student/teacher achievement ratio (STAR) project (Technical {{Report}}). Tennessee State Department of Educatbn.
+Berliner, D. C. (2005). The near impossibility of testing for teacher quality. Journal of Teacher Education, 56(3), 205–213.
+Habermas, J. (2014). Theorie und Praxis: Sozialphilosophische Studien (9. Aufl). Frankfurt am Main: Suhrkamp.
+Kirk-Johnson, A., Galla, B. M., & Fraundorf, S. H. (2019). Perceiving effort as poor learning: The misinterpreted-effort hypothesis of how experienced effort and perceived learning relate to study strategy choice. Cognitive Psychology, 115, 101237.
+Klieme, E. (2019). Unterrichtsqualität. In M. Harring, C. Rohlfs, & M. Gläser-Zikuda (Eds.), Handbuch Schulpädagogik (pp. 393–408). Waxmann.
+Kunter, M., & Trautwein, U. (2013). Psychologie des Unterrichts. Paderborn: UTB.
+Massingham, P. (2019). An Aristotelian interpretation of practical wisdom: The case of retirees. Palgrave Communications, 5(1), 1–13.
+Meyer, H. (2021). Was ist guter Unterricht? (15. Auflage). Berlin: Cornelsen.
+Pietsch, M. (2010). Evaluation von unterrichtsstandards. Zeitschrift Für Erziehungswissenschaft, 13(1), 121–148.
+Praetorius, A. K., Klieme, E., Herbert, B., & Pinger, P. (2018). Generic dimensions of teaching quality: The German framework of three basic dimensions. Mathematics Education, 50(3), 407–426.
+Rogowsky, B. A., Calhoun, B. M., & Tallal, P. (2015). Matching learning style to instructional method: Effects on comprehension. Journal of Educational Psychology, 107(1), 64–78.
+Slavin, R. E. (2010). Co-operative learning: What makes group-work work? In H. Dumont, D. Istance, & F. Benavides (Eds.), The nature of learning (pp. 161–178). Paris: OECD.
+
+
+
+Doyle, W. (2006). Ecological approaches to classroom management. In C. M. Evertson & C. S. Weinstein (Hrsg.), Handbook of Classroom Management (S. 97–125). Mahwah, NJ: Lawrence Erlbaum.
+Kunter, M. & Trautwein, U. (2013). Psychologie des Unterrichts. Paderborn u.a.: Schöningh.
