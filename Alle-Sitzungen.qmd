@@ -11,7 +11,6 @@ format:
     pdf-separate-fragments: true
     pdfexport: true
 bibliography: references.bib
-csl: apa.csl
 editor_options: 
   chunk_output_type: console
 lightbox: true
@@ -128,11 +127,12 @@ Auf all diesen Ebenen – positive Erlebnisse – Bewusstmachung dessen – Ress
 * Blockzeiten jeweils von 08:00 bis 13:00 Uhr
     + pro Tag mind. 40 Minuten Pause 
     + geplante Pausen können flexibel angepasst werden
-* Bis spätestens Dienstagvormittag Ihre Wunschvertiefung in Liste eintragen
+* Bis spätestens Dienstagvormittag Ihre Wunschvertiefung in die ausgelegten Listen eintragen
 * Informationsblock zur Studienleistung/Modulprüfung findet am Freitag statt
 * Seminar steht und fällt mir Ihrer Aktivität
     + Tag 1 und 2 verschiedene Inputphasen
     + Tag 3, 4 und 5 viele Aktivitätsphasen
+* Eigene Kopfhörer ab Dienstag mitbringen
 * Noch offene Fragen Ihrerseits?
 
 ## Geplante Pausen {{< fa mug-hot >}}
@@ -215,7 +215,7 @@ Optimale Ausprägung ist immer eine Frage der Adaptivität (der Passung) – an 
 
 > Lehrer:innen und Studierende sind immer wieder der Meinung die Frage nach »Merkmalen guten Unterrichts« könne mit dem »Alltagsverstand« genauso beantwortet werden, wie mit Unterrichtsforschung.
 
-ADD LINK ZUR UMFRAGE
+https://survey.ph-karlsruhe.de/Meinung-zu-Forschung/
 
 ::: notes
 -	Lehrer:innen und Lehramtsstudierende sind oft der Meinung, dass man mit dem Alltagsverstand - Erfahrungen, practical wisdom ... - genauso gut wie mit Unterrichtsforschung beantworten kann, was Merkmale guten Unterrichts sind 
@@ -267,16 +267,16 @@ ggsave(
 ::: {style="font-size: 0.5em"}
 * Klassengröße: 
     * ~~Eine Reduktion der durchschnittlichen Klassengröße von 25 auf 15 steigert die Leistungsfähigkeit der Schüler\*innen deutlich.~~
-    * Im STAR-Experiment [@achilles1985] waren die Effektstärken eher klein: ![](img/STAR.png){width="25%"}
+    * Im STAR-Experiment (Achilles et al., 1985) waren die Effektstärken eher klein: ![](img/STAR.png){width="25%"}
 * Much Pain - no Gain: 
     * ~~Wenn Schüler\*innen berichten, eine Lernaktivität fühle sich anstrengend an, spricht das dafür, dass diese Lernaktivität nicht optimal adaptiv geplant war.~~
-    * Retrieval Practice wird als viel anstrengender als Restudying empfunden, kann aber als klar lernwirksamer bezeichnet werden [@kirk-johnson2019] 
+    * Retrieval Practice wird als viel anstrengender als Restudying empfunden, kann aber als klar lernwirksamer bezeichnet werden (Kirk-Johnson et al., 2019) 
 * Der Hans machts eh: 
     * ~~Gruppenarbeit ist meist weniger effektiv als Standardmethoden und fördert auch affektive Outcomes wie Motivation und Emotionen von Lernenden nicht.~~
-    * Eine Review von qualitativ hochwertigen Studien zeigt eine klare Überlegenheit kooperativen Lernens bzgl. affektiver Outcomes. Bzgl. des Lernzuwachses sind »Gruppenziele bei individueller Verantwortlichkeit« notwendige Kriterien für die Überlegenheit [@slavin2010].
+    * Eine Review von qualitativ hochwertigen Studien zeigt eine klare Überlegenheit kooperativen Lernens bzgl. affektiver Outcomes. Bzgl. des Lernzuwachses sind »Gruppenziele bei individueller Verantwortlichkeit« notwendige Kriterien für die Überlegenheit (Slavin, 2010).
 * Lernstile: 
     * ~~Bedient man den von Schülern bevorzugten VARK Lernstil (visual [V], auditiv [A], read/write [R], kinesthetic [K]) nach Fleming lernen diese mehr.~~
-    * Qualitativ hochwertige Studien  [z.B. @rogowsky2015] finden keine Bestätigung für die »Verzahnungshypothese«.
+    * Qualitativ hochwertige Studien  (z.B. Rogowsky et al., 2015) finden keine Bestätigung für die »Verzahnungshypothese«.
     
 <!--
 * Gendern im Unterricht: 
@@ -334,7 +334,7 @@ __Der Hans machts eh__
 __Lernstile__
 
 -	Studien finden keine Bestätigung für Lernstile, die über alle Fächer hinweg zu besseren Leistungen führen
-- Kogowsky und Kolleg:innen (2014) fokussierten auditory and visual learning style
+- Rogowsky und Kolleg:innen (2014) fokussierten auditory and visual learning style
 
 
 -	Was schließen wir daraus: unser Alltagsverstand kann uns doch auch immer in die Irre führen
@@ -346,8 +346,8 @@ __Lernstile__
 
 ## Wiss. Wissen & Handlungswissen {{< fa magnifying-glass >}} {.smaller}
 #### Charakteristika
-* Wissenschaftliches Wissen: Formal, explizit, propositional, diskursiv [@habermas2014]
-* Praktisches Wissen: Implizit, »embodied in action« [@massingham2019]
+* Wissenschaftliches Wissen: Formal, explizit, propositional, diskursiv (Habermas, 2014)
+* Praktisches Wissen: Implizit, »embodied in action« (Massingham, 2019)
 <br><br>
 
 
@@ -391,12 +391,12 @@ Praktisches Wissen:
     + Bestimmungsmerkmale von Unterricht: Planmäßigkeit, Professionalisierung, Institutionalisierung, Intentionalität
     + Qualität: keine stabile, einem Objekt innenwohnende Eigenschaft
 
-<center> ![Struktur nach [@berliner2005]](img/berliner4.png){width="200"} </center> 
+<center> ![Struktur nach Berliner (2005)](img/berliner4.png){width="200"} </center> 
 
-* Eine vglw. breite Definition nach Klieme [-@klieme2019, S. 396]:
+* Eine vglw. breite Definition nach Klieme (2019, S. 396):
 *»Unterrichtsqualität wird hier also verstanden als [Gesamtheit der empirisch beobachtbaren Merkmale des Unterrichtsgeschehens {{< fa eye >}}]{style="color: #d77d00;"}, die nachweislich mit der [Entwicklung der Lernenden im Sinne der Realisierung von Bildungs- und Erziehungszielen {{< fa chart-line >}}]{style="color: #0FA5D7;"} einhergehen.«*
 * Im Kontext aktueller empirischer (insb. deutschsprachiger) Forschung {{< fa eye >}}
-    + wird meistens die [Leistungsentwicklung]{style="color: #0FA5D7;"} als Kriterium fokussiert [@kunter2013b]
+    + wird meistens die [Leistungsentwicklung]{style="color: #0FA5D7;"} als Kriterium fokussiert (Kunter & Trautwein, 2013)
 
 
 ::: notes
@@ -455,7 +455,7 @@ Praktisches Wissen:
 
 ::: {.column width='33%'}
 #### Listen {{< fa list-check >}}
-* z.B. [@meyer2021]
+* z.B. Meyer (2021)
     * Strukturierung
     * Time on Task
     * Klarheit
@@ -467,7 +467,7 @@ Praktisches Wissen:
 
 ::: {.column width='33%'}
 #### Dimensionen {{< fa ruler-combined >}}
-* z.B. [@klieme2019]
+* z.B. Klieme (2019)
     * Klassenführung
     * Konstruktive Unterstützung
     * Kognitive Aktivierung
@@ -476,7 +476,7 @@ Praktisches Wissen:
 
 ::: {.column width='33%'}
 #### Stufen {{< fa stairs >}}
-* z.B. [@pietsch2010]
+* z.B. Pietsch (2010)
 
 ![](img/Pietsch_Stufenmodell.png){width="500"}
 :::
@@ -501,8 +501,8 @@ Praktisches Wissen:
 
 * ... 
 * Im Kontext aktueller empirischer (insb. deutschsprachiger) Forschung {{< fa eye >}}
-    + wird meistens die [Leistungsentwicklung]{style="color: #0FA5D7;"} als Kriterium fokussiert [@kunter2013b];
-    + werden meistens sog. generische Tiefenstrukturen als Unterrichtsmerkmale betrachtet [@praetorius2018]
+    + wird meistens die [Leistungsentwicklung]{style="color: #0FA5D7;"} als Kriterium fokussiert  (Kunter & Trautwein, 2013);
+    + werden meistens sog. generische Tiefenstrukturen als Unterrichtsmerkmale betrachtet (Praetorius et al., 2018)
         * [Klassenführung]{style="color: #d77d00;"} (classroom management)
         * [Konstruktive Unterstützung]{style="color: #d77d00;"} (student support)
         * [Kognitive Aktivierung]{style="color: #d77d00;"} (cognitive activation)
@@ -532,14 +532,14 @@ Implikation der Definiton:
 
 ## Vertiefung {{< fa chalkboard-teacher >}}
 
-> Vertiefen Sie die Inhalte nochmals mit Ihrer Sitznachbarin/Ihrem Sitznachbarn und diskutieren Sie dabei auch Ihre Fragen, die Sie an den Text von Drechsler & Schindler (2019) gestellt haben.
+> Vertiefen Sie die Inhalte nochmals mit Ihrer Sitznachbarin/Ihrem Sitznachbarn und diskutieren Sie dabei auch Ihre Fragen, die Sie an den Text von Drechsel & Schindler (2019) gestellt haben.
 
 <center> 5 Minuten {{< fa clock >}} </center>
 
 # Arbeit an Ihren Fällen {{< fa file-lines >}}{.cent1}
 
 > „Ein Fall ist eine exemplarische Schlüsselsituation pädagogischen
-Handelns“ (Goeze u. Hartz, 2010)
+Handelns“ (Goeze & Hartz, 2010)
 
 ## Peer-Feedback Aufgabe {{< fa user-group >}} {.smaller}
 
@@ -1274,7 +1274,7 @@ Herausforderungen:
 2. ausgewählte [__Situation beschreiben__]{.imp2}|Was ist die Ausgangssituation ? (z.B. Was geschieht? Wen sehe ich? Was sehe ich?; Hilfestellung: Standbild) | Schüler:innen sitzen auf ihren Plätzen. Lehrperson steht vor der Klasse. Ein Schüler betritt den Raum. |
 3. [__mögliche Handlungsalternativen (inklusive der Handlung der Lehrperson) erörtern__]{.imp2} | - Wie handelt die Lehrperson? <br> - Welche Handlungen sind noch denkbar? | - Handlungsalternative 1 (tatsächliche Handlung der Lehrperson): Lehrperson unterbricht ihren Unterricht, widmet sich ausschließlich dem Schüler zu. <br> - Sie hält dem Schüler eine ausführliche Standpauke, die insgesamt 20 Sekunden dauert. <br> - Handlungsalternative 2: Die Lehrperson nickt dem zuspätkommenden Schüler zu und spricht ihn nach der Schule an.|
 4.[__Handlungsalternativen erklären__]{.imp2}, insbesondere durch das Anwenden des konzeptuellen [__Wissens zum Thema Classroom Management__]{.imp2} | - Welche Ursachen haben diese Handlungen?  <br> - Welche Konsequenzen haben diese Handlungen? - Welche Merkmale des Classroom Managements werden (nicht) angewendet ? | - Handlungsalternative 1: Da die Lehrperson nur diesem Schüler ihre volle Aufmerksamkeit widmet, ist die Überlappung eingeschränkt (-). <br> - Möglicherweise ist der Schüler schon häufiger zu spät gekommen, obwohl "Pünktlichkeit" als Regel festgelegt ist. Die Lehrperson überproblematisiert das Zuspätkommen und verliert so den Schwung ihres Unterrichts (-). <br> - Handlungsalternative 2: Da die Lehrperson dem Schüler zu nickt und ihre Erklärungen weiterführt, handelt sie überlappend (+). Außerdem verlagert sie das Gespräch auf die Zeit nach dem Unterricht, wodurch Reibungslosigkeit und Schwung gewährleistet ist (+). |
-5. [__Beurteilung/Entscheidung vor dem Hintergrund der Theorie (im Seminar: Classroom Management)__]{.imp2} | - Wie beurteile ich die Handlungen der Lehrkraft? <br> - Welche Handlungsalternative würde ich wählen? | - Die Handlung der Lehrkraft ist problematisch, da eine effektive Klassenführung gefährdet ist. <br> - Ich würde mich für Handlungsalternative 2 entscheiden, um zentrale Merkmale der Klassenführung - Überlappung, Reibungslosigkeit und Schwung - zu gewährleisten.|
+5. [__Beurteilung/Entscheidung vor dem Hintergrund der Theorie (im Seminar: Classroom Management)__]{.imp2} | Für welche Handlungsalternative würde ich mich entscheiden? Warum? | - Die Handlung der Lehrkraft ist problematisch, da eine effektive Klassenführung gefährdet ist. <br> - Ich würde mich für Handlungsalternative 2 entscheiden, um zentrale Merkmale der Klassenführung - Überlappung, Reibungslosigkeit und Schwung - zu gewährleisten.|
 
 ::: notes
 
@@ -1291,7 +1291,7 @@ optional, gerade bei fremden Videos wie in der Hausarbeit: Kontextinformationen 
 3. Wie beschreiben Sie die ausgewählte Situation? Machen Sie sich hierfür bitte Notizen! Diese brauchen Sie zu einem späteren Zeitpunkt.
 
 > Einzelarbeit: <br>
-4. Öffnen Sie die Aktivität "Videoanalyse: Experimente zum Thema Magnetismus" im Innovationspace. Nutzen Sie gerne auch die Datei "Techniken der Klassenführung - ein Überblick". Erklären Sie gemäß des dritten Analyseschritts "Erklären" (F.46) die Unterrichtssituation, die wir gemeinsam beschrieben haben. Greifen Sie dabei auch auf die Techniken der Klassenführung nach Kounin zurück. Halten Sie Ihre Teilanalyse im in Stichpunkten __im Online-Textfeld im Innovationspace__ fest.
+4. Öffnen Sie die Aktivität "Videoanalyse: Experimente zum Thema Magnetismus" im Innovationspace. Nutzen Sie gerne auch die Datei "Techniken der Klassenführung - ein Überblick". Erklären Sie gemäß des vierten Analyseschritts "Erklären" (F.45) die Unterrichtssituation, die wir gemeinsam beschrieben haben. Greifen Sie dabei auch auf die Techniken der Klassenführung nach Kounin zurück. Halten Sie Ihre Teilanalyse im in Stichpunkten __im Online-Textfeld im Innovationspace__ fest.
 
 > Plenum <br> 
 5. Sammlung der Erklärungen <br> 
@@ -1323,7 +1323,7 @@ optional, gerade bei fremden Videos wie in der Hausarbeit: Kontextinformationen 
 
 ::: {style="font-size: 0.57em"}
 
-1. Schauen Sie sich zunächst das Unterrichtsvideo mit dem Titel __"Klassenperspektive: Schwimmen/Sinken. 1. Unterrichtseinheit 1. Doppelstunde - 2. Klasse"__ in Ruhe und für sich an ohne dabei einen der Analyseschritte (vgl. F. 46) durchzuführen. Das Unterrichtsvideo finden Sie im Metaportal "unterrichtsvideos.net". Achten Sie dabei darauf, dass Sie das Video auswählen, das sich auf die __1. Doppelstunde__ bezieht (dies müsste das erste Video sein, das Ihnen angezeigt wird). Um das Video abzurufen, klicken Sie im Portal auf "Videosuche". Folgende Angaben können Ihnen die Suche erleichtern:
+1. Schauen Sie sich zunächst das Unterrichtsvideo mit dem Titel __"Klassenperspektive: Schwimmen/Sinken. 1. Unterrichtseinheit 1. Doppelstunde - 2. Klasse"__ in Ruhe und für sich an ohne dabei einen der Analyseschritte (vgl. F. 45) durchzuführen. Das Unterrichtsvideo finden Sie im Metaportal "unterrichtsvideos.net". Achten Sie dabei darauf, dass Sie das Video auswählen, das sich auf die __1. Doppelstunde__ bezieht (dies müsste das erste Video sein, das Ihnen angezeigt wird). Um das Video abzurufen, klicken Sie im Portal auf "Videosuche". Folgende Angaben können Ihnen die Suche erleichtern:
 
 - Nutzergruppe: Lehramtsstudierende
 - Ort: Sonstige Universität
@@ -1331,13 +1331,13 @@ optional, gerade bei fremden Videos wie in der Hausarbeit: Kontextinformationen 
 
 *Hinweis: Das Video wird ggf. nicht von Safari unterstützt, verwenden Sie also am besten einen anderen Internetbrowser.* <br>
 
-2. Wählen Sie gemeinsam in der Gruppe __1 Szene des Unterrichtsvideos__ aus, die Sie gemäß der im Seminar formulierten Analyseschritte analysieren (vgl. Folie 46). *Hinweis: Der theoretische Hintergrund auf den Sie sich in Analyseschritt 3 beziehen sollen, umfasst Kounins Techniken der Klassenführung. Halten Sie Ihre Gedanken für den jeweiligen Analyseschritt schriftlich in Stichpunkten fest.*
+2. Wählen Sie gemeinsam in der Gruppe __1 Szene des Unterrichtsvideos__ aus, die Sie gemäß der im Seminar formulierten Analyseschritte analysieren (vgl. Folie 45). *Hinweis: Der theoretische Hintergrund auf den Sie sich in Analyseschritt 4 beziehen sollen, umfasst Kounins Techniken der Klassenführung. Halten Sie Ihre Gedanken für den jeweiligen Analyseschritt schriftlich in Stichpunkten fest.*
 
 3. Laden Sie am Ende Ihrer Analyse die Stichpunkte unter der Aktivität "Videoanalyse: Schwimmen und Sinken" im Innovationspace hoch und bereiten Sie sich auf eine fünfminütige Vorstellung Ihres Analyseprozesses vor.
     - Legen Sie fest wer aus Ihrer Gruppe (max. 2 Personen) das Beispiel vorstellt. Beschreiben Sie in der Vorstellung was in dieser Situation passiert ist, wie Sie diese vor dem Hintergrund der Techniken nach Kounin erklären, welche Handlungsalternativen Sie sehen und wie Sie diese bewerten.
     - Die Vorstellung findet in der Großgruppe statt.
 
-[{{< fa exclamation >}}]{.imp2} Die Gruppenzusammensetzung (8 x 4-er und 1x 3-er Gruppen) dürfen Sie selbst entscheiden; tragen Sie ihre Gruppe in die Liste ein.
+[{{< fa exclamation >}}]{.imp2} Die Gruppenzusammensetzung dürfen Sie selbst entscheiden; tragen Sie ihre Gruppe in die Liste ein.
 
 
 ::: 
@@ -1692,22 +1692,57 @@ Zusammenfassung des aktuellen Forschungsstandes rund um Classroom Management fin
 > Gold, B., & Syring, M. (2025). Klassenführung/Klassenmangagement. In M. Syring, T. Bohl, A. Gröschner, & A. Scheunpflug (Hrsg.). *Studienbuch Bildungswissenschaften 2. Unterricht und Schule gestalten.* https://doi.org/10.36198/9783838562193
 
 
-## Literatur
+## Literatur {.scrollable}
 
-Achilles, C. M., Bain, H. P., Bellot, F., Boyd-Zaharias, J., Finn, J., Folger, J., … Word, E. (1985). The state of Tennessee’s student/teacher achievement ratio (STAR) project (Technical {{Report}}). Tennessee State Department of Educatbn.
-Berliner, D. C. (2005). The near impossibility of testing for teacher quality. Journal of Teacher Education, 56(3), 205–213.
-Habermas, J. (2014). Theorie und Praxis: Sozialphilosophische Studien (9. Aufl). Frankfurt am Main: Suhrkamp.
-Kirk-Johnson, A., Galla, B. M., & Fraundorf, S. H. (2019). Perceiving effort as poor learning: The misinterpreted-effort hypothesis of how experienced effort and perceived learning relate to study strategy choice. Cognitive Psychology, 115, 101237.
-Klieme, E. (2019). Unterrichtsqualität. In M. Harring, C. Rohlfs, & M. Gläser-Zikuda (Eds.), Handbuch Schulpädagogik (pp. 393–408). Waxmann.
-Kunter, M., & Trautwein, U. (2013). Psychologie des Unterrichts. Paderborn: UTB.
-Massingham, P. (2019). An Aristotelian interpretation of practical wisdom: The case of retirees. Palgrave Communications, 5(1), 1–13.
-Meyer, H. (2021). Was ist guter Unterricht? (15. Auflage). Berlin: Cornelsen.
-Pietsch, M. (2010). Evaluation von unterrichtsstandards. Zeitschrift Für Erziehungswissenschaft, 13(1), 121–148.
-Praetorius, A. K., Klieme, E., Herbert, B., & Pinger, P. (2018). Generic dimensions of teaching quality: The German framework of three basic dimensions. Mathematics Education, 50(3), 407–426.
-Rogowsky, B. A., Calhoun, B. M., & Tallal, P. (2015). Matching learning style to instructional method: Effects on comprehension. Journal of Educational Psychology, 107(1), 64–78.
-Slavin, R. E. (2010). Co-operative learning: What makes group-work work? In H. Dumont, D. Istance, & F. Benavides (Eds.), The nature of learning (pp. 161–178). Paris: OECD.
+Achilles, C. M., Bain, H. P., Bellot, F., Boyd-Zaharias, J., Finn, J., Folger, J., … Word, E. (1985). The state of Tennessee’s student/teacher achievement ratio (STAR) project (Technical Report). Tennessee State Department of Education. <br> 
 
+Berliner, D. C. (2005). The near impossibility of testing for teacher quality. Journal of Teacher Education, 56(3), 205–213. <br>
 
+Doyle, W. (2006). Ecological approaches to classroom management. In C. M. Evertson & C. S. Weinstein (Hrsg.), Handbook of Classroom Management (S. 97–125). Mahwah, NJ: Lawrence Erlbaum. <br>
 
-Doyle, W. (2006). Ecological approaches to classroom management. In C. M. Evertson & C. S. Weinstein (Hrsg.), Handbook of Classroom Management (S. 97–125). Mahwah, NJ: Lawrence Erlbaum.
-Kunter, M. & Trautwein, U. (2013). Psychologie des Unterrichts. Paderborn u.a.: Schöningh.
+Drechsel, B., & Schindler, A.-K. (2019). Unterrichtsqualität. In D. Urhahne, M. Dresel, & F. Fischer (Hrsg.), Psychologie für den Lehrberuf (S. 353–372). Springer. https://doi.org/10.1007/978-3-662-55754-9_18 <br>
+
+Gold, B., & Syring, M. (2025). Klassenführung/Klassenmangagement. In M. Syring, T. Bohl, A. Gröschner, & A. Scheunpflug (Hrsg.). *Studienbuch Bildungswissenschaften 2. Unterricht und Schule gestalten.* https://doi.org/10.36198/9783838562193 <br> 
+
+Haag, L., & Streber, D. (2012). Klassenführung: Erfolgreich unterrichten mit Classroom Management. Beltz. <br>
+
+Habermas, J. (2014). Theorie und Praxis: Sozialphilosophische Studien (9. Aufl). Frankfurt am Main: Suhrkamp. <br>
+
+Kiel, E., Frey, A., & Weiß, S. (2013). Trainingsbuch Klassenführung. Verlag Julius Klinkhardt. <br>
+
+Kirk-Johnson, A., Galla, B. M., & Fraundorf, S. H. (2019). Perceiving effort as poor learning: The misinterpreted-effort hypothesis of how experienced effort and perceived learning relate to study strategy choice. Cognitive Psychology, 115, 101237. <br>
+
+Klieme, E. (2019). Unterrichtsqualität. In M. Harring, C. Rohlfs, & M. Gläser-Zikuda (Eds.), Handbuch Schulpädagogik (pp. 393–408). Waxmann. <br> 
+
+Kohler, B., Prinz, E., Schneider, J., & Syring, M. (2015). Ein neuer Blick auf die Praxis. Selbst- und Fremdreflexion mithilfe von Unterrichtsvideos. Schulmagazin, 5(10). 11-14.
+
+Kounin, J. S. (2006). Techniken der Klassenführung (M. Gellert & C. Gellert, Übers.). Waxmann. <br>
+
+Krammer, K., & Reusser, K. (2005). Unterrichtsvideos als Medium der Aus- und Weiterbildung von Lehrpersonen. Beiträge zur Lehrerbildung(23), 35–50. https://doi.org/10.25656/01:13561 <br>
+
+Kunter, M., & Trautwein, U. (2013). Psychologie des Unterrichts. Paderborn: UTB. <br>
+
+Massingham, P. (2019). An Aristotelian interpretation of practical wisdom: The case of retirees. Palgrave Communications, 5(1), 1–13. <br>
+
+Meyer, H. (2021). Was ist guter Unterricht? (15. Auflage). Berlin: Cornelsen. <br> 
+
+Pietsch, M. (2010). Evaluation von unterrichtsstandards. Zeitschrift Für Erziehungswissenschaft, 13(1), 121–148. <br>
+
+Praetorius, A. K., Klieme, E., Herbert, B., & Pinger, P. (2018). Generic dimensions of teaching quality: The German framework of three basic dimensions. Mathematics Education, 50(3), 407–426. <br>
+
+Rogowsky, B. A., Calhoun, B. M., & Tallal, P. (2015). Matching learning style to instructional method: Effects on comprehension. Journal of Educational Psychology, 107(1), 64–78. <br>
+
+Schneider, J. (2016). Lehramtsstudierende analysieren Praxis: Ein Vergleich der Effekte unterschiedlicher fallbasierter Lehr-Lern-Arrangements. Tübingen: Universität Tübingen. <br>
+
+Schwindt, K. (2008). Lehrpersonen betrachten Unterricht: Kriterien für die kompetente Unterrichtswahrnehmung. Waxmann. <br>
+
+Seidel, T. (2020.). Klassenführung. In E. Wild & J. Möller, J. (Hrsg.). Pädagogische Psychologie. Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-61403-7 <br> 
+
+Seidel, T., & Shavelson, R. (2007). Teaching Effectiveness Research in the Past Decade: The Role of Theory and Research Design in Disentangling Meta-Analysis Results. Review of Educational Research, 77, 454–499. https://doi.org/10.3102/0034654307310317 <br>
+ 
+Slavin, R. E. (2010). Co-operative learning: What makes group-work work? In H. Dumont, D. Istance, & F. Benavides (Eds.), The nature of learning (pp. 161–178). Paris: OECD. <br>
+
+Syring, M. (2017). Classroom Management: Theorien, Befunde, Fälle - Hilfen für die Praxis. Vandenhoeck & Ruprecht.
+
+Syring, M., Reuschling, A., Bohl, T., Kleinknecht, M., Kuntze, S., & Rehm, M. (2013). Classroom-Management lehren und lernen. Zur Bedeutung des Konzepts im Unterricht und dessen Vermittlung in fallbasierten Seminaren in der Lehrerbildung (S. 75–91).
+
