@@ -129,7 +129,7 @@ Auf all diesen Ebenen – positive Erlebnisse – Bewusstmachung dessen – Ress
     + geplante Pausen können flexibel angepasst werden
 * Bis spätestens Dienstagvormittag Ihre Wunschvertiefung in die ausgelegten Listen eintragen
 * Informationsblock zur Studienleistung/Modulprüfung findet am Freitag statt
-* Seminar steht und fällt mir Ihrer Aktivität
+* Seminar steht und fällt mit Ihrer Aktivität
     + Tag 1 und 2 verschiedene Inputphasen
     + Tag 3, 4 und 5 viele Aktivitätsphasen
 * Eigene Kopfhörer ab Dienstag mitbringen
@@ -166,11 +166,7 @@ Auf all diesen Ebenen – positive Erlebnisse – Bewusstmachung dessen – Ress
 
 ::: notes
 
-* Heute widmen wir uns der UQ, was wir in der nächsten Sitzung dann fortführen werden
-
-- Ziele des Themenblocks
-- __schon als SuS in der Schule__ und Sie haben vielleicht auch schon ein __Praktikum hinter sich__
-- daher möchte ich mit ihnen einsteigen, indem ich Sie fragen, __welche Merkmale guten Unterrichts sie eigentlich schon kennen__ und für relevant halten
+* Heute widmen wir uns der UQ
 
 :::
 
@@ -187,7 +183,7 @@ Frau Müller: „Aber da langweilen sich die Schüler doch und wer sich langwe
 
 ::: notes
 
-Think-Pair-Share (ca. 10 Minuten)
+Think-Pair-Share (ca. 25 Min)
 Machen Sie sich Notizen (das ist immer hilfreich!) und berücksichtigen Sie Text, den Sie vorbereitend gelesen haben
 
 Evtl. sind Ihnen solche Gespräche aus dem Praktikum bekannt?
@@ -221,8 +217,11 @@ https://survey.ph-karlsruhe.de/Meinung-zu-Forschung/
 -	Lehrer:innen und Lehramtsstudierende sind oft der Meinung, dass man mit dem Alltagsverstand - Erfahrungen, practical wisdom ... - genauso gut wie mit Unterrichtsforschung beantworten kann, was Merkmale guten Unterrichts sind 
 -	starten wir daher mal mit einem kleinen Experiment, warum UQual-Forschung  überhaupt sinnig sein kann
 
--	Ergebnisse der Studis anschauen
--	Schauen wir mal, was die Forschung dazu sagt
+-	Schauen wir mal, was die Forschung zum Thema genderneutrale Sprache sagt
+    -	Tatsächlich Male Bias
+    -	Argumentiert, dass bei Gendersternchen eher ein Female Bias, aber wurde gezeigt, dass der Male Bias größer ist als der Female Bias
+    -	am ausgewogensten waren die Darstellungen, wenn sowohl männliche als auch weibliche Formen genannt wurden
+    - wie wird das untersucht: mentale Geschlechterdarstellungen/-repräsentationen, die beim Lesen hervorgerufen werden z.B. zwei Sätze und die Teilnehmenden sollen entscheiden, ob der zweite Satz eine plausible Fortsetzung des ersten Satzes ist. Im ersten Satz wird eine Gruppe an Menschen in Gender-Schreibweise, generischem Maskulinum oder in Beidnennung, im Folgesatz wird dann Bezug zu Männern/Frauen aus der Gruppe hergestellt
 
 - noch weitere Themen, bei der uns unsere Intiution trügen kann oder unsere Überzeugungen uns in die Irre führen können
 
@@ -278,12 +277,6 @@ ggsave(
     * ~~Bedient man den von Schülern bevorzugten VARK Lernstil (visual [V], auditiv [A], read/write [R], kinesthetic [K]) nach Fleming lernen diese mehr.~~
     * Qualitativ hochwertige Studien  (z.B. Rogowsky et al., 2015) finden keine Bestätigung für die »Verzahnungshypothese«.
     
-<!--
-* Gendern im Unterricht: 
-    * ~~Wenn Lehrer »Schüler« (generisches Maskulinum) sagen, werden weibliche und männliche Personen gleichermaßen adressiert. »Schülerinnen und Schüler« zu sagen ist also eher überkompliziert.~~
-    * Eher das Gegenteil ist der Fall: Der »Malebias« des Generischen Maskulinums ist sogar größer als der »Femalebias« des »Gendersterns« [@korner2022]
-    
---> 
 
 :::
 
@@ -311,12 +304,7 @@ __Much Pain – no Gain__
   - ist für die retrieval practice eine aktive Gedächtnissuche erforderlich - eine kognitiv anstrengende Aufgabe
 
 <!--
-__Gendern im Unterricht__
 
--	Tatsächlich Male Bias
--	Argumentiert, dass bei Gendersternchen eher ein Female Bias, aber wurde gezeigt, dass der Male Bias größer ist als der Female Bias
--	am ausgewogensten waren die Darstellungen, wenn sowohl männliche als auch weibliche Formen genannt wurden
-- wie wird das untersucht: mentale Geschlechterdarstellungen/-repräsentationen, die beim Lesen hervorgerufen werden z.B. zwei Sätze und die Teilnehmenden sollen entscheiden, ob der zweite Satz eine plausible Fortsetzung des ersten Satzes ist. Im ersten Satz wird eine Gruppe an Menschen in Gender-Schreibweise, generischem Maskulinum oder in Beidnennung, im Folgesatz wird dann Bezug zu Männern/Frauen aus der Gruppe hergestellt
 
 --> 
 __Der Hans machts eh__
@@ -381,6 +369,8 @@ Praktisches Wissen:
 
 - daher nun noch stärker mit UQ aus Forschungsperspektive
 
+PAUSE
+
 :::
 
 
@@ -405,9 +395,9 @@ Praktisches Wissen:
 * Die beiden Begriffe einzeln betrachtet: 
     * Unterricht:
     * keine einheitliche Definition von Unterricht in der pädagogischen Fachliteratur zu finden – Beschäftigung von Unterricht findet aus unterschiedlichen Perspektiven statt, führt zu unterschiedlichen Vorstellungen von Unterricht und damit Definitionen, z.B. Unterricht als sprachlicher Diskurs (sprachtheoretisch fundierte Bestimmung), Unterricht als soziomaterieller Zusammenhang von Praktiken (praxistheoretisch fundierte Bestimmung) – Beispiele aus der qualitativen Unterrichtsforschung
-    * Minimaldefinition von Terhart (1994): „Unterricht kann als langfristig organisierte Abfolge von Lehr- und Lernsituationen verstanden werden, die von ausgebildeten Lehrpersonen absichtsvoll geplant und initiiert werden und die dem Aufbau von Wissen sowie dem Erwerb von Fertigkeiten und Fähigkeiten der Lernenden dienen. Sie finden in der Regel in bestimmten dafür vorgesehenen Institutionen unter regelhaften Bedingungen statt.“  eignet sich, um Unterricht von anderen sozialen Situationen wir Erziehung und Sozialisation abzugrenzen.
+    * Minimaldefinition von Terhart (1994): „Unterricht kann als langfristig organisierte Abfolge von Lehr- und Lernsituationen verstanden werden, die von ausgebildeten Lehrpersonen absichtsvoll geplant und initiiert werden und die dem Aufbau von Wissen sowie dem Erwerb von Fertigkeiten und Fähigkeiten der Lernenden dienen. Sie finden in der Regel in bestimmten dafür vorgesehenen Institutionen unter regelhaften Bedingungen statt.“ -> eignet sich, um Unterricht von anderen sozialen Situationen wir Erziehung und Sozialisation abzugrenzen.
     * Bestimmungsmerkmale von Unterricht, die benannt werden: 
-        * Planmäßigkeit:  Verlaufsplanung, Jahresplanung, ... (im Vergleich zur Erziehung: Lehrplan liegt jedem Unterricht zugrunde) / Aufstellen von Regeln, Unterrichtszeiten / Kontrolle des Grades der Zielerreichung: Klausuren, … -> Planmäßigkeit wird in zeitlicher und sachlicher Struktur sichtbar   ABER: Planmäßigkeit darf nicht mit Determinismus verwechselt werden. 
+        * Planmäßigkeit:  Verlaufsplanung, Jahresplanung, ... (im Vergleich zur Erziehung: Lehrplan liegt jedem Unterricht zugrunde) / Aufstellen von Regeln, Unterrichtszeiten / Kontrolle des Grades der Zielerreichung: Klausuren, … -> Planmäßigkeit wird in zeitlicher und sachlicher Struktur sichtbar ->  ABER: Planmäßigkeit darf nicht mit Determinismus verwechselt werden. 
         * Professionalisierung: staatlich organisierte Lehrerbildung
         * Institutionalisierung: Lehrpläne, Kerncurricula, Schulgesetze, … -> Sicherheit der Ausbildung, Gleichwertigkeit der Abschlüsse. 
         * Intentionalität: Lehrauftrag, Erziehungsauftrag
@@ -415,39 +405,34 @@ Praktisches Wissen:
     * Lat. : qualitas = Beschaffenheit, Eigenschaft ~  wertneutraler Begriff
     * Impliziert der Qualitätsbegriff eine Bewertung, wird eine Bezugsbasis benötigt. Diese Bezugsbasis muss ausgewählt und begründet werden. Was gut ist, hängt vom Kriterium ab. 
     * Qualität ist keine stabile, einem Objekt innewohnende Eigenschaft, sondern stets kriterienabhängig, d.h. welche Ziele definiert werden, bezüglich des Unterrichts z.B. kognitive und motivationale Ziele
-    * Qualität von Unterricht  eine veränderbare, von LuL beeinflussbare Größe (im Gegensatz zu den individuellen Eingangsvoraussetzungen der SuS)
+    * Qualität von Unterricht -> eine veränderbare, von LuL beeinflussbare Größe (im Gegensatz zu den individuellen Eingangsvoraussetzungen der SuS)
 
-* Unterrichtsqualität
-    * = Konstrukt:  nicht direkt beobachtbarer Sachverhalte
-    * muss aus anderen, leichter beobachtbaren Sachverhalten (Indikatoren) erschlossen werden (= Operationalisierung) 
-    * Definition: Unterrichtsqualität = Bündel solcher empirisch identifizierter Merkmale, die sich nachweislich positiv auf die Unterrichts- und Erziehungsziele auswirken – Zielfestlegung normativ
-    * Keine endgültig abgeschlossene Liste an Merkmalen, nicht ein erfolgreiches methodisches Vorgehen. 
-    * Definition muss offen bleiben -> müssen LuL aushalten.
+* UQ nach Berliner
+    + Dieser Einteilung nach besteht UQ aus gutem Unterricht / „good teaching“ und effektivem Unterricht „effective teaching“
+    + Die Idee stammt von David Berliner (amerikanischer Päd. Psych.) und hier ein wenig ausgebaut
+    + Good teaching: hierbei geht es darum sich Gedanken zu machen, __was denn eigentlich erreicht werden soll__
+    + Effective/succesful teaching hingegen prüft, __inwiefern ein festgelegtes Ziel erreicht wird__
+    + __Outcomes von good teaching sind der Didaktik und der theoretischen Erziehungswissenschaft zuzuordnen__
+    + Didaktische Modelle wie das Hamburger oder Berliner Modell oder so etwas wie das EEE-Schema, das für Einstieg, Erarbeitung und Ergebnissicherung steht, aber auch Unterrichtstheorien usw.
+    + Outcomes von __effective teaching__ stammen eher aus der __Pädagogischen Psychologie__:
+    + Qualitätskriterien, __Merkmale im Unterricht, die positiv mit Leistung von Schüler:innen zusammenhängen__ z.B. nach Hilbert Mayer – Strukturierung des Unterrichts, time on task, Klima
+    + __Wirkmodelle nennen nicht nur die Kriterien, sondern beschreiben die Prozesse dahinter__ z.B., kognitive Aktivierung (aktive Auseinandersetzung und vertiefte Beschäftigung mit den Lerngegenstände) = Qualitätskriterium
+        + Wirkmodell: offene Aufgaben wirken kognitiv aktivierender weil Lernende nicht ein Ritual abspulen können, sondern wirklich das zu Verstehende elaborieren/durchdenken müssen
+        + Angebot-Nutzungs-Modell = Wirkmodell
+    + Qualitätsvoller Unterricht integriert beide Seiten:
+    + „Direkte Instruktion“: zeigt sich konsistent lernwirksam in Bezug auf fachliche Lernziele, genügt somit den Kriterien effektiven Unterrichts, entspricht jedoch u.a. aufgrund der starken Lehrersteuerung nicht den aktuellen pädagogischen Vorstellungen guten Unterrichts
 
-* umfasst sowohl theoretische als auch empirische Forschung
-
-
-* Dieser Einteilung nach besteht UQ aus gutem Unterricht / „good teaching“ und effektivem Unterricht „effective teaching“
-* Die Idee stammt von David Berliner (amerikanischer Päd. Psych.) und hier ein wenig ausgebaut
-* Good teaching: hierbei geht es darum sich Gedanken zu machen, __was denn eigentlich erreicht werden soll__
-* Effective teaching hingegen prüft, __inwiefern ein festgelegtes Ziel erreicht wird__
-* __Outcomes von good teaching sind der Didaktik und der theoretischen Erziehungswissenschaft zuzuordnen__
-  * Didaktische Modelle wie das Hamburger oder Berliner Modell oder so etwas wie das EEE-Schema, das für Einstieg, Erarbeitung und Ergebnissicherung steht, aber auch Unterrichtstheorien usw.
-
-* Outcomes von __effective teaching__ stammen eher aus der __Pädagogischen Psychologie__:
-
-  * Qualitätskriterien, __Merkmale im Unterricht, die positiv mit Leistung von Schüler:innen zusammenhängen__ z.B. nach Hilbert Mayer – Strukturierung des Unterrichts, time on task, Klima
-  * __Wirkmodelle nennen nicht nur die Kriterien, sondern beschreiben die Prozesse dahinter__ z.B., kognitive Aktivierung (aktive Auseinandersetzung und vertiefte Beschäftigung mit den Lerngegenstände) = Qualitätskriterium 
-  * Wirkmodell: offene Aufgaben wirken kognitiv aktivierender weil Lernende nicht ein Ritual abspulen können, sondern wirklich das zu Verstehende elaborieren/durchdenken müssen
-  * Angebot-Nutzungs-Modell = Wirkmodell
-
-* Qualitätsvoller Unterricht integriert beide Seiten: 
-* „Direkte Instruktion“: zeigt sich konsistent lernwirksam in Bezug auf fachliche Lernziele, genügt somit den Kriterien effektiven Unterrichts, entspricht jedoch u.a. aufgrund der starken Lehrersteuerung nicht den aktuellen pädagogischen Vorstellungen guten Unterrichts
 
 * Neuere UQualforschung fast ausschließlich unter effective Perspektive
 * Eckhard Klieme definiert UQ relativ breit 
-  * Kontext aktueller empirischer Forschung: 
-  * Fokus Leistungsentwicklung -> Wenn __nicht nur Leistungsentwicklung__ betrachtet wird, nennt man das oft eine __multikriteriale Perspektive auf Unterrichtsqualität__ (typisches Beispiel: Sehr starke, autoritäre Engführung im Unterricht kann sehr lernwirksamsein ist aber autonmieeinschränkend und damit motivationsentwicklungshinderlich; Deci and Ryan Selbstbestimmungstheorie (Autonomie, Fähigkeit, Zugehörigkeit))
+    * = Konstrukt:  nicht direkt beobachtbarer Sachverhalte
+    * muss aus anderen, leichter beobachtbaren Sachverhalten (Indikatoren) erschlossen werden (= Operationalisierung) 
+    * Definition: Unterrichtsqualität = Bündel solcher empirisch identifizierter Merkmale, die sich nachweislich positiv auf die Unterrichts- und Erziehungsziele auswirken – Zielfestlegung normativ
+    * Kontext aktueller empirischer Forschung: 
+    * Fokus Leistungsentwicklung -> Wenn __nicht nur Leistungsentwicklung__ betrachtet wird, nennt man das oft eine __multikriteriale Perspektive auf Unterrichtsqualität__ (typisches Beispiel: Sehr starke, autoritäre Engführung im Unterricht kann sehr lernwirksamsein ist aber autonmieeinschränkend und damit motivationsentwicklungshinderlich; Deci and Ryan Selbstbestimmungstheorie (Autonomie, Fähigkeit, Zugehörigkeit))
+* Unterrichtsqualität
+    * Keine endgültig abgeschlossene Liste an Merkmalen, nicht ein erfolgreiches methodisches Vorgehen. 
+    * Definition muss offen bleiben -> müssen LuL aushalten.
   
 ::: 
 
@@ -486,13 +471,12 @@ Praktisches Wissen:
 ::: notes
 
 - Verschiedene Modelle von UQ
-- Hier erkennen Sie die Tiefenstruktur wieder - Dimensionen 
-- Da findet man aber auch durch aus andere Modelle: 
   - Listen, die gar nichts über das Verhältnis der Merkmale aussagen, suggerieren oft eine dichotome Ausprägung (vorhanden vs. nicht vorhanden)
   - Stufen, die eine Hierarchie vorschlagen, also systematisch aufeinander aufbauen von Lernklima bis zur Differenzierung, und dadurch auch bissl heuristischer sind.
     - Die Stufung ist nicht kausal zu verstehen: Eine effiziente Klassenführung führt nicht automatisch zu einer guten individuellen Förderung, aber sie erhöht die Wahrscheinlichkeit, dass diese gelingt
     - umkehrt: Es ist unwahrscheinlich, dass es gelingt, individuelle Voraussetzungen von Schüler:innen im Unterricht angemessen zu berücksichtigen, wenn es Schüler:innen nicht möglich ist, Lernstrategien zu erwerben oder anzuwenden
     - auf Stufe zwei ist es für eine Schule nicht realistisch kurzfristig eine weitreichende „Individualisierung“ des Unterrichts anzustreben (Stufe 4), aber es wäre realistisch ein Konzept zu entwickeln für eine umfassende Einbeziehung der Schüler:innen in die Gestaltung des Unterrichts
+- Dimensionen schon kennengelernt
     
 :::
     
@@ -552,6 +536,8 @@ Tragen Sie sich Ihre Fallbeschreibungen gegenseitig vor und geben Sie sich dabei
 
 Überarbeiten Sie - falls notwendig - Ihre Fallbeschreibung und laden Sie diese überarbeitete Version in Innovationspace unter "Ihr herausforderndes Ereignis (überarbeitet)" hoch.
 
+<center> 30 Minuten {{< fa clock >}} </center>
+
 ## Basisdimensionen in Ihren Fällen {{< fa sitemap >}} {.smaller .scrollable}
 
 __Teil 1: Betiteln Sie Ihren Fall__
@@ -566,10 +552,19 @@ __Teil 2: Anwendung der Basisdimensionen__
 * Welche Basisdimensionen kommen in Ihrem Fall zum tragen? Gibt es eine dominante Dimension? 
 * Notieren Sie wenige Stichpunkte für die Vorstellung. Vergessen Sie dabei nicht zu begründen, warum Sie sich für welche Basisdimension(en) entschieden haben.
 
+<center> ca. 20 Minuten für Teil 1 und Teil 2 {{< fa clock >}} </center>
+
 __Teil 3: Vorstellung & Clusterung Ihres Falles__
 
 * Stellen Sie Ihren Fall inklusive Ihrer Zuordnung zu den Basisdimensionen in zwei bis drei Sätzen vor.
 * Gemeinsam clustern wir Ihre Fälle hinsichtlich der Basisdimensionen.
+
+
+::: notes
+
+PAUSE
+
+:::
 
 # Komplexität des Unterrichts {{< fa layer-group >}}{.cent1}
 
@@ -662,10 +657,10 @@ Pädagogische Hochschule Karlsruhe <br>
 * Classroom Management 
     + Historische Entwicklung
     + Techniken der Klassenführung nach Kounin
-* Einführung in die Analyse von Unterrichtsvideo
+* Einführung in die Analyse von Unterrichtsvideos
     + Potenziale und Herausforderungen
     + Einführung in die Analyseschritte 
-    + Durchführung der Videoanalyse
+    + Durchführung von Videoanalysen
 
 ## Lernziele {{< fa bullseye >}}
 
@@ -679,12 +674,6 @@ Pädagogische Hochschule Karlsruhe <br>
 
 ::: notes
 
-- Motivation: CM wird von Novizen als Herausforderung wahrgenommen
-  - kann erlernt werden
-  - einer der zentralsten Prädiktoren für Schüler:innenlernen
-  - wichtiger Faktor um Belastungserleben entgegen zu wirken 
-  - Strategien erlernen, um mit Komplexität umzugehen
-  
 :::
 
 ## Komplexität des Unterrichts {{< fa layer-group >}}
@@ -697,7 +686,16 @@ Pädagogische Hochschule Karlsruhe <br>
 
 
 ::: notes
+
 - Wir können die Komplexität nicht auflösen, sie uns aber bewusst machen -> und Strategien / Merkmale / Techniken etc. von CRM können uns behilflich sein damit umzugehen. 
+
+
+- Motivation: CM wird von Novizen als Herausforderung wahrgenommen
+  - kann erlernt werden
+  - einer der zentralsten Prädiktoren für Schüler:innenlernen
+  - wichtiger Faktor um Belastungserleben entgegen zu wirken 
+  - Strategien erlernen, um mit Komplexität umzugehen
+  
 
 :::
 
@@ -993,6 +991,8 @@ Forschungsfrage:
 :::
 
 ::: notes
+
+- nach Aktivität 20 Minuten Pause
 - je nach Quelle etwas unterschiedliche Bezeichnungen
 
 - am Ende: dies bedeutet nicht -> mach guten Unterricht dann gibts keine Störungen
@@ -1031,19 +1031,7 @@ Forschungsfrage:
 
 :::
 
-::: notes
 
-Beschreiben der Ausgangssituation vergleichbar mit einem Querschnitt durch das Video - Standbild
-
-Handlungsalternativen startet mit dem Handeln d. Lehrperson
-
-Erklären Ursachen und Konsequenzen 
-
-Entscheidung
-
-ADD NEGATIVBEISPIEL Digitalisierung bei Cocabora
-
-::: 
 
 
 ## Vertiefung der Techniken {{< fa wrench >}}{.smaller}
@@ -1186,7 +1174,7 @@ Diskutieren Sie in zwei Minuten mit Ihrer Nachbarin / Ihrem Nachbarn folgende Fr
 
 ::: notes
 
-- in dieser Zeit Peerfeedback zuteilen
+
 ::: 
 
 
@@ -1280,6 +1268,14 @@ Herausforderungen:
 
 optional, gerade bei fremden Videos wie in der Hausarbeit: Kontextinformationen 3. Stunde, zuvor große Pause etc. nennen
 
+Beschreiben der Ausgangssituation vergleichbar mit einem Querschnitt durch das Video - Standbild
+
+Handlungsalternativen startet mit dem Handeln d. Lehrperson
+
+Erklären Ursachen und Konsequenzen 
+
+5-Minuten PAUSE
+
 :::
 
 ## Unterrichtssequenz analysieren {{< fa file-pen >}}{.scrollable}
@@ -1316,6 +1312,9 @@ optional, gerade bei fremden Videos wie in der Hausarbeit: Kontextinformationen 
         - Überlappung: teile der Materialien austeilen während Gruppen arbeiten, gleichzeitiges Arbeiten ggf. nicht möglich (schwer erkennbar)
 - unbedingt Notizen bei Beschreibung machen
 
+- HA: Digitalisierung z.B. PPP mit AA verwenden -> eine mögliche Handlungsalternative, die aber keine weiteren / anderen Techniken der Klassenführung adressiert. 
+
+20-MINUTEN PAUSE
 ::: 
 
 
@@ -1437,6 +1436,8 @@ Pädagogische Hochschule Karlsruhe <br>
 
 ::: notes
 - in 10 Minuten Präsentationen rahmen
+
+15-MINUTEN PAUSE
 :::
 
 
@@ -1662,7 +1663,7 @@ weitere Differenzierung:
 
 - falls noch Zeit: Rückfragen?
 
- 
+ 15-MINUTEN PAUSE
 ::: 
 
 
@@ -1682,6 +1683,8 @@ Sie erhalten zufällig eine Ausarbeitung einer Kommilitonin / eines Kommilitonen
 
 - Reanalyse, dieses Mal aber in Einzelarbeit und nur ein Videoausschnitt
 
+
+15-MINUTEN PAUSE
 :::
 
 
