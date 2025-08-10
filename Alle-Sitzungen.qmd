@@ -211,7 +211,8 @@ Optimale Ausprägung ist immer eine Frage der Adaptivität (der Passung) – an 
 
 > Lehrer:innen und Studierende sind immer wieder der Meinung die Frage nach »Merkmalen guten Unterrichts« könne mit dem »Alltagsverstand« genauso beantwortet werden, wie mit Unterrichtsforschung.
 
-https://survey.ph-karlsruhe.de/Meinung-zu-Forschung/
+<center> ![](img/Experiment.png){width="250"} <br>
+[Zur Umfrage](https://survey.ph-karlsruhe.de/Meinung-und-Forschung/){preview-link="true"} </center>
 
 ::: notes
 -	Lehrer:innen und Lehramtsstudierende sind oft der Meinung, dass man mit dem Alltagsverstand - Erfahrungen, practical wisdom ... - genauso gut wie mit Unterrichtsforschung beantworten kann, was Merkmale guten Unterrichts sind 
@@ -375,8 +376,9 @@ PAUSE
 
 
 
-## Begriffsverständnisse (I) {{< fa chalkboard-teacher >}} {.smaller}
+## Begriffsverständnisse (I) {{< fa chalkboard-teacher >}} 
 
+::: {style="font-size: 0.6em"}
 * Unterrichtsqualität ein Kompositum aus Unterricht und Qualität 
     + Bestimmungsmerkmale von Unterricht: Planmäßigkeit, Professionalisierung, Institutionalisierung, Intentionalität
     + Qualität: keine stabile, einem Objekt innenwohnende Eigenschaft
@@ -388,6 +390,7 @@ PAUSE
 * Im Kontext aktueller empirischer (insb. deutschsprachiger) Forschung {{< fa eye >}}
     + wird meistens die [Leistungsentwicklung]{style="color: #0FA5D7;"} als Kriterium fokussiert (Kunter & Trautwein, 2013)
 
+:::
 
 ::: notes
 
@@ -481,8 +484,9 @@ PAUSE
 :::
     
     
-## Begriffsverständnisse: Basisdimensionen {{< fa chalkboard-teacher >}}{.smaller}
+## Begriffsverständnisse: Basisdimensionen {{< fa chalkboard-teacher >}}
 
+::: {style="font-size: 0.6em"}
 * ... 
 * Im Kontext aktueller empirischer (insb. deutschsprachiger) Forschung {{< fa eye >}}
     + wird meistens die [Leistungsentwicklung]{style="color: #0FA5D7;"} als Kriterium fokussiert  (Kunter & Trautwein, 2013);
@@ -492,6 +496,7 @@ PAUSE
         * [Kognitive Aktivierung]{style="color: #d77d00;"} (cognitive activation)
 <center> ![](img/Eisberg.png){width="200"} </center>
 
+:::
 
 ::: notes
 * Basisdimensionen - Tiefenstruktur
@@ -702,7 +707,7 @@ Pädagogische Hochschule Karlsruhe <br>
 
 ## Classroom Management: Historische Entwicklung {{< fa arrow-rotate-left >}}
 
-::: {style="font-size: 0.55em"}
+::: {style="font-size: 0.50em"}
 
 __1. Classroom Management als reaktiver Umgang mit Störungen__
 
@@ -760,7 +765,7 @@ __3. Lernerzentriertes Classroom Management__
 
 ## Classroom Management: Historische Entwicklung {{< fa arrow-rotate-left >}}
 
-::: {style="font-size: 0.55em"}
+::: {style="font-size: 0.50em"}
 
 __1. Classroom Management als reaktiver Umgang mit Störungen__
 
@@ -1280,7 +1285,7 @@ Erklären Ursachen und Konsequenzen
 
 ## Unterrichtssequenz analysieren {{< fa file-pen >}}{.scrollable}
 
-::: {style="font-size: 0.6em"}
+::: {style="font-size: 0.5em"}
 > Plenum <br>
 1. Videoausschnitt aus "Experimente zum Thema Magnetismus" gemeinsam anschauen. <br>
 2. Welche Sequenzen würden Sie für eine Videoanalyse auswählen? <br> 
@@ -1669,6 +1674,7 @@ weitere Differenzierung:
 
 ##  Peer Feedback zur Videoanalyse (Teil 2) {{< fa pen >}} {.smaller .scrollable}
 
+::: {style="font-size: 0.7em"}
 __Teil 1:__ <br>
 Schauen Sie sich Ihren Videoausschnitt nochmals an, den Sie heute morgen in Ihrer Gruppe vorgestellt haben. Analysieren Sie diesen Videoausschnitt erneut, indem Sie 
 
@@ -1678,6 +1684,9 @@ Schauen Sie sich Ihren Videoausschnitt nochmals an, den Sie heute morgen in Ihre
 
 __Teil 2:__ <br>
 Sie erhalten zufällig eine Ausarbeitung einer Kommilitonin / eines Kommilitonen (diese Ausarbeitung kann auch aus der anderen Seminargruppe stammen). Geben Sie nun unter "" der Aktivität Aktivität "Videoanalyse - Teil 2: Schwimmen und Sinken (Peerfeedback)" anhand der vorgegebenen Fragen ein Feedback zur zugeteilten Analyse.
+
+
+:::
 
 ::: notes
 
