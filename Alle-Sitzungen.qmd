@@ -602,13 +602,13 @@ Informalität: Ähnlich wie bereits beim Aspekt der »Unvorhersehbarkeit« besch
 
 ## Arbeitsauftrag {{< fa layer-group >}} {.smaller}
 
-1. Lesen Sie die Merkmale der Komplexität des Unterrichts und finden Sie zu mind. zwei der aufgelisteten Merkmalen verschiedene __konkrete__, möglichst __selbst erlebte Beispiele__ aus dem __Unterrichtsalltag__, um diese Merkmale der Komplexität von Unterricht zu stützen und greifbarer zu machen. Halten Sie Ihre Beispiele in Stichpunkten fest und laden Sie diese im Innovationspace unter "Beispiele zur Komplexität des Unterrichts" hoch.
+1. Lesen Sie die Merkmale der Komplexität des Unterrichts und finden Sie zu mind. einem der aufgelisteten Merkmale ein __konkretes__, möglichst __selbst erlebtes Beispiel__ aus dem __Unterrichtsalltag__, um diese Merkmale der Komplexität von Unterricht zu stützen und greifbarer zu machen. Halten Sie Ihr(e) Beispiel(e) in Stichpunkten fest und laden Sie diese(s) im Innovationspace unter "Beispiele zur Komplexität des Unterrichts" hoch.
 
-<center> 15 Minuten {{< fa clock >}} </center>
+<center> 7 Minuten {{< fa clock >}} </center>
 
-2. Stellen Sie ein Beispiel vor - ohne das Merkmal zu nennen - und lassen Sie Ihre Sitznachbarin / Ihren Sitznachbarn das Merkmal zuordnen.
+2. Stellen Sie Ihr Beispiel vor - ohne das Merkmal zu nennen - und lassen Sie Ihre Sitznachbarin / Ihren Sitznachbarn das Merkmal zuordnen.
 
-<center> 10 Minuten {{< fa clock >}} </center>
+<center> 5 Minuten {{< fa clock >}} </center>
 
 
 # Vielen Dank!{.cent1}
@@ -1290,13 +1290,13 @@ Erklären Ursachen und Konsequenzen
 1. Videoausschnitt aus "Experimente zum Thema Magnetismus" gemeinsam anschauen. <br>
 2. Welche Sequenzen würden Sie für eine Videoanalyse auswählen? <br> 
 3. Wie beschreiben Sie die ausgewählte Situation? Machen Sie sich hierfür bitte Notizen! Diese brauchen Sie zu einem späteren Zeitpunkt.
+4. Erörtern möglicher Handlungsalternativen 
 
 > Einzelarbeit: <br>
-4. Öffnen Sie die Aktivität "Videoanalyse: Experimente zum Thema Magnetismus" im Innovationspace. Nutzen Sie gerne auch die Datei "Techniken der Klassenführung - ein Überblick". Erklären Sie gemäß des vierten Analyseschritts "Erklären" (F.45) die Unterrichtssituation, die wir gemeinsam beschrieben haben. Greifen Sie dabei auch auf die Techniken der Klassenführung nach Kounin zurück. Halten Sie Ihre Teilanalyse im in Stichpunkten __im Online-Textfeld im Innovationspace__ fest.
+5. Öffnen Sie die Aktivität "Videoanalyse: Experimente zum Thema Magnetismus" im Innovationspace. Nutzen Sie gerne auch die Datei "Techniken der Klassenführung - ein Überblick". Erklären Sie gemäß des vierten Analyseschritts "Erklären" (F.45) die Unterrichtssituation, die wir gemeinsam beschrieben haben. Greifen Sie dabei auch auf die Techniken der Klassenführung nach Kounin zurück. Halten Sie Ihre Teilanalyse im in Stichpunkten __im Online-Textfeld im Innovationspace__ fest.
 
 > Plenum <br> 
-5. Sammlung der Erklärungen <br> 
-6. Erörtern möglicher Handlungsalternativen <br>  
+6. Sammlung der Erklärungen <br> 
 7. Entschiedung für eine Handlungsalternative vor dem Hintergrund der Techniken der Klassenführung.
 
 :::
@@ -1414,11 +1414,11 @@ Pädagogische Hochschule Karlsruhe <br>
 
 <br>
 
-> ca. 10:50 Uhr - 11:05 Uhr 
+> frei wählbare Pause zwischen ca. 10:55 Uhr - 11:20 Uhr 
 
 <br> 
 
-> ca. 11:50 Uhr - 12:10 Uhr
+> vorzeitiges Ende um 12:30 Uhr
 
 ## Was erwartet Sie heute? {{< fa list-ol >}}
 
@@ -1437,7 +1437,7 @@ Pädagogische Hochschule Karlsruhe <br>
 
 ## Ihr Arbeitsauftrag - Teil 2 {{< fa pen >}}{.scrollable}
 
-> Nun hören wir uns in der Großgruppe die Analysebeispiele aller Gruppen an. Bitte beachten Sie, dass Sie als Gruppe jeweils 5 Minuten Zeit für Ihre Vorstellung haben. Anschließend diskutieren wir gemeinsam ca. 10 Minuten über Ihre Vorstellungen.
+> Nun hören wir uns Ihre Analysebeispiele an. Bitte beachten Sie, dass Sie als Gruppe jeweils 5 Minuten Zeit für Ihre Vorstellung haben. Die Gruppen, die nicht vortragen, erhalten einen Beobachtungsauftrag, den  Sie den Kärtchen entnehmen können. Die Kärtchen werden für jede Runde neu verteilt.
 
 ::: notes
 - in 10 Minuten Präsentationen rahmen
@@ -1564,19 +1564,19 @@ __2. Classroom Management als proaktiver Umgang mit Störungen__
 ::: {style="font-size: 0.7em"}
 [__Think__]{.imp2} <br> 
 
-Lesen Sie sich den Textauszug von Haag & Streber (2020; S.74 unten - S.77 oben) durch. Den Textauszug finden Sie im Innovationspace unter "Evertson nach Haag und Streber (2020)". __Überlegen Sie sich mind. zwei Beispiele zu zwei Merkmalen.__ Beziehen Sie sich dabei *nicht* auf die ersten beiden Merkmale "Klassenraum vorbereiten" und "Regeln planen und Verfahrensweisen klar festlegen", da hierfür die Autor:innen Beispiele liefern. <br> *{{< fa clock >}} 15 Minuten*
+Lesen Sie sich den Textauszug von Haag & Streber (2020; S.74 unten - S.77 oben) durch. Den Textauszug finden Sie im Innovationspace unter "Evertson nach Haag und Streber (2020)". __Überlegen Sie sich mind. zwei Beispiele zu zwei Merkmalen.__ Beziehen Sie sich dabei *nicht* auf die ersten beiden Merkmale "Klassenraum vorbereiten" und "Regeln planen und Verfahrensweisen klar festlegen", da hierfür die Autor:innen Beispiele liefern. <br> *{{< fa clock >}} 10 Minuten*
 
 <br> 
 
 [__Pair__]{.imp2} <br> 
 
-Lassen Sie Ihre:n Sitznachbar:in Ihre Beispiele zu den möglichen Merkmalen zuordnen, d.h. stellen Sie Ihre Bespiele vor ohne dabei zu nennen, für welches Merkmal Sie dieses Beispiel gewählt haben. <br> *{{< fa clock >}} 10 Minuten* 
+Lassen Sie Ihre:n Sitznachbar:in Ihre Beispiele zu den möglichen Merkmalen zuordnen, d.h. stellen Sie Ihre Bespiele vor ohne dabei zu nennen, für welches Merkmal Sie dieses Beispiel gewählt haben. <br> *{{< fa clock >}} 7 Minuten* 
 
 <br>
 
 [__Share__]{.imp2} <br> 
 
-Kurze Reflexion Ihrer Einzel- und Partner:innenarbeit. <br> *{{< fa clock >}} 5 Minuten*
+Kurze Reflexion Ihrer Einzel- und Partner:innenarbeit. <br> *{{< fa clock >}} 3 Minuten*
 :::
 
 
