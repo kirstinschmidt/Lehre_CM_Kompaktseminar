@@ -1339,7 +1339,7 @@ Erklären Ursachen und Konsequenzen
 
 3. Laden Sie am Ende Ihrer Analyse die Stichpunkte unter der Aktivität "Videoanalyse: Schwimmen und Sinken" im Innovationspace hoch und bereiten Sie sich auf eine fünfminütige Vorstellung Ihres Analyseprozesses vor.
     - Legen Sie fest wer aus Ihrer Gruppe (max. 2 Personen) das Beispiel vorstellt. Beschreiben Sie in der Vorstellung was in dieser Situation passiert ist, wie Sie diese vor dem Hintergrund der Techniken nach Kounin erklären, welche Handlungsalternativen Sie sehen und wie Sie diese bewerten.
-    - Die Vorstellung findet in der Großgruppe statt.
+    - Halten Sie Ihre Punkte in einer kleinen Powerpointpräsentation o.ä. fest.
 
 [{{< fa exclamation >}}]{.imp2} Die Gruppenzusammensetzung dürfen Sie selbst entscheiden; tragen Sie ihre Gruppe in die Liste ein.
 
